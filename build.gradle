@@ -1,8 +1,16 @@
+
+
+
+
 buildscript {
+
+
     repositories {
         maven { url = 'https://repo.spongepowered.org/repository/maven-public/' }
     }
 }
+
+
 
 plugins {
     id 'eclipse'
@@ -213,8 +221,7 @@ dependencies {
     implementation fg.deobf("curse.maven:apothic-attributes-898963:5634071")
     implementation fg.deobf("dev.shadowsoffire:Placebo:${minecraft_version}-${placebo_version}")
 
-    implementation fg.deobf('curse.maven:timeless-and-classics-zero-1028108:6654541');
-//    modImplementation('curse.maven:timeless-and-classics-zero-1028108:6069384');
+    implementation fg.deobf("curse.maven:timeless-and-classics-zero-1028108:6654541")//    modImplementation('curse.maven:timeless-and-classics-zero-1028108:6069384');
 
 
     // Modern Ragnarok
@@ -263,4 +270,14 @@ tasks.named('jar', Jar).configure {
 
 tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8' // Use the UTF-8 charset for Java compilation
+}
+
+def modsDir = file("C:/Users/Hell-/AppData/Roaming/PrismLauncher/instances/Playwrights Guns and Buns v3/minecraft/mods")
+
+
+tasks.register('installMod', Copy) {
+    // For Forge projects use reobfJar; for plain Java use build
+    dependsOn tasks.named('reobfJar')
+    from(tasks.named('jar').flatMap { it.archiveFile })
+    into modsDir
 }

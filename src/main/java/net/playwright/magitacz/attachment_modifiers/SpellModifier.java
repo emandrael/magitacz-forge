@@ -76,7 +76,11 @@ public class SpellModifier implements IAttachmentModifier<AttachedSpell, Attache
 
         private void resolveComponent(AttachedSpell spell) {
 
-            var per_x = spell.getCastTypeParameters().get("per_x").intValue();
+            var castTypeParameters = spell.getCastTypeParameters();
+
+            if (castTypeParameters == null) {return;}
+
+            int per_x = castTypeParameters.get("per_x").intValue();
 
             boolean singular = per_x == 1;
             String spellName = I18n.get(("spell."+ spell.getSpellRegistry().registryName + "." + spell.getSpellName()));

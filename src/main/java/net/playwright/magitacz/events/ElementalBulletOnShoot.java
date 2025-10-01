@@ -31,7 +31,16 @@ public class ElementalBulletOnShoot {
         Entity shooter = event.getAttacker();
         Level level = shooter.level();
 
-        LivingEntity hurtEntity = (LivingEntity) event.getHurtEntity();
+        if (event.getHurtEntity() == null) return;
+
+
+        try {
+            LivingEntity hurtEntity = (LivingEntity) event.getHurtEntity();
+        }
+        catch (ClassCastException e){
+            MagitaczMod.LOGGER.info(e.toString());
+            return;
+        }
 
         ItemStack gunItem = event.getAttacker().getMainHandItem();
         ModernKineticGunScriptAPI api = new ModernKineticGunScriptAPI();

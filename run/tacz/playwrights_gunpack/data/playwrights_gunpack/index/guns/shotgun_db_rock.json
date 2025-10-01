@@ -1,0 +1,7 @@
+{
+    "name": "playwrights_gunpack.gun.shotgun_db_rock",
+    "display": "playwrights_gunpack:shotgun_db_rock_display",
+    "data": "playwrights_gunpack:shotgun_db_rock_data",
+    "type": "shotgun",
+    "sort": 350
+}

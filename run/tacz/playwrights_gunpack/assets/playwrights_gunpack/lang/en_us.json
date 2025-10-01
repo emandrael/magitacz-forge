@@ -1,0 +1,11 @@
+{
+  "pack.playwrights_gunpack.name": "Playwright's Gunpack",
+  "pack.playwrights_gunpack.desc": "Some modified weapons textures and models from a plethora of differnt gun packs!",
+
+
+  "playwrights_gunpack.gun.rifle_assult_peacock": "\"Peacock\" Assult Rifle",
+  "playwrights_gunpack.gun.shotgun_db_rock": "\"Rock\" Shotgun",
+  "playwrights_gunpack.gun.pistol_auto_stress_out": "\"Stressed Out\" Pistol",
+  "playwrights_gunpack.gun.pistol_revolver_whirly" : "\"Whirly\" Revolver",
+  "playwrights_gunpack.gun.sniper_semi_unclassical": "\"Unclassical M1\" Semi Rifle"
+}

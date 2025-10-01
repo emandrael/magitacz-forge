@@ -1,0 +1,7 @@
+{
+  "types": ["gun"],
+  "values": {
+    "common": {"min": 0.05, "max": 0.15, "steps": 1},
+    "rare": {"min": 0.2, "max": 0.5, "steps": 1}
+  }
+}

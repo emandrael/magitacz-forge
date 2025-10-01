@@ -1,0 +1,58 @@
+{
+  "itemGroup.magitacz": "Example Mod Tab",
+  "block.magitacz.raw_elementium_block": "Raw Elementium Block",
+  "block.magitacz.elementium_block": "Elementium Block",
+  "item.magitacz.elementium": "Elementium Shard",
+  "item.magitacz.elementium_sword": "Elementium Sword",
+  "item.magitacz.raw_elementium": "Unstable Elementium",
+
+  "item.magitacz.elementium_helmet": "Elementium Helmet",
+  "item.magitacz.elementium_leggings": "Elementium Leggings",
+  "item.magitacz.elementium_chestplate": "Elementium Chestplate",
+  "item.magitacz.elementium_boots": "Elementium Boots",
+
+  "affix.magitacz.elemental_bullet.desc": "Bullets deal %s%% bonus %s damage",
+
+  "affix.magitacz:elemental_bullets/elemental_bullet_fire" : "Blazing",
+  "affix.magitacz:elemental_bullets/elemental_bullet_fire.suffix" : "of Inferno",
+
+  "affix.magitacz:elemental_bullets/elemental_bullet_ice" : "Frosted",
+  "affix.magitacz:elemental_bullets/elemental_bullet_ice.suffix" : "of Glaciers",
+
+  "affix.magitacz:elemental_bullets/elemental_bullet_lightning" : "Electrified",
+  "affix.magitacz:elemental_bullets/elemental_bullet_lightning.suffix" : "of the Storm",
+
+  "affix.magitacz:elemental_bullets/elemental_bullet_blood" : "Sanguine",
+  "affix.magitacz:elemental_bullets/elemental_bullet_blood.suffix" : "of Blood",
+
+  "affix.magitacz:elemental_bullets/elemental_bullet_ender" : "Warped",
+  "affix.magitacz:elemental_bullets/elemental_bullet_ender.suffix" : "of the Void",
+
+  "affix.magitacz:elemental_bullets/elemental_bullet_evocation" : "Evoked",
+  "affix.magitacz:elemental_bullets/elemental_bullet_evocation.suffix" : "of Evocation",
+
+  "affix.magitacz:elemental_bullets/elemental_bullet_eldritch" : "Eldritch",
+  "affix.magitacz:elemental_bullets/elemental_bullet_eldritch.suffix" : "of Aberration",
+
+  "affix.magitacz:elemental_bullets/elemental_bullet_holy" : "Blessed",
+  "affix.magitacz:elemental_bullets/elemental_bullet_holy.suffix" : "of Light",
+
+  "affix.magitacz:elemental_bullets/elemental_bullet_nature" : "Wild",
+  "affix.magitacz:elemental_bullets/elemental_bullet_nature.suffix" : "of Nature",
+
+  "attachment.magitacz.on_hit_spell" : "%s | %s | Spell Level: %s",
+
+  "enchantment.magitacz.lightning_striker" : "Lightning Striker",
+
+  "guns.magitacz:spell_attachment_on_hit" : "Cast %s every %s bullets that %s on an enemy.",
+  "guns.magitacz:spell_attachment_on_hit_singular" : "Cast %s every shot that %s on an enemy.",
+
+  "guns.magitacz:spell_attachment_on_kill" : "Cast %s every %s enemies %s using this gun.",
+  "guns.magitacz:spell_attachment_on_kill_singular" : "Cast %s every for each %s using this gun.",
+
+  "guns.magitacz:spell_attachment_on_shoot" : "Cast %s every %s bullets %s from this gun.",
+  "guns.magitacz:spell_attachment_on_shoot_singular" : "Cast %s every shot %s from this gun.",
+
+
+  "creativetab.magitacz" : "Magitacz"
+}

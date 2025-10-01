@@ -1,0 +1,9 @@
+{
+    "model" : "playwrights_gunpack:gun/pistol_auto_stress_out_geo",
+    "texture" : "playwrights_gunpack:gun/uv/pistol_auto_stress_out",
+    "slot" : "playwrights_gunpack:gun/slot/pistol_auto_stress_out",
+    "third_person_animation": "default",
+    "hud": "create_armorer:gun/hud/pistol_auto_stress",
+    "animation": "playwrights_gunpack:pistol_auto_stress_out",
+    "use_default_animation": "pistol"
+}
