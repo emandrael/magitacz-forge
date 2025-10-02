@@ -6,6 +6,7 @@ import com.tacz.guns.resource.modifier.AttachmentPropertyManager;
 import dev.shadowsoffire.apotheosis.adventure.affix.AffixRegistry;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
@@ -37,7 +38,9 @@ import net.playwright.magitacz.attachment_modifiers.SpellModifier;
 import net.playwright.magitacz.blocks.MagitaczBlocks;
 import net.playwright.magitacz.datagen.loot.MagitaczLootTableProvider;
 import net.playwright.magitacz.enchantments.ModEnchantments;
+import net.playwright.magitacz.hud.DamageTypeHud;
 import net.playwright.magitacz.item.MagitaczItems;
+import net.tslat.tes.api.TESAPI;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -87,6 +90,11 @@ public class MagitaczMod {
 
         modEventBus.addListener(this::gatherData);
 
+
+        ResourceLocation hudResource = new ResourceLocation("magitacz","textures/item/elementium.png");
+
+
+        TESAPI.addTESHudElement(hudResource, new DamageTypeHud());
 
         LOGGER.info("HELLO THERE:"+ AttachmentPropertyManager.getModifiers());
 

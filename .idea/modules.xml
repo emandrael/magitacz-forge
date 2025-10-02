@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/magitacz-forge.main.iml" filepath="$PROJECT_DIR$/.idea/modules/magitacz-forge.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/magitacz-forge.test.iml" filepath="$PROJECT_DIR$/.idea/modules/magitacz-forge.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/net.playwright.magitacz-forge.main.iml" filepath="$PROJECT_DIR$/.idea/modules/net.playwright.magitacz-forge.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/net.playwright.magitacz-forge.test.iml" filepath="$PROJECT_DIR$/.idea/modules/net.playwright.magitacz-forge.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/untitled1.main.iml" filepath="$PROJECT_DIR$/.idea/modules/untitled1.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/untitled1.test.iml" filepath="$PROJECT_DIR$/.idea/modules/untitled1.test.iml" />
     </modules>

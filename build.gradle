@@ -1,4 +1,4 @@
-
+import org.apache.tools.ant.taskdefs.condition.Os
 
 
 
@@ -9,6 +9,8 @@ buildscript {
         maven { url = 'https://repo.spongepowered.org/repository/maven-public/' }
     }
 }
+
+
 
 
 
@@ -184,6 +186,13 @@ repositories {
         }
     }
 
+    repositories {
+        maven {
+            name = "TslatEntityStatus (TES) Maven Repo"
+            url = "https://dl.cloudsmith.io/public/tslat/tes/maven/"
+        }
+    }
+
     if (file('../GunsmithLib').exists()) {
         flatDir {
             dir '../GunsmithLib/build/libs'
@@ -222,6 +231,9 @@ dependencies {
     implementation fg.deobf("dev.shadowsoffire:Placebo:${minecraft_version}-${placebo_version}")
 
     implementation fg.deobf("curse.maven:timeless-and-classics-zero-1028108:6654541")//    modImplementation('curse.maven:timeless-and-classics-zero-1028108:6069384');
+
+    // TSLAT ENtity HUD
+    implementation fg.deobf("net.tslat.tes:TES-forge-1.20.1:1.5.1")
 
 
     // Modern Ragnarok
@@ -272,12 +284,18 @@ tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8' // Use the UTF-8 charset for Java compilation
 }
 
-def modsDir = file("C:/Users/Hell-/AppData/Roaming/PrismLauncher/instances/Playwrights Guns and Buns v3/minecraft/mods")
 
 
 tasks.register('installMod', Copy) {
-    // For Forge projects use reobfJar; for plain Java use build
-    dependsOn tasks.named('reobfJar')
-    from(tasks.named('jar').flatMap { it.archiveFile })
-    into modsDir
+    if (Os.isFamily(Os.FAMILY_WINDOWS)) {
+        def modsDir = file("C:/Users/Hell-/AppData/Roaming/PrismLauncher/instances/Playwrights Guns and Buns v3/minecraft/mods")
+        dependsOn tasks.named('reobfJar')
+        from(tasks.named('jar').flatMap { it.archiveFile })
+        into modsDir
+    }
+    if (Os.isFamily(Os.FAMILY_MAC))
+    {
+        println("No mac setup")
+    }
+
 }
