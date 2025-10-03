@@ -40,6 +40,8 @@ public class DamageTypeHud implements TESHudElement {
 
         int x = 0;
 
+
+
         TESClientUtil.prepRenderForTexture(FIRE_TEXTURE);
         if (DamageTypeUtils.fireSpellResistOf(livingEntity) > 1) {
             TESClientUtil.drawSimpleTexture(guiGraphics, x, 0, 16, 16, 0.0F, 0.0F, 16);

@@ -1,0 +1,15 @@
+Java Launcher: C:\Users\Hell-\.gradle\jdks\eclipse_adoptium-17-amd64-windows.2\bin\java.exe
+Arguments: '--task, SRG_TO_MCP, --input, C:\Users\Hell-\.gradle\caches\modules-2\files-2.1\net.tslat.tes\TES-forge-1.20.1\1.5.1\47c35bd90ad089eed83f9e6a0eef68a72c29b6ae\TES-forge-1.20.1-1.5.1.jar, --output, C:\Users\Hell-\.gradle\caches\forge_gradle\deobf_dependencies\net\tslat\tes\TES-forge-1.20.1\1.5.1_mapped_official_1.20.1\TES-forge-1.20.1-1.5.1_mapped_official_1.20.1.jar, --mcp, C:\Users\Hell-\.gradle\caches\forge_gradle\mcp_repo\net\minecraft\mapping\1.20.1\mapping-1.20.1-mapping.zip, --strip-signatures'
+Classpath:
+ - C:\Users\Hell-\.gradle\caches\forge_gradle\maven_downloader\net\minecraftforge\installertools\1.4.4\installertools-1.4.4-fatjar.jar
+Working directory: C:\Projects\magitacz-forge\build\_RenameSrg2Mcp_1288876508
+Main class: net.minecraftforge.installertools.ConsoleTool
+====================================
+Task: SRG_TO_MCP
+Input:  C:\Users\Hell-\.gradle\caches\modules-2\files-2.1\net.tslat.tes\TES-forge-1.20.1\1.5.1\47c35bd90ad089eed83f9e6a0eef68a72c29b6ae\TES-forge-1.20.1-1.5.1.jar
+Output: C:\Users\Hell-\.gradle\caches\forge_gradle\deobf_dependencies\net\tslat\tes\TES-forge-1.20.1\1.5.1_mapped_official_1.20.1\TES-forge-1.20.1-1.5.1_mapped_official_1.20.1.jar
+MCP:    C:\Users\Hell-\.gradle\caches\forge_gradle\mcp_repo\net\minecraft\mapping\1.20.1\mapping-1.20.1-mapping.zip
+Loading MCP Data
+Processing ZIP file
+Stripped Manifest of sha digests
+Process complete

@@ -173,7 +173,7 @@ repositories {
         name = 'GeckoLib'
         url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
         content {
-            includeGroupByRegex("software\\.bernie.*")
+            includeGroupByRegex("software/.bernie.*")
             includeGroup("com.eliotlash.mclib")
         }
     }
@@ -288,7 +288,7 @@ tasks.withType(JavaCompile).configureEach {
 
 tasks.register('installMod', Copy) {
     if (Os.isFamily(Os.FAMILY_WINDOWS)) {
-        def modsDir = file("C:/Users/Hell-/AppData/Roaming/PrismLauncher/instances/Playwrights Guns and Buns v3/minecraft/mods")
+        def modsDir = file("C:/Users/Hell-/AppData/Roaming/PrismLauncher/instances/playwrights_cobble_world/minecraft/mods")
         dependsOn tasks.named('reobfJar')
         from(tasks.named('jar').flatMap { it.archiveFile })
         into modsDir

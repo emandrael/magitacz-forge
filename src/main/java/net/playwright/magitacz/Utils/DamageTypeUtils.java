@@ -1,5 +1,7 @@
 package net.playwright.magitacz.Utils;
 
+import com.tacz.guns.api.item.attachment.AttachmentType;
+import com.tacz.guns.init.ModAttributes;
 import io.redspace.ironsspellbooks.api.registry.AttributeRegistry;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.attributes.AttributeInstance;
@@ -7,6 +9,11 @@ import net.minecraft.world.entity.ai.attributes.AttributeInstance;
 public class DamageTypeUtils {
     public static double spellResistOf(LivingEntity e) {
         AttributeInstance inst = e.getAttribute(AttributeRegistry.SPELL_RESIST.get());
+        return inst != null ? inst.getValue() : 0.0;
+    }
+
+    public static double bulletResistOf(LivingEntity e) {
+        AttributeInstance inst = e.getAttribute(ModAttributes.BULLET_RESISTANCE.get());
         return inst != null ? inst.getValue() : 0.0;
     }
 
