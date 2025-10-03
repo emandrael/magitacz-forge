@@ -22,9 +22,9 @@ public class DamageTypeHud implements TESHudElement {
     private static final ResourceLocation EVOCATION_TEXTURE = new ResourceLocation("irons_spellbooks", spellIconLoc + "lob_creeper.png");
     private static final ResourceLocation HOLY_TEXTURE = new ResourceLocation("irons_spellbooks", spellIconLoc + "angel_wing.png");
     private static final ResourceLocation BLOOD_TEXTURE = new ResourceLocation("irons_spellbooks", spellIconLoc + "devour.png");
+
     private static final ResourceLocation SHIELD_TEXTURE = new ResourceLocation("magitacz", "textures/gui/shield.png");
     private static final ResourceLocation SKULL_TEXTURE = new ResourceLocation("magitacz", "textures/gui/skull.png");
-
 
 
 
