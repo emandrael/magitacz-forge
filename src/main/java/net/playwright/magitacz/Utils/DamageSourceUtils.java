@@ -6,7 +6,9 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.damagesource.DamageType;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.level.Level;
+
 
 public class DamageSourceUtils {
     public static DamageSource getDamageSourceFromResource(Level level, ResourceKey<DamageType> damageTypeKey, Entity directEntity, Entity causingEntity) {
@@ -16,5 +18,9 @@ public class DamageSourceUtils {
                 .getHolderOrThrow(damageTypeKey);
         // Create and return the DamageSource
         return new DamageSource(damageTypeHolder, directEntity, causingEntity);
+    }
+
+    public static Attribute getMagicResistOfFromDamageSource(Entity entity) {
+
     }
 }

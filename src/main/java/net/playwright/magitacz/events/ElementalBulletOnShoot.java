@@ -65,5 +65,12 @@ public class ElementalBulletOnShoot {
 
         event.setDamageSource(GunDamageSourcePart.NON_ARMOR_PIERCING, schoolDamageSource);
         event.setDamageSource(GunDamageSourcePart.ARMOR_PIERCING, schoolDamageSource);
+        try {
+            LivingEntity hurtEntity = (LivingEntity) event.getHurtEntity();
+            event.setBaseAmount(hurtEntity.getAttributeValue());
+        }
+
+
+
     }
 }

@@ -71,8 +71,8 @@ public class DamageTypeHud implements TESHudElement {
         else if (DamageTypeUtils.bulletResistOf(livingEntity) == 0.8) {
             TESClientUtil.drawSimpleTexture(guiGraphics, x, 0, 16, 16, 0.0F, 0.0F, 16);
             TESClientUtil.prepRenderForTexture(FOUR);
-            TESClientUtil.drawSimpleTexture(guiGraphics, x + 10, 10, 8, 8, 0.0F, 0.0F, 8);
-            x += 20;
+            TESClientUtil.drawSimpleTexture(guiGraphics, x + 10, 10, 10, 8, 0.0F, 0.0F, 10, 8);
+            x += 22;
         }
 
         TESClientUtil.prepRenderForTexture(FIRE_TEXTURE);
