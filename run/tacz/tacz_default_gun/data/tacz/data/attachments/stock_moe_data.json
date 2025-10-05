@@ -7,5 +7,13 @@
     "pitch": {
       "multiplier": 0.85
     }
-  }
+  },
+
+  "spell" : {
+    "spell_name" : "earthquake",
+    "spell_level" : 2,
+    "cast_type" : "ONKILL",
+    "cast_type_parameters" : {
+      "per_x" : 5
+    }
 }

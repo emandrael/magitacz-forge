@@ -51,6 +51,7 @@ public class CastSpellOnHurtEvent {
 
     @SubscribeEvent
     public static void onEntityHurtByGun(EntityHurtByGunEvent event) {
+
         LivingEntity shooter = event.getAttacker();
         Entity victim = event.getHurtEntity();
 
@@ -63,10 +64,15 @@ public class CastSpellOnHurtEvent {
         api.setItemStack(gunItem);
         GunData gunData = api.getGunIndex().getGunData();
 
+
+
         AbstractSpell spell  = MagitaczDataUtils.getSpellOnAttachment(gunItem, gunData, AttachmentType.STOCK);
         AttachedSpell attachedSpell = MagitaczDataUtils.getAttachmentSpellData(gunItem, gunData, AttachmentType.STOCK);
 
+
+
         if (spell == null) return; // bad id
+
 
         Level world = shooter.level();
         MagicData shooterData = MagicData.getPlayerMagicData(shooter);
@@ -97,8 +103,11 @@ public class CastSpellOnHurtEvent {
                 boolean shouldTrigger = count % castPerX == 0;
 
                 if (shouldTrigger) {
+                    MagitaczMod.LOGGER.info("SHOOT HURT");
                     doSpellCastOnEntity( shooter, spell, world, spellLevel);
                 }
+
+
 
                 break;
             }

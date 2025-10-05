@@ -15,6 +15,8 @@ public class DamageTypeHud implements TESHudElement {
 
     private static final String spellIconLoc = "textures/gui/spell_icons/";
 
+    private static final ResourceLocation BULLET_TEXTURE = new ResourceLocation("magitacz", "textures/gui/bullet.png");
+
     private static final ResourceLocation FIRE_TEXTURE = new ResourceLocation("irons_spellbooks", spellIconLoc + "fireball.png");
     private static final ResourceLocation ICE_TEXTURE = new ResourceLocation("irons_spellbooks", spellIconLoc + "ice_block.png");
     private static final ResourceLocation LIGHTNING_TEXTURE = new ResourceLocation("irons_spellbooks", spellIconLoc + "lightning_bolt.png");
@@ -25,6 +27,13 @@ public class DamageTypeHud implements TESHudElement {
 
     private static final ResourceLocation SHIELD_TEXTURE = new ResourceLocation("magitacz", "textures/gui/shield.png");
     private static final ResourceLocation SKULL_TEXTURE = new ResourceLocation("magitacz", "textures/gui/skull.png");
+
+    private static final ResourceLocation ONE = new ResourceLocation("magitacz", "textures/gui/one.png");
+    private static final ResourceLocation TWO = new ResourceLocation("magitacz", "textures/gui/two.png");
+    private static final ResourceLocation THREE = new ResourceLocation("magitacz", "textures/gui/three.png");
+    private static final ResourceLocation FOUR = new ResourceLocation("magitacz", "textures/gui/four.png");
+
+
 
 
 
@@ -41,6 +50,30 @@ public class DamageTypeHud implements TESHudElement {
         int x = 0;
 
 
+        TESClientUtil.prepRenderForTexture(BULLET_TEXTURE);
+        if (DamageTypeUtils.bulletResistOf(livingEntity) == 0.2 ){
+            TESClientUtil.drawSimpleTexture(guiGraphics, x, 0, 16, 16, 0.0F, 0.0F, 16);
+            TESClientUtil.prepRenderForTexture(ONE);
+            TESClientUtil.drawSimpleTexture(guiGraphics, x + 10, 10, 8, 8, 0.0F, 0.0F, 8);
+            x += 20;
+        }else if (DamageTypeUtils.bulletResistOf(livingEntity) == 0.4) {
+            TESClientUtil.drawSimpleTexture(guiGraphics, x, 0, 16, 16, 0.0F, 0.0F, 16);
+            TESClientUtil.prepRenderForTexture(TWO);
+            TESClientUtil.drawSimpleTexture(guiGraphics, x + 10, 10, 8, 8, 0.0F, 0.0F, 8);
+            x += 20;
+        }
+        else if (DamageTypeUtils.bulletResistOf(livingEntity) == 0.6) {
+            TESClientUtil.drawSimpleTexture(guiGraphics, x, 0, 16, 16, 0.0F, 0.0F, 16);
+            TESClientUtil.prepRenderForTexture(THREE);
+            TESClientUtil.drawSimpleTexture(guiGraphics, x + 10, 10, 8, 8, 0.0F, 0.0F, 8);
+            x += 20;
+        }
+        else if (DamageTypeUtils.bulletResistOf(livingEntity) == 0.8) {
+            TESClientUtil.drawSimpleTexture(guiGraphics, x, 0, 16, 16, 0.0F, 0.0F, 16);
+            TESClientUtil.prepRenderForTexture(FOUR);
+            TESClientUtil.drawSimpleTexture(guiGraphics, x + 10, 10, 8, 8, 0.0F, 0.0F, 8);
+            x += 20;
+        }
 
         TESClientUtil.prepRenderForTexture(FIRE_TEXTURE);
         if (DamageTypeUtils.fireSpellResistOf(livingEntity) > 1) {

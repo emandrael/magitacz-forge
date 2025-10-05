@@ -20,6 +20,7 @@ import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.item.ItemStack;
+import net.playwright.magitacz.MagitaczMod;
 import net.playwright.magitacz.attachment_modifiers.AttachedSpell;
 import net.playwright.magitacz.attachment_modifiers.SpellModifier;
 
@@ -37,6 +38,7 @@ public class MagitaczDataUtils {
         AttachedSpell.SpellRegistryEnum spellRegistryEnum = attachedSpell.getSpellRegistry();
 
         ResourceLocation spellId = new ResourceLocation(spellRegistryEnum.registryName, spellName);
+
         return SpellRegistry.getSpell(spellId);
     }
 
@@ -44,15 +46,21 @@ public class MagitaczDataUtils {
     public static AttachedSpell getAttachmentSpellData(ItemStack gunItem, GunData gunData, AttachmentType attachmentType) {
         IGun iGun = IGun.getIGunOrNull(gunItem);
         AttachedSpell attachedSpell = null;
+
+
+
         if (iGun == null) {
             return new AttachedSpell();
         }
         else{
             ResourceLocation attachmentId = iGun.getAttachmentId(gunItem, attachmentType);
+
+            MagitaczMod.LOGGER.info(attachmentId.toString());
+
             if (!DefaultAssets.isEmptyAttachmentId(attachmentId)) {
                 AttachmentData attachmentData = (AttachmentData)gunData.getExclusiveAttachments().get(attachmentId);
                 if (attachmentData != null) {
-                    JsonProperty<?> m = attachmentData.getModifier().get(SpellModifier.ID);
+                    JsonProperty<?> m = attachmentData.getModifier().get(SpellModifier.ID);;
                     if (m != null) {
                         Object spell = m.getValue();
                         if (spell instanceof AttachedSpell) {

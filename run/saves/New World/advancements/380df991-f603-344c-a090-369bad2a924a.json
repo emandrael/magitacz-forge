@@ -15,6 +15,7 @@
     "criteria": {
       "minecraft:beach": "2025-10-02 21:36:26 +0100",
       "minecraft:stony_shore": "2025-10-02 22:10:46 +0100",
+      "minecraft:meadow": "2025-10-05 11:51:56 +0100",
       "minecraft:plains": "2025-10-01 12:13:52 +0100"
     },
     "done": false
@@ -75,6 +76,7 @@
   },
   "minecraft:adventure/kill_all_mobs": {
     "criteria": {
+      "minecraft:pillager": "2025-10-03 21:31:07 +0100",
       "minecraft:skeleton": "2025-10-02 21:18:14 +0100",
       "minecraft:spider": "2025-10-02 22:02:59 +0100",
       "minecraft:creeper": "2025-10-02 22:03:33 +0100",
@@ -321,6 +323,66 @@
   "minecraft:recipes/food/cooked_porkchop_from_smoking": {
     "criteria": {
       "has_porkchop": "2025-10-03 12:31:05 +0100"
+    },
+    "done": true
+  },
+  "minecraft:adventure/voluntary_exile": {
+    "criteria": {
+      "voluntary_exile": "2025-10-03 21:31:11 +0100"
+    },
+    "done": true
+  },
+  "apotheosis:spawner/capturing": {
+    "criteria": {
+      "egg": "2025-10-05 11:02:28 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/glowstone": {
+    "criteria": {
+      "has_glowstone_dust": "2025-10-05 11:02:57 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/spectral_arrow": {
+    "criteria": {
+      "has_glowstone_dust": "2025-10-05 11:02:57 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_beef_from_smoking": {
+    "criteria": {
+      "has_beef": "2025-10-05 11:03:08 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_beef": {
+    "criteria": {
+      "has_beef": "2025-10-05 11:03:08 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_beef_from_campfire_cooking": {
+    "criteria": {
+      "has_beef": "2025-10-05 11:03:08 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/firework_rocket_simple": {
+    "criteria": {
+      "has_gunpowder": "2025-10-05 11:03:18 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/tnt": {
+    "criteria": {
+      "has_gunpowder": "2025-10-05 11:03:18 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cake": {
+    "criteria": {
+      "has_egg": "2025-10-05 11:51:53 +0100"
     },
     "done": true
   },
