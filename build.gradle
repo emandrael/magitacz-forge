@@ -232,6 +232,9 @@ dependencies {
 
     implementation fg.deobf("curse.maven:timeless-and-classics-zero-1028108:6654541")//    modImplementation('curse.maven:timeless-and-classics-zero-1028108:6069384');
 
+    // Aquamirae
+    implementation fg.deobf("curse.maven:ob-aquamirae-536254:7039863")
+
     // TSLAT ENtity HUD
     implementation fg.deobf("net.tslat.tes:TES-forge-1.20.1:1.5.1")
 
