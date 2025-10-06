@@ -36,7 +36,6 @@ import net.minecraftforge.registries.RegistryObject;
 import net.playwright.magitacz.affix.ElementalBulletAffix;
 import net.playwright.magitacz.attachment_modifiers.SpellModifier;
 import net.playwright.magitacz.blocks.MagitaczBlocks;
-import net.playwright.magitacz.datagen.loot.MagitaczLootTableProvider;
 import net.playwright.magitacz.enchantments.ModEnchantments;
 import net.playwright.magitacz.hud.DamageTypeHud;
 import net.playwright.magitacz.item.MagitaczItems;
@@ -105,8 +104,6 @@ public class MagitaczMod {
         var generator = event.getGenerator();
         var output = generator.getPackOutput();
         boolean includeServer = event.includeServer();
-
-        generator.addProvider(includeServer, new MagitaczLootTableProvider(output));
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
@@ -114,7 +111,7 @@ public class MagitaczMod {
         LOGGER.info("HELLO FROM COMMON SETUP");
         LOGGER.info("DIRT BLOCK >> {}", ForgeRegistries.BLOCKS.getKey(Blocks.DIRT));
 
-        if (Config.logDirtBlock) LOGGER.info("DIRT BLOCK >> {}", ForgeRegistries.BLOCKS.getKey(Blocks.DIRT));
+        if (Config.injectChestLoot) LOGGER.info("INJECTING DE SHITE");
 
         LOGGER.info(Config.magicNumberIntroduction + Config.magicNumber);
 

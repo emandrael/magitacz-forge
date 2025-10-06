@@ -238,6 +238,7 @@ dependencies {
 
     // Modern Ragnarok
     implementation fg.deobf("curse.maven:apotheosis-modern-ragnarok-966582:6956142")
+    implementation fg.deobf("curse.maven:gunsmith-lib-1264058:7049169")
 
     implementation fg.deobf("curse.maven:selene-499980:6380635")
     implementation fg.deobf("curse.maven:mmmmmmmmmmmm-225738:6237015")

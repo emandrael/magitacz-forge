@@ -1,5 +1,3 @@
-#Whether to log the dirt block on common setup
-logDirtBlock = true
 #A magic number
 #Range: > 0
 magicNumber = 42
@@ -7,4 +5,6 @@ magicNumber = 42
 magicNumberIntroduction = "The magic number is... "
 #A list of items to log on common setup.
 items = ["minecraft:iron_ingot"]
+#Whether to inject chests with Magitacz Loot!
+injectChestLoot = true
 

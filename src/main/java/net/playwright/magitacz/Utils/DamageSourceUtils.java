@@ -9,6 +9,8 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.level.Level;
 
+import org.apache.commons.compress.archivers.zip.ZipSplitReadOnlySeekableByteChannel;
+
 
 public class DamageSourceUtils {
     public static DamageSource getDamageSourceFromResource(Level level, ResourceKey<DamageType> damageTypeKey, Entity directEntity, Entity causingEntity) {
@@ -20,7 +22,7 @@ public class DamageSourceUtils {
         return new DamageSource(damageTypeHolder, directEntity, causingEntity);
     }
 
-    public static Attribute getMagicResistOfFromDamageSource(Entity entity) {
-
-    }
+//    public static Attribute getMagicResistOfFromDamageSource(Entity entity) {
+//
+//    }
 }
