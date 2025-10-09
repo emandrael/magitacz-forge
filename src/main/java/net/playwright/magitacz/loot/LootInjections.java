@@ -1,5 +1,6 @@
 package net.playwright.magitacz.loot;
 
+import com.obscuria.aquamirae.common.entities.CaptainCornelia;
 import mod.chloeprime.apotheosismodernragnarok.ApotheosisModernRagnarok;
 import mod.chloeprime.apotheosismodernragnarok.common.CommonConfig;
 import net.minecraft.resources.ResourceLocation;

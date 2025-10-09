@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Specification-Title: magitacz
+Specification-Vendor: playwright
+Specification-Version: 1
+Implementation-Title: magitacz-forge
+Implementation-Version: 1.0
+Implementation-Vendor: playwright
+Implementation-Timestamp: 2025-10-09T10:12:59+0100
+

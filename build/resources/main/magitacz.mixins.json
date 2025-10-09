@@ -1,0 +1,10 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.playwright.magitacz.mixins",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "magitacz.refmap.json",
+  "mixins": [ "CaptainCorneliaMixin" ],
+  "client": [],
+  "injectors": { "defaultRequire": 1 }
+}

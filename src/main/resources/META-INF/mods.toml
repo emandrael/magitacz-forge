@@ -13,9 +13,11 @@ license = "${mod_license}"
 # A URL to refer people to when problems occur with this mod
 #issueTrackerURL="https://change.me.to.your.issue.tracker.example.invalid/" #optional
 # A list of mods - how many allowed here is determined by the individual mod loader
+mixinConfigs = "magitacz.mixins.json"
+
 [[mods]] #mandatory
 # The modid of the mod
-modId = "${mod_id}" #mandatory
+modId = "magitacz" #mandatory
 # The version number of the mod
 version = "${mod_version}" #mandatory
 # A display name for the mod
@@ -61,3 +63,6 @@ mandatory = true
 versionRange = "${minecraft_version_range}"
 ordering = "NONE"
 side = "BOTH"
+
+
+

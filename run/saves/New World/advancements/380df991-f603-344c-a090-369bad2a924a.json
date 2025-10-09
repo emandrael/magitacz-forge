@@ -1036,5 +1036,29 @@
     },
     "done": true
   },
+  "aquamirae:recipes/oxygen_tank": {
+    "criteria": {
+      "has_item": "2025-10-07 11:58:56 +0100"
+    },
+    "done": true
+  },
+  "aquamirae:recipes/ship_graveyard_echo": {
+    "criteria": {
+      "has_item": "2025-10-07 11:58:56 +0100"
+    },
+    "done": true
+  },
+  "aquamirae:adventure/obtain_frozen_key": {
+    "criteria": {
+      "frozen_key": "2025-10-07 11:58:56 +0100"
+    },
+    "done": true
+  },
+  "aquamirae:recipes/three_bolt_helmet": {
+    "criteria": {
+      "has_item": "2025-10-07 11:58:56 +0100"
+    },
+    "done": true
+  },
   "DataVersion": 3465
 }

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "functions": [
+            {
+              "function": "apotheosis_modern_ragnarok:apoth_reforge",
+              "rarity": "apotheosis:mythic"
+            }
+          ],
+          "name": "magitacz:kits/tacz/pistol/deagle",
+          "quality": 2,
+          "weight": 100000
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "magitacz:injects/chest/middle_east"
+}
