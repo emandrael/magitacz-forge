@@ -1,204 +1,255 @@
-[09Oct2025 14:31:55.037] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientuserdev, --version, MOD_DEV, --assetIndex, 5, --assetsDir, /Users/rai/.gradle/caches/forge_gradle/assets, --gameDir, ., --fml.forgeVersion, 47.4.0, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mixin.config, magitacz.mixins.json]
-[09Oct2025 14:31:55.041] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.14 by Eclipse Adoptium; OS Mac OS X arch aarch64 version 13.4
-[09Oct2025 14:31:55.234] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
-[09Oct2025 14:31:55.482] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
-[09Oct2025 14:31:55.546] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.5
-[09Oct2025 14:31:55.560] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.4
-[09Oct2025 14:31:55.570] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.3
-[09Oct2025 14:31:55.585] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.2
-[09Oct2025 14:31:55.597] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.1
-[09Oct2025 14:31:55.614] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.1 got version 4.1
-[09Oct2025 14:31:55.706] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/Users/rai/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23121!/ Service=ModLauncher Env=CLIENT
-[09Oct2025 14:31:55.730] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: Apple M1 GL version 4.1 Metal - 83.1, Apple
-[09Oct2025 14:31:56.058] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /Users/rai/.gradle/caches/modules-2/files-2.1/net.minecraftforge/javafmllanguage/1.20.1-47.4.0/f0c0b352173d0a378cbdcec9cfc4ba65899a721/javafmllanguage-1.20.1-47.4.0.jar is missing mods.toml file
-[09Oct2025 14:31:56.059] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /Users/rai/.gradle/caches/modules-2/files-2.1/net.minecraftforge/lowcodelanguage/1.20.1-47.4.0/e862740d8c84d08dbfedea412bef88fe42e727c5/lowcodelanguage-1.20.1-47.4.0.jar is missing mods.toml file
-[09Oct2025 14:31:56.060] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /Users/rai/.gradle/caches/modules-2/files-2.1/net.minecraftforge/mclanguage/1.20.1-47.4.0/5719b3a297a33f877ed5dde4cb4bd75c859096af/mclanguage-1.20.1-47.4.0.jar is missing mods.toml file
-[09Oct2025 14:31:56.061] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /Users/rai/.gradle/caches/modules-2/files-2.1/net.minecraftforge/fmlcore/1.20.1-47.4.0/235975dafa4309945b59c56b53f31dc5b65a6051/fmlcore-1.20.1-47.4.0.jar is missing mods.toml file
-[09Oct2025 14:31:56.586] [main/WARN] [net.minecraftforge.jarjar.selection.JarSelector/]: Attempted to select a dependency jar for JarJar which was passed in as source: gunsmithlib. Using Mod File: /Users/rai/.gradle/caches/forge_gradle/deobf_dependencies/curse/maven/gunsmith-lib-1264058/7049169_mapped_official_1.20.1/gunsmith-lib-1264058-7049169_mapped_official_1.20.1.jar
-[09Oct2025 14:31:56.586] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 7 dependencies adding them to mods collection
-[09Oct2025 14:31:58.208] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
-[09Oct2025 14:31:58.246] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientuserdev' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, /Users/rai/.gradle/caches/forge_gradle/assets, --assetIndex, 5]
-[09Oct2025 14:31:58.277] [main/WARN] [mixin/]: Reference map 'magitacz.refmap.json' for magitacz.mixins.json could not be read. If this is a development environment you can ignore this message
-[09Oct2025 14:31:58.716] [main/INFO] [mixin/]: Remapping refMap tslatentitystatus.refmap.json using /Users/rai/Projects/magitacz-forge/build/createSrgToMcp/output.srg
-[09Oct2025 14:31:58.725] [main/INFO] [mixin/]: Remapping refMap moonlight-common-refmap.json using /Users/rai/Projects/magitacz-forge/build/createSrgToMcp/output.srg
-[09Oct2025 14:31:58.726] [main/INFO] [mixin/]: Remapping refMap moonlight-forge-refmap.json using /Users/rai/Projects/magitacz-forge/build/createSrgToMcp/output.srg
-[09Oct2025 14:31:58.728] [main/INFO] [mixin/]: Remapping refMap gunsmithlib.refmap.json using /Users/rai/Projects/magitacz-forge/build/createSrgToMcp/output.srg
-[09Oct2025 14:31:58.729] [main/INFO] [mixin/]: Remapping refMap geckolib.refmap.json using /Users/rai/Projects/magitacz-forge/build/createSrgToMcp/output.srg
-[09Oct2025 14:31:58.731] [main/INFO] [mixin/]: Remapping refMap player-animation-lib-minecraft_common-refmap.json using /Users/rai/Projects/magitacz-forge/build/createSrgToMcp/output.srg
-[09Oct2025 14:31:58.732] [main/INFO] [mixin/]: Remapping refMap tacz.refmap.json using /Users/rai/Projects/magitacz-forge/build/createSrgToMcp/output.srg
-[09Oct2025 14:31:58.733] [main/INFO] [mixin/]: Remapping refMap caelus.refmap.json using /Users/rai/Projects/magitacz-forge/build/createSrgToMcp/output.srg
-[09Oct2025 14:31:58.733] [main/INFO] [mixin/]: Remapping refMap obscure_api.refmap.json using /Users/rai/Projects/magitacz-forge/build/createSrgToMcp/output.srg
-[09Oct2025 14:31:58.736] [main/INFO] [mixin/]: Remapping refMap curios.refmap.json using /Users/rai/Projects/magitacz-forge/build/createSrgToMcp/output.srg
-[09Oct2025 14:31:58.737] [main/INFO] [mixin/]: Remapping refMap placebo.refmap.json using /Users/rai/Projects/magitacz-forge/build/createSrgToMcp/output.srg
-[09Oct2025 14:31:58.737] [main/INFO] [mixin/]: Remapping refMap attributeslib.refmap.json using /Users/rai/Projects/magitacz-forge/build/createSrgToMcp/output.srg
-[09Oct2025 14:31:58.738] [main/INFO] [mixin/]: Remapping refMap irons_spellbooks.refmap.json using /Users/rai/Projects/magitacz-forge/build/createSrgToMcp/output.srg
-[09Oct2025 14:31:58.739] [main/INFO] [mixin/]: Remapping refMap apotheosis.refmap.json using /Users/rai/Projects/magitacz-forge/build/createSrgToMcp/output.srg
-[09Oct2025 14:31:58.741] [main/INFO] [mixin/]: Remapping refMap apotheosis_modern_ragnarok.refmap.json using /Users/rai/Projects/magitacz-forge/build/createSrgToMcp/output.srg
-[09Oct2025 14:31:58.742] [main/INFO] [mixin/]: Remapping refMap dummmmmmy-common-refmap.json using /Users/rai/Projects/magitacz-forge/build/createSrgToMcp/output.srg
-[09Oct2025 14:31:58.745] [main/WARN] [mixin/]: Reference map 'Aquamirae.refmap.json' for aquamirae.mixins.json could not be read. If this is a development environment you can ignore this message
-[09Oct2025 14:31:59.436] [main/INFO] [net.minecraftforge.coremod.CoreMod.placebo/COREMODLOG]: Patching IForgeItemStack#getEnchantmentLevel
-[09Oct2025 14:31:59.452] [main/INFO] [net.minecraftforge.coremod.CoreMod.placebo/COREMODLOG]: Patching IForgeItemStack#getEnchantmentLevel
-[09Oct2025 14:31:59.724] [main/INFO] [net.minecraftforge.coremod.CoreMod.apotheosis/COREMODLOG]: Replaced 2 calls to Enchantment#getMaxLevel() in net/minecraft/world/inventory/AnvilMenu
-[09Oct2025 14:31:59.748] [main/WARN] [mixin/]: Error loading class: org/violetmoon/quark/content/tweaks/module/GoldToolsHaveFortuneModule (java.lang.ClassNotFoundException: org.violetmoon.quark.content.tweaks.module.GoldToolsHaveFortuneModule)
-[09Oct2025 14:31:59.749] [main/INFO] [net.minecraftforge.coremod.CoreMod.placebo/COREMODLOG]: Patching IForgeItemStack#getEnchantmentLevel
-[09Oct2025 14:31:59.750] [main/INFO] [net.minecraftforge.coremod.CoreMod.placebo/COREMODLOG]: Patching IForgeItemStack#getEnchantmentLevel
-[09Oct2025 14:31:59.770] [main/WARN] [mixin/]: Error loading class: com/hollingsworth/arsnouveau/common/items/SpellCrossbow (java.lang.ClassNotFoundException: com.hollingsworth.arsnouveau.common.items.SpellCrossbow)
-[09Oct2025 14:31:59.782] [main/WARN] [mixin/]: Error loading class: org/violetmoon/quark/content/client/tooltip/AttributeTooltips (java.lang.ClassNotFoundException: org.violetmoon.quark.content.client.tooltip.AttributeTooltips)
-[09Oct2025 14:31:59.888] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0).
-[09Oct2025 14:32:02.259] [pool-4-thread-1/INFO] [net.minecraftforge.coremod.CoreMod.apotheosis/COREMODLOG]: Replaced 2 calls to Enchantment#getMaxLevel() in net/minecraft/world/item/CreativeModeTabs
-[09Oct2025 14:32:03.282] [pool-4-thread-1/INFO] [net.minecraftforge.coremod.CoreMod.placebo/COREMODLOG]: Patching IForgeItemStack#getEnchantmentLevel
-[09Oct2025 14:32:03.282] [pool-4-thread-1/INFO] [net.minecraftforge.coremod.CoreMod.placebo/COREMODLOG]: Patching IForgeItemStack#getEnchantmentLevel
-[09Oct2025 14:32:03.352] [pool-4-thread-1/INFO] [net.minecraftforge.coremod.CoreMod.apotheosis/COREMODLOG]: Replaced 2 calls to Enchantment#getMaxLevel() in net/minecraft/world/inventory/AnvilMenu
-[09Oct2025 14:32:05.096] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 188 Datafixer optimizations took 183 milliseconds
-[09Oct2025 14:32:06.543] [pool-4-thread-1/INFO] [net.minecraftforge.coremod.CoreMod.apotheosis/COREMODLOG]: Patching FishingHook#catchingFish
-[09Oct2025 14:32:07.092] [pool-4-thread-1/INFO] [net.minecraftforge.coremod.CoreMod.apotheosis/COREMODLOG]: Replaced 1 calls to Enchantment#getMaxLevel() in net/minecraft/world/level/storage/loot/functions/EnchantRandomlyFunction
-[09Oct2025 14:32:07.092] [pool-4-thread-1/INFO] [net.minecraftforge.coremod.CoreMod.apotheosis/COREMODLOG]: Replaced 1 calls to Enchantment#isDiscoverable() in net/minecraft/world/level/storage/loot/functions/EnchantRandomlyFunction
-[09Oct2025 14:32:07.925] [Render thread/INFO] [mixin/]: BeforeConstant is searching for constants in method with descriptor (Lnet/minecraft/network/chat/Component;Z)V
-[09Oct2025 14:32:07.925] [Render thread/INFO] [mixin/]:   BeforeConstant found INTEGER constant: value = 0, intValue = null
-[09Oct2025 14:32:07.925] [Render thread/INFO] [mixin/]:     BeforeConstant found a matching constant TYPE at ordinal 0
-[09Oct2025 14:32:07.925] [Render thread/INFO] [mixin/]:       BeforeConstant found Insn [ICONST_0] 
-[09Oct2025 14:32:07.925] [Render thread/INFO] [mixin/]:   BeforeConstant found INTEGER constant: value = 60, intValue = null
-[09Oct2025 14:32:07.925] [Render thread/INFO] [mixin/]:     BeforeConstant found a matching constant TYPE at ordinal 1
-[09Oct2025 14:32:07.925] [Render thread/INFO] [mixin/]:       BeforeConstant found IntInsn 60
-[09Oct2025 14:32:08.065] [Render thread/INFO] [net.minecraftforge.coremod.CoreMod.attributeslib/COREMODLOG]: Patching EffectRenderingInventoryScreen#renderEffects
-[09Oct2025 14:32:08.166] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/Users/rai/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.0_mapped_official_1.20.1/forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23184!/assets/.mcassetsroot' uses unexpected schema
-[09Oct2025 14:32:08.167] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/Users/rai/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.0_mapped_official_1.20.1/forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23184!/data/.mcassetsroot' uses unexpected schema
-[09Oct2025 14:32:08.179] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[09Oct2025 14:32:08.184] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
-[09Oct2025 14:32:08.232] [Render thread/INFO] [mixin/]: BeforeConstant is searching for constants in method with descriptor (Lnet/minecraft/network/chat/Component;Lnet/minecraft/client/GuiMessageTag;)V
-[09Oct2025 14:32:08.233] [Render thread/INFO] [mixin/]:   BeforeConstant found STRING constant: value = , stringValue = null
-[09Oct2025 14:32:08.233] [Render thread/INFO] [mixin/]:     BeforeConstant found a matching constant TYPE at ordinal 0
-[09Oct2025 14:32:08.233] [Render thread/INFO] [mixin/]:       BeforeConstant found LdcInsn 
-[09Oct2025 14:32:08.233] [Render thread/INFO] [mixin/]:   BeforeConstant found STRING constant: value = \\r, stringValue = null
-[09Oct2025 14:32:08.233] [Render thread/INFO] [mixin/]:     BeforeConstant found a matching constant TYPE at ordinal 1
-[09Oct2025 14:32:08.233] [Render thread/INFO] [mixin/]:       BeforeConstant found LdcInsn \\r
-[09Oct2025 14:32:08.233] [Render thread/INFO] [mixin/]:   BeforeConstant found STRING constant: value = 
+[09Oct2025 20:44:25.842] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientuserdev, --version, MOD_DEV, --assetIndex, 5, --assetsDir, C:\Users\Hell-\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.4.0, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mixin.config, magitacz.mixins.json]
+[09Oct2025 20:44:25.852] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.15 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
+[09Oct2025 20:44:26.014] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
+[09Oct2025 20:44:26.093] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
+[09Oct2025 20:44:26.301] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
+[09Oct2025 20:44:26.407] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/Hell-/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
+[09Oct2025 20:44:26.474] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: NVIDIA GeForce RTX 2080 SUPER/PCIe/SSE2 GL version 4.6.0 NVIDIA 581.42, NVIDIA Corporation
+[09Oct2025 20:44:26.930] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Hell-\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.4.0\f0c0b352173d0a378cbdcec9cfc4ba65899a721\javafmllanguage-1.20.1-47.4.0.jar is missing mods.toml file
+[09Oct2025 20:44:26.934] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Hell-\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.4.0\e862740d8c84d08dbfedea412bef88fe42e727c5\lowcodelanguage-1.20.1-47.4.0.jar is missing mods.toml file
+[09Oct2025 20:44:26.939] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Hell-\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.4.0\5719b3a297a33f877ed5dde4cb4bd75c859096af\mclanguage-1.20.1-47.4.0.jar is missing mods.toml file
+[09Oct2025 20:44:26.944] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Hell-\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.4.0\235975dafa4309945b59c56b53f31dc5b65a6051\fmlcore-1.20.1-47.4.0.jar is missing mods.toml file
+[09Oct2025 20:44:27.751] [main/WARN] [net.minecraftforge.jarjar.selection.JarSelector/]: Attempted to select a dependency jar for JarJar which was passed in as source: gunsmithlib. Using Mod File: C:\Users\Hell-\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\gunsmith-lib-1264058\7049169_mapped_official_1.20.1\gunsmith-lib-1264058-7049169_mapped_official_1.20.1.jar
+[09Oct2025 20:44:27.751] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 7 dependencies adding them to mods collection
+[09Oct2025 20:44:30.744] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[09Oct2025 20:44:30.791] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientuserdev' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\Hell-\.gradle\caches\forge_gradle\assets, --assetIndex, 5]
+[09Oct2025 20:44:30.944] [main/WARN] [mixin/]: Reference map 'magitacz.refmap.json' for magitacz.mixins.json could not be read. If this is a development environment you can ignore this message
+[09Oct2025 20:44:31.296] [main/INFO] [mixin/]: Remapping refMap tslatentitystatus.refmap.json using C:\Projects\magitacz-forge\build\createSrgToMcp\output.srg
+[09Oct2025 20:44:31.321] [main/INFO] [mixin/]: Remapping refMap moonlight-common-refmap.json using C:\Projects\magitacz-forge\build\createSrgToMcp\output.srg
+[09Oct2025 20:44:31.322] [main/INFO] [mixin/]: Remapping refMap moonlight-forge-refmap.json using C:\Projects\magitacz-forge\build\createSrgToMcp\output.srg
+[09Oct2025 20:44:31.323] [main/INFO] [mixin/]: Remapping refMap gunsmithlib.refmap.json using C:\Projects\magitacz-forge\build\createSrgToMcp\output.srg
+[09Oct2025 20:44:31.323] [main/INFO] [mixin/]: Remapping refMap geckolib.refmap.json using C:\Projects\magitacz-forge\build\createSrgToMcp\output.srg
+[09Oct2025 20:44:31.326] [main/INFO] [mixin/]: Remapping refMap player-animation-lib-minecraft_common-refmap.json using C:\Projects\magitacz-forge\build\createSrgToMcp\output.srg
+[09Oct2025 20:44:31.327] [main/INFO] [mixin/]: Remapping refMap tacz.refmap.json using C:\Projects\magitacz-forge\build\createSrgToMcp\output.srg
+[09Oct2025 20:44:31.328] [main/INFO] [mixin/]: Remapping refMap caelus.refmap.json using C:\Projects\magitacz-forge\build\createSrgToMcp\output.srg
+[09Oct2025 20:44:31.329] [main/INFO] [mixin/]: Remapping refMap obscure_api.refmap.json using C:\Projects\magitacz-forge\build\createSrgToMcp\output.srg
+[09Oct2025 20:44:31.330] [main/INFO] [mixin/]: Remapping refMap curios.refmap.json using C:\Projects\magitacz-forge\build\createSrgToMcp\output.srg
+[09Oct2025 20:44:31.331] [main/INFO] [mixin/]: Remapping refMap placebo.refmap.json using C:\Projects\magitacz-forge\build\createSrgToMcp\output.srg
+[09Oct2025 20:44:31.333] [main/INFO] [mixin/]: Remapping refMap attributeslib.refmap.json using C:\Projects\magitacz-forge\build\createSrgToMcp\output.srg
+[09Oct2025 20:44:31.334] [main/INFO] [mixin/]: Remapping refMap irons_spellbooks.refmap.json using C:\Projects\magitacz-forge\build\createSrgToMcp\output.srg
+[09Oct2025 20:44:31.335] [main/INFO] [mixin/]: Remapping refMap apotheosis.refmap.json using C:\Projects\magitacz-forge\build\createSrgToMcp\output.srg
+[09Oct2025 20:44:31.336] [main/INFO] [mixin/]: Remapping refMap apotheosis_modern_ragnarok.refmap.json using C:\Projects\magitacz-forge\build\createSrgToMcp\output.srg
+[09Oct2025 20:44:31.337] [main/INFO] [mixin/]: Remapping refMap dummmmmmy-common-refmap.json using C:\Projects\magitacz-forge\build\createSrgToMcp\output.srg
+[09Oct2025 20:44:31.340] [main/WARN] [mixin/]: Reference map 'Aquamirae.refmap.json' for aquamirae.mixins.json could not be read. If this is a development environment you can ignore this message
+[09Oct2025 20:44:32.016] [main/INFO] [net.minecraftforge.coremod.CoreMod.placebo/COREMODLOG]: Patching IForgeItemStack#getEnchantmentLevel
+[09Oct2025 20:44:32.048] [main/INFO] [net.minecraftforge.coremod.CoreMod.placebo/COREMODLOG]: Patching IForgeItemStack#getEnchantmentLevel
+[09Oct2025 20:44:32.321] [main/INFO] [net.minecraftforge.coremod.CoreMod.apotheosis/COREMODLOG]: Replaced 2 calls to Enchantment#getMaxLevel() in net/minecraft/world/inventory/AnvilMenu
+[09Oct2025 20:44:32.336] [main/WARN] [mixin/]: Error loading class: org/violetmoon/quark/content/tweaks/module/GoldToolsHaveFortuneModule (java.lang.ClassNotFoundException: org.violetmoon.quark.content.tweaks.module.GoldToolsHaveFortuneModule)
+[09Oct2025 20:44:32.339] [main/INFO] [net.minecraftforge.coremod.CoreMod.placebo/COREMODLOG]: Patching IForgeItemStack#getEnchantmentLevel
+[09Oct2025 20:44:32.339] [main/INFO] [net.minecraftforge.coremod.CoreMod.placebo/COREMODLOG]: Patching IForgeItemStack#getEnchantmentLevel
+[09Oct2025 20:44:32.345] [main/WARN] [mixin/]: Error loading class: com/hollingsworth/arsnouveau/common/items/SpellCrossbow (java.lang.ClassNotFoundException: com.hollingsworth.arsnouveau.common.items.SpellCrossbow)
+[09Oct2025 20:44:32.355] [main/WARN] [mixin/]: Error loading class: org/violetmoon/quark/content/client/tooltip/AttributeTooltips (java.lang.ClassNotFoundException: org.violetmoon.quark.content.client.tooltip.AttributeTooltips)
+[09Oct2025 20:44:32.471] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0).
+[09Oct2025 20:44:35.952] [pool-4-thread-1/INFO] [net.minecraftforge.coremod.CoreMod.apotheosis/COREMODLOG]: Replaced 2 calls to Enchantment#getMaxLevel() in net/minecraft/world/item/CreativeModeTabs
+[09Oct2025 20:44:37.295] [pool-4-thread-1/INFO] [net.minecraftforge.coremod.CoreMod.placebo/COREMODLOG]: Patching IForgeItemStack#getEnchantmentLevel
+[09Oct2025 20:44:37.295] [pool-4-thread-1/INFO] [net.minecraftforge.coremod.CoreMod.placebo/COREMODLOG]: Patching IForgeItemStack#getEnchantmentLevel
+[09Oct2025 20:44:37.377] [pool-4-thread-1/INFO] [net.minecraftforge.coremod.CoreMod.apotheosis/COREMODLOG]: Replaced 2 calls to Enchantment#getMaxLevel() in net/minecraft/world/inventory/AnvilMenu
+[09Oct2025 20:44:38.969] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 188 Datafixer optimizations took 151 milliseconds
+[09Oct2025 20:44:39.803] [pool-4-thread-1/INFO] [net.minecraftforge.coremod.CoreMod.apotheosis/COREMODLOG]: Patching FishingHook#catchingFish
+[09Oct2025 20:44:40.251] [pool-4-thread-1/INFO] [net.minecraftforge.coremod.CoreMod.apotheosis/COREMODLOG]: Replaced 1 calls to Enchantment#getMaxLevel() in net/minecraft/world/level/storage/loot/functions/EnchantRandomlyFunction
+[09Oct2025 20:44:40.251] [pool-4-thread-1/INFO] [net.minecraftforge.coremod.CoreMod.apotheosis/COREMODLOG]: Replaced 1 calls to Enchantment#isDiscoverable() in net/minecraft/world/level/storage/loot/functions/EnchantRandomlyFunction
+[09Oct2025 20:44:41.386] [Render thread/INFO] [mixin/]: BeforeConstant is searching for constants in method with descriptor (Lnet/minecraft/network/chat/Component;Z)V
+[09Oct2025 20:44:41.387] [Render thread/INFO] [mixin/]:   BeforeConstant found INTEGER constant: value = 0, intValue = null
+[09Oct2025 20:44:41.387] [Render thread/INFO] [mixin/]:     BeforeConstant found a matching constant TYPE at ordinal 0
+[09Oct2025 20:44:41.387] [Render thread/INFO] [mixin/]:       BeforeConstant found Insn [ICONST_0] 
+[09Oct2025 20:44:41.387] [Render thread/INFO] [mixin/]:   BeforeConstant found INTEGER constant: value = 60, intValue = null
+[09Oct2025 20:44:41.387] [Render thread/INFO] [mixin/]:     BeforeConstant found a matching constant TYPE at ordinal 1
+[09Oct2025 20:44:41.387] [Render thread/INFO] [mixin/]:       BeforeConstant found IntInsn 60
+[09Oct2025 20:44:41.514] [Render thread/INFO] [net.minecraftforge.coremod.CoreMod.attributeslib/COREMODLOG]: Patching EffectRenderingInventoryScreen#renderEffects
+[09Oct2025 20:44:41.613] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Hell-/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.0_mapped_official_1.20.1/forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23191!/assets/.mcassetsroot' uses unexpected schema
+[09Oct2025 20:44:41.613] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Hell-/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.0_mapped_official_1.20.1/forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23191!/data/.mcassetsroot' uses unexpected schema
+[09Oct2025 20:44:41.634] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[09Oct2025 20:44:41.639] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[09Oct2025 20:44:41.692] [Render thread/INFO] [mixin/]: BeforeConstant is searching for constants in method with descriptor (Lnet/minecraft/network/chat/Component;Lnet/minecraft/client/GuiMessageTag;)V
+[09Oct2025 20:44:41.692] [Render thread/INFO] [mixin/]:   BeforeConstant found STRING constant: value = , stringValue = null
+[09Oct2025 20:44:41.692] [Render thread/INFO] [mixin/]:     BeforeConstant found a matching constant TYPE at ordinal 0
+[09Oct2025 20:44:41.692] [Render thread/INFO] [mixin/]:       BeforeConstant found LdcInsn 
+[09Oct2025 20:44:41.692] [Render thread/INFO] [mixin/]:   BeforeConstant found STRING constant: value = \\r, stringValue = null
+[09Oct2025 20:44:41.692] [Render thread/INFO] [mixin/]:     BeforeConstant found a matching constant TYPE at ordinal 1
+[09Oct2025 20:44:41.692] [Render thread/INFO] [mixin/]:       BeforeConstant found LdcInsn \\r
+[09Oct2025 20:44:41.692] [Render thread/INFO] [mixin/]:   BeforeConstant found STRING constant: value = 
 , stringValue = null
-[09Oct2025 14:32:08.233] [Render thread/INFO] [mixin/]:     BeforeConstant found a matching constant TYPE at ordinal 2
-[09Oct2025 14:32:08.233] [Render thread/INFO] [mixin/]:       BeforeConstant found LdcInsn 
+[09Oct2025 20:44:41.692] [Render thread/INFO] [mixin/]:     BeforeConstant found a matching constant TYPE at ordinal 2
+[09Oct2025 20:44:41.692] [Render thread/INFO] [mixin/]:       BeforeConstant found LdcInsn 
 
-[09Oct2025 14:32:08.233] [Render thread/INFO] [mixin/]:   BeforeConstant found STRING constant: value = \\n, stringValue = null
-[09Oct2025 14:32:08.233] [Render thread/INFO] [mixin/]:     BeforeConstant found a matching constant TYPE at ordinal 3
-[09Oct2025 14:32:08.233] [Render thread/INFO] [mixin/]:       BeforeConstant found LdcInsn \\n
-[09Oct2025 14:32:08.233] [Render thread/INFO] [mixin/]:   BeforeConstant found CLASS constant: value = Ljava/lang/String;, typeValue = null
-[09Oct2025 14:32:08.233] [Render thread/INFO] [mixin/]:   BeforeConstant found STRING constant: value = [{}] [CHAT] {}, stringValue = null
-[09Oct2025 14:32:08.233] [Render thread/INFO] [mixin/]:     BeforeConstant found a matching constant TYPE at ordinal 4
-[09Oct2025 14:32:08.233] [Render thread/INFO] [mixin/]:       BeforeConstant found LdcInsn [{}] [CHAT] {}
-[09Oct2025 14:32:08.233] [Render thread/INFO] [mixin/]:   BeforeConstant found STRING constant: value = [CHAT] {}, stringValue = null
-[09Oct2025 14:32:08.234] [Render thread/INFO] [mixin/]:     BeforeConstant found a matching constant TYPE at ordinal 5
-[09Oct2025 14:32:08.234] [Render thread/INFO] [mixin/]:       BeforeConstant found LdcInsn [CHAT] {}
-[09Oct2025 14:32:08.282] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.1 build 7
-[09Oct2025 14:32:09.462] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.4.0, for MC 1.20.1 with MCP 20230612.114412
-[09Oct2025 14:32:09.462] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.4.0 Initialized
-[09Oct2025 14:32:09.898] [modloading-worker-0/INFO] [net.playwright.magitacz.MagitaczMod/]: HELLO THERE:{ads=com.tacz.guns.resource.modifier.custom.AdsModifier@77f17bfe, ammo_speed=com.tacz.guns.resource.modifier.custom.AmmoSpeedModifier@745b9219, armor_ignore=com.tacz.guns.resource.modifier.custom.ArmorIgnoreModifier@21a9c0cb, damage=com.tacz.guns.resource.modifier.custom.DamageModifier@1d9f7ac8, effective_range=com.tacz.guns.resource.modifier.custom.EffectiveRangeModifier@61cddc0e, explosion=com.tacz.guns.resource.modifier.custom.ExplosionModifier@492e4174, head_shot=com.tacz.guns.resource.modifier.custom.HeadShotModifier@26ee7f02, ignite=com.tacz.guns.resource.modifier.custom.IgniteModifier@4041082d, inaccuracy=com.tacz.guns.resource.modifier.custom.InaccuracyModifier@4f639187, knockback=com.tacz.guns.resource.modifier.custom.KnockbackModifier@747d4cfe, pierce=com.tacz.guns.resource.modifier.custom.PierceModifier@213e2b1c, recoil=com.tacz.guns.resource.modifier.custom.RecoilModifier@69f65f76, rpm=com.tacz.guns.resource.modifier.custom.RpmModifier@3aca1466, silence=com.tacz.guns.resource.modifier.custom.SilenceModifier@24cea57d, weight_modifier=com.tacz.guns.resource.modifier.custom.WeightModifier@74f81c33, movement_speed=com.tacz.guns.resource.modifier.custom.ExtraMovementModifier@2f2ee035, spell=net.playwright.magitacz.attachment_modifiers.SpellModifier@45ada892}
-[09Oct2025 14:32:10.422] [Render thread/INFO] [Moonlight/]: Initialized block sets in 8ms
-[09Oct2025 14:32:10.943] [Render thread/INFO] [tacz/GunPackFinder]: Start scanning for gun packs in /Users/rai/Projects/magitacz-forge/run/tacz
-[09Oct2025 14:32:10.945] [Render thread/INFO] [tacz/GunPackFinder]: - playwrights_gunpack, Main namespace: playwrights_gunpack
-[09Oct2025 14:32:10.945] [Render thread/INFO] [tacz/GunPackFinder]: - tacz_default_gun, Main namespace: tacz
-[09Oct2025 14:32:10.945] [Render thread/INFO] [tacz/GunPackFinder]: Found 2 possible gunpack(s) and added them to resource set.
-[09Oct2025 14:32:11.594] [Render thread/INFO] [net.minecraftforge.gametest.ForgeGameTestHooks/]: Enabled Gametest Namespaces: [magitacz]
-[09Oct2025 14:32:12.300] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, tacz_resources, mod_resources, Moonlight Mods Dynamic Assets
-[09Oct2025 14:32:12.309] [Render thread/INFO] [Moonlight/]: Generated runtime CLIENT_RESOURCES for pack Moonlight Mods Dynamic Assets (moonlight) in: 2 ms (debug resource dump on)
-[09Oct2025 14:32:12.411] [Worker-Main-6/INFO] [net.playwright.magitacz.MagitaczMod/]: HELLO FROM COMMON SETUP
-[09Oct2025 14:32:12.412] [Worker-Main-6/INFO] [net.playwright.magitacz.MagitaczMod/]: DIRT BLOCK >> minecraft:dirt
-[09Oct2025 14:32:12.412] [Worker-Main-6/INFO] [net.playwright.magitacz.MagitaczMod/]: INJECTING DE SHITE
-[09Oct2025 14:32:12.412] [Worker-Main-6/INFO] [net.playwright.magitacz.MagitaczMod/]: The magic number is... 42
-[09Oct2025 14:32:12.412] [Worker-Main-6/INFO] [net.playwright.magitacz.MagitaczMod/]: ITEM >> iron_ingot
-[09Oct2025 14:32:12.696] [Worker-Main-4/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.0.06.hex, loading
-[09Oct2025 14:32:12.822] [Worker-Main-7/WARN] [net.minecraft.client.sounds.SoundManager/]: File irons_spellbooks:sounds/dead_king/music/drums.ogg does not exist, cannot add it to event irons_spellbooks:entity.dead_king.music.drum_loop
-[09Oct2025 14:32:12.822] [Worker-Main-7/WARN] [net.minecraft.client.sounds.SoundManager/]: File irons_spellbooks:sounds/dead_king/music/finale.ogg does not exist, cannot add it to event irons_spellbooks:entity.dead_king.music.finale
-[09Oct2025 14:32:13.052] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [moonlight] Starting version check at https://raw.githubusercontent.com/MehVahdJukaar/Moonlight/multi-loader/forge/update.json
-[09Oct2025 14:32:13.214] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [moonlight] Found status: BETA Current: 1.20-2.13.81 Target: null
-[09Oct2025 14:32:13.214] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [obscure_api] Starting version check at https://raw.githubusercontent.com/ObscuriaLithium/Home/main/obscure_api/versions.json
-[09Oct2025 14:32:13.225] [Forge Version Check/WARN] [net.minecraftforge.fml.VersionChecker/]: Failed to process update information
+[09Oct2025 20:44:41.693] [Render thread/INFO] [mixin/]:   BeforeConstant found STRING constant: value = \\n, stringValue = null
+[09Oct2025 20:44:41.693] [Render thread/INFO] [mixin/]:     BeforeConstant found a matching constant TYPE at ordinal 3
+[09Oct2025 20:44:41.693] [Render thread/INFO] [mixin/]:       BeforeConstant found LdcInsn \\n
+[09Oct2025 20:44:41.693] [Render thread/INFO] [mixin/]:   BeforeConstant found CLASS constant: value = Ljava/lang/String;, typeValue = null
+[09Oct2025 20:44:41.693] [Render thread/INFO] [mixin/]:   BeforeConstant found STRING constant: value = [{}] [CHAT] {}, stringValue = null
+[09Oct2025 20:44:41.693] [Render thread/INFO] [mixin/]:     BeforeConstant found a matching constant TYPE at ordinal 4
+[09Oct2025 20:44:41.693] [Render thread/INFO] [mixin/]:       BeforeConstant found LdcInsn [{}] [CHAT] {}
+[09Oct2025 20:44:41.693] [Render thread/INFO] [mixin/]:   BeforeConstant found STRING constant: value = [CHAT] {}, stringValue = null
+[09Oct2025 20:44:41.693] [Render thread/INFO] [mixin/]:     BeforeConstant found a matching constant TYPE at ordinal 5
+[09Oct2025 20:44:41.693] [Render thread/INFO] [mixin/]:       BeforeConstant found LdcInsn [CHAT] {}
+[09Oct2025 20:44:41.781] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.1 build 7
+[09Oct2025 20:44:42.586] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.4.0, for MC 1.20.1 with MCP 20230612.114412
+[09Oct2025 20:44:42.586] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.4.0 Initialized
+[09Oct2025 20:44:43.484] [modloading-worker-0/INFO] [net.playwright.magitacz.MagitaczMod/]: HELLO THERE:{ads=com.tacz.guns.resource.modifier.custom.AdsModifier@12aaba6a, ammo_speed=com.tacz.guns.resource.modifier.custom.AmmoSpeedModifier@6ec74138, armor_ignore=com.tacz.guns.resource.modifier.custom.ArmorIgnoreModifier@587e6407, damage=com.tacz.guns.resource.modifier.custom.DamageModifier@532bd73a, effective_range=com.tacz.guns.resource.modifier.custom.EffectiveRangeModifier@14154edf, explosion=com.tacz.guns.resource.modifier.custom.ExplosionModifier@408f03e4, head_shot=com.tacz.guns.resource.modifier.custom.HeadShotModifier@6bfa09ae, ignite=com.tacz.guns.resource.modifier.custom.IgniteModifier@666591ec, inaccuracy=com.tacz.guns.resource.modifier.custom.InaccuracyModifier@58b84849, knockback=com.tacz.guns.resource.modifier.custom.KnockbackModifier@6010e099, pierce=com.tacz.guns.resource.modifier.custom.PierceModifier@5b1c324c, recoil=com.tacz.guns.resource.modifier.custom.RecoilModifier@11bc2232, rpm=com.tacz.guns.resource.modifier.custom.RpmModifier@b5cda4c, silence=com.tacz.guns.resource.modifier.custom.SilenceModifier@6c2fe796, weight_modifier=com.tacz.guns.resource.modifier.custom.WeightModifier@561b360d, movement_speed=com.tacz.guns.resource.modifier.custom.ExtraMovementModifier@2646334e, spell=net.playwright.magitacz.attachment_modifiers.SpellModifier@4b250370}
+[09Oct2025 20:44:43.960] [Render thread/INFO] [Moonlight/]: Initialized block sets in 23ms
+[09Oct2025 20:44:44.896] [Render thread/INFO] [tacz/GunPackFinder]: Start scanning for gun packs in C:\Projects\magitacz-forge\run\tacz
+[09Oct2025 20:44:44.897] [Render thread/INFO] [tacz/GunPackFinder]: - playwrights_gunpack, Main namespace: playwrights_gunpack
+[09Oct2025 20:44:44.898] [Render thread/INFO] [tacz/GunPackFinder]: - tacz_default_gun, Main namespace: tacz
+[09Oct2025 20:44:44.898] [Render thread/INFO] [tacz/GunPackFinder]: Found 2 possible gunpack(s) and added them to resource set.
+[09Oct2025 20:44:45.786] [Render thread/INFO] [net.minecraftforge.gametest.ForgeGameTestHooks/]: Enabled Gametest Namespaces: [magitacz]
+[09Oct2025 20:44:46.189] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, tacz_resources, mod_resources, Moonlight Mods Dynamic Assets
+[09Oct2025 20:44:46.196] [Render thread/INFO] [Moonlight/]: Generated runtime CLIENT_RESOURCES for pack Moonlight Mods Dynamic Assets (moonlight) in: 1 ms (debug resource dump on)
+[09Oct2025 20:44:46.295] [Worker-Main-14/INFO] [net.playwright.magitacz.MagitaczMod/]: HELLO FROM COMMON SETUP
+[09Oct2025 20:44:46.295] [Worker-Main-14/INFO] [net.playwright.magitacz.MagitaczMod/]: DIRT BLOCK >> minecraft:dirt
+[09Oct2025 20:44:46.295] [Worker-Main-14/INFO] [net.playwright.magitacz.MagitaczMod/]: INJECTING DE SHITE
+[09Oct2025 20:44:46.295] [Worker-Main-14/INFO] [net.playwright.magitacz.MagitaczMod/]: The magic number is... 42
+[09Oct2025 20:44:46.298] [Worker-Main-14/INFO] [net.playwright.magitacz.MagitaczMod/]: ITEM >> iron_ingot
+[09Oct2025 20:44:46.429] [Worker-Main-13/WARN] [net.minecraft.client.sounds.SoundManager/]: File irons_spellbooks:sounds/dead_king/music/drums.ogg does not exist, cannot add it to event irons_spellbooks:entity.dead_king.music.drum_loop
+[09Oct2025 20:44:46.430] [Worker-Main-13/WARN] [net.minecraft.client.sounds.SoundManager/]: File irons_spellbooks:sounds/dead_king/music/finale.ogg does not exist, cannot add it to event irons_spellbooks:entity.dead_king.music.finale
+[09Oct2025 20:44:46.579] [Worker-Main-13/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.0.06.hex, loading
+[09Oct2025 20:44:47.021] [Worker-Main-3/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Unused frames in sprite apotheosis:items/gems/blood_lord: [9]
+[09Oct2025 20:44:47.070] [Worker-Main-4/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Unused frames in sprite irons_spellbooks:item/upgrade_orb_ender: [1, 5, 6, 7]
+[09Oct2025 20:44:47.070] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [moonlight] Starting version check at https://raw.githubusercontent.com/MehVahdJukaar/Moonlight/multi-loader/forge/update.json
+[09Oct2025 20:44:47.078] [Worker-Main-3/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Unused frames in sprite irons_spellbooks:item/energized_core_energy: [11]
+[09Oct2025 20:44:47.326] [Render thread/INFO] [Moonlight/]: Initialized color sets in 23ms
+[09Oct2025 20:44:47.687] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [moonlight] Found status: BETA Current: 1.20-2.13.81 Target: null
+[09Oct2025 20:44:47.688] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [obscure_api] Starting version check at https://raw.githubusercontent.com/ObscuriaLithium/Home/main/obscure_api/versions.json
+[09Oct2025 20:44:47.688] [Render thread/INFO] [tacz/SYNCED_ENTITY_DATA_TAC_COPY]: Registered synced data key tacz:shoot_cool_down for minecraft:living_entity
+[09Oct2025 20:44:47.688] [Render thread/INFO] [tacz/SYNCED_ENTITY_DATA_TAC_COPY]: Registered synced data key tacz:melee_cool_down for minecraft:living_entity
+[09Oct2025 20:44:47.688] [Render thread/INFO] [tacz/SYNCED_ENTITY_DATA_TAC_COPY]: Registered synced data key tacz:reload_state for minecraft:living_entity
+[09Oct2025 20:44:47.688] [Render thread/INFO] [tacz/SYNCED_ENTITY_DATA_TAC_COPY]: Registered synced data key tacz:aiming_progress for minecraft:living_entity
+[09Oct2025 20:44:47.688] [Render thread/INFO] [tacz/SYNCED_ENTITY_DATA_TAC_COPY]: Registered synced data key tacz:draw_cool_down for minecraft:living_entity
+[09Oct2025 20:44:47.688] [Render thread/INFO] [tacz/SYNCED_ENTITY_DATA_TAC_COPY]: Registered synced data key tacz:is_aiming for minecraft:living_entity
+[09Oct2025 20:44:47.689] [Render thread/INFO] [tacz/SYNCED_ENTITY_DATA_TAC_COPY]: Registered synced data key tacz:sprint_time for minecraft:living_entity
+[09Oct2025 20:44:47.689] [Render thread/INFO] [tacz/SYNCED_ENTITY_DATA_TAC_COPY]: Registered synced data key tacz:is_bolting for minecraft:living_entity
+[09Oct2025 20:44:47.689] [Render thread/INFO] [tacz/SYNCED_ENTITY_DATA_TAC_COPY]: Registered synced data key tacz:throwable_using for minecraft:living_entity
+[09Oct2025 20:44:47.695] [Forge Version Check/WARN] [net.minecraftforge.fml.VersionChecker/]: Failed to process update information
 com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was NUMBER at line 1 column 4 path $
-	at com.google.gson.Gson.fromJson(Gson.java:1226) ~[gson-2.10.jar%23123!/:?]
-	at com.google.gson.Gson.fromJson(Gson.java:1124) ~[gson-2.10.jar%23123!/:?]
-	at com.google.gson.Gson.fromJson(Gson.java:1034) ~[gson-2.10.jar%23123!/:?]
-	at com.google.gson.Gson.fromJson(Gson.java:969) ~[gson-2.10.jar%23123!/:?]
-	at net.minecraftforge.fml.VersionChecker$1.process(VersionChecker.java:186) ~[fmlcore-1.20.1-47.4.0.jar%23188!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1226) ~[gson-2.10.jar%23130!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1124) ~[gson-2.10.jar%23130!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1034) ~[gson-2.10.jar%23130!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:969) ~[gson-2.10.jar%23130!/:?]
+	at net.minecraftforge.fml.VersionChecker$1.process(VersionChecker.java:186) ~[fmlcore-1.20.1-47.4.0.jar%23195!/:?]
 	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?]
-	at net.minecraftforge.fml.VersionChecker$1.run(VersionChecker.java:117) ~[fmlcore-1.20.1-47.4.0.jar%23188!/:?]
+	at net.minecraftforge.fml.VersionChecker$1.run(VersionChecker.java:117) ~[fmlcore-1.20.1-47.4.0.jar%23195!/:?]
 Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was NUMBER at line 1 column 4 path $
-	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:393) ~[gson-2.10.jar%23123!/:?]
-	at com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter.read(MapTypeAdapterFactory.java:182) ~[gson-2.10.jar%23123!/:?]
-	at com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter.read(MapTypeAdapterFactory.java:144) ~[gson-2.10.jar%23123!/:?]
-	at com.google.gson.Gson.fromJson(Gson.java:1214) ~[gson-2.10.jar%23123!/:?]
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:393) ~[gson-2.10.jar%23130!/:?]
+	at com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter.read(MapTypeAdapterFactory.java:182) ~[gson-2.10.jar%23130!/:?]
+	at com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter.read(MapTypeAdapterFactory.java:144) ~[gson-2.10.jar%23130!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1214) ~[gson-2.10.jar%23130!/:?]
 	... 6 more
-[09Oct2025 14:32:13.226] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
-[09Oct2025 14:32:13.401] [Worker-Main-5/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Unused frames in sprite apotheosis:items/gems/blood_lord: [9]
-[09Oct2025 14:32:13.413] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: UP_TO_DATE Current: 47.4.0 Target: null
-[09Oct2025 14:32:13.413] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [aquamirae] Starting version check at https://raw.githubusercontent.com/ObscuriaLithium/Minecraft/main/aquamirae/versions.json
-[09Oct2025 14:32:13.423] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [aquamirae] Found status: UP_TO_DATE Current: 6.1.0 Target: null
-[09Oct2025 14:32:13.475] [Worker-Main-5/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Unused frames in sprite irons_spellbooks:item/upgrade_orb_ender: [1, 5, 6, 7]
-[09Oct2025 14:32:13.553] [Worker-Main-5/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Unused frames in sprite irons_spellbooks:item/energized_core_energy: [11]
-[09Oct2025 14:32:13.671] [Render thread/INFO] [Moonlight/]: Initialized color sets in 20ms
-[09Oct2025 14:32:13.722] [Render thread/INFO] [tacz/SYNCED_ENTITY_DATA_TAC_COPY]: Registered synced data key tacz:shoot_cool_down for minecraft:living_entity
-[09Oct2025 14:32:13.722] [Render thread/INFO] [tacz/SYNCED_ENTITY_DATA_TAC_COPY]: Registered synced data key tacz:melee_cool_down for minecraft:living_entity
-[09Oct2025 14:32:13.722] [Render thread/INFO] [tacz/SYNCED_ENTITY_DATA_TAC_COPY]: Registered synced data key tacz:reload_state for minecraft:living_entity
-[09Oct2025 14:32:13.722] [Render thread/INFO] [tacz/SYNCED_ENTITY_DATA_TAC_COPY]: Registered synced data key tacz:aiming_progress for minecraft:living_entity
-[09Oct2025 14:32:13.722] [Render thread/INFO] [tacz/SYNCED_ENTITY_DATA_TAC_COPY]: Registered synced data key tacz:draw_cool_down for minecraft:living_entity
-[09Oct2025 14:32:13.722] [Render thread/INFO] [tacz/SYNCED_ENTITY_DATA_TAC_COPY]: Registered synced data key tacz:is_aiming for minecraft:living_entity
-[09Oct2025 14:32:13.723] [Render thread/INFO] [tacz/SYNCED_ENTITY_DATA_TAC_COPY]: Registered synced data key tacz:sprint_time for minecraft:living_entity
-[09Oct2025 14:32:13.723] [Render thread/INFO] [tacz/SYNCED_ENTITY_DATA_TAC_COPY]: Registered synced data key tacz:is_bolting for minecraft:living_entity
-[09Oct2025 14:32:13.723] [Render thread/INFO] [tacz/SYNCED_ENTITY_DATA_TAC_COPY]: Registered synced data key tacz:throwable_using for minecraft:living_entity
-[09Oct2025 14:32:14.106] [Worker-Main-2/INFO] [net.playwright.magitacz.MagitaczMod/]: HELLO FROM CLIENT SETUP
-[09Oct2025 14:32:14.107] [Worker-Main-2/INFO] [net.playwright.magitacz.MagitaczMod/]: MINECRAFT NAME >> Dev
-[09Oct2025 14:32:14.430] [Placebo Patreon Trail Loader/INFO] [placebo/]: Loading patreon trails data...
-[09Oct2025 14:32:14.431] [Placebo Patreon Wing Loader/INFO] [placebo/]: Loading patreon wing data...
-[09Oct2025 14:32:14.451] [Placebo Patreon Trail Loader/INFO] [placebo/]: Loaded 49 patreon trails.
-[09Oct2025 14:32:14.474] [Placebo Patreon Wing Loader/INFO] [placebo/]: Loaded 43 patreon wings.
-[09Oct2025 14:32:14.922] [Worker-Main-7/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Unable to load model: 'magitacz:elementium#inventory' referenced from: magitacz:elementium#inventory: java.io.FileNotFoundException: magitacz:models/item/elementium.json
-[09Oct2025 14:32:14.923] [Worker-Main-7/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Unable to load model: 'magitacz:elementium_helmet#inventory' referenced from: magitacz:elementium_helmet#inventory: java.io.FileNotFoundException: magitacz:models/item/elementium_helmet.json
-[09Oct2025 14:32:14.923] [Worker-Main-7/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Unable to load model: 'magitacz:elementium_chestplate#inventory' referenced from: magitacz:elementium_chestplate#inventory: java.io.FileNotFoundException: magitacz:models/item/elementium_chestplate.json
-[09Oct2025 14:32:14.923] [Worker-Main-7/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Unable to load model: 'magitacz:elementium_leggings#inventory' referenced from: magitacz:elementium_leggings#inventory: java.io.FileNotFoundException: magitacz:models/item/elementium_leggings.json
-[09Oct2025 14:32:14.923] [Worker-Main-7/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Unable to load model: 'magitacz:elementium_boots#inventory' referenced from: magitacz:elementium_boots#inventory: java.io.FileNotFoundException: magitacz:models/item/elementium_boots.json
-[09Oct2025 14:32:14.923] [Worker-Main-7/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Unable to load model: 'magitacz:elementium_sword#inventory' referenced from: magitacz:elementium_sword#inventory: java.io.FileNotFoundException: magitacz:models/item/elementium_sword.json
-[09Oct2025 14:32:14.923] [Worker-Main-7/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Unable to load model: 'magitacz:raw_elementium#inventory' referenced from: magitacz:raw_elementium#inventory: java.io.FileNotFoundException: magitacz:models/item/raw_elementium.json
-[09Oct2025 14:32:14.923] [Worker-Main-7/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Unable to load model: 'magitacz:elementium_block#inventory' referenced from: magitacz:elementium_block#inventory: java.io.FileNotFoundException: magitacz:models/item/elementium_block.json
-[09Oct2025 14:32:14.923] [Worker-Main-7/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Unable to load model: 'magitacz:raw_elementium_block#inventory' referenced from: magitacz:raw_elementium_block#inventory: java.io.FileNotFoundException: magitacz:models/item/raw_elementium_block.json
-[09Oct2025 14:32:14.964] [Worker-Main-7/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Unable to load model: 'irons_spellbooks:item/truthseeker_gui' referenced from: irons_spellbooks:item/truthseeker_gui: java.io.FileNotFoundException: irons_spellbooks:models/item/truthseeker_gui.json
-[09Oct2025 14:32:14.964] [Worker-Main-7/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Unable to load model: 'irons_spellbooks:item/keeper_flamberge_normal' referenced from: irons_spellbooks:item/keeper_flamberge_normal: java.io.FileNotFoundException: irons_spellbooks:models/item/keeper_flamberge_normal.json
-[09Oct2025 14:32:14.964] [Worker-Main-7/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Unable to load model: 'irons_spellbooks:item/magehunter_gui' referenced from: irons_spellbooks:item/magehunter_gui: java.io.FileNotFoundException: irons_spellbooks:models/item/magehunter_gui.json
-[09Oct2025 14:32:14.964] [Worker-Main-7/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Unable to load model: 'irons_spellbooks:item/truthseeker_normal' referenced from: irons_spellbooks:item/truthseeker_normal: java.io.FileNotFoundException: irons_spellbooks:models/item/truthseeker_normal.json
-[09Oct2025 14:32:14.964] [Worker-Main-7/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Unable to load model: 'irons_spellbooks:item/magehunter_normal' referenced from: irons_spellbooks:item/magehunter_normal: java.io.FileNotFoundException: irons_spellbooks:models/item/magehunter_normal.json
-[09Oct2025 14:32:14.965] [Worker-Main-7/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Unable to load model: 'irons_spellbooks:item/keeper_flamberge_gui' referenced from: irons_spellbooks:item/keeper_flamberge_gui: java.io.FileNotFoundException: irons_spellbooks:models/item/keeper_flamberge_gui.json
-[09Oct2025 14:32:16.445] [Worker-Main-7/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model apotheosis:ancient_material#inventory:
-    minecraft:textures/atlas/blocks.png:apotheosis:items/ancient_material
-[09Oct2025 14:32:19.693] [Worker-Main-6/INFO] [io.redspace.ironsspellbooks.IronsSpellbooks/]: Got IMC []
-[09Oct2025 14:32:21.198] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
-[09Oct2025 14:32:21.198] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
-[09Oct2025 14:32:21.227] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device CoreAudio Default
-[09Oct2025 14:32:21.229] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
-[09Oct2025 14:32:21.442] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 2048x1024x4 minecraft:textures/atlas/blocks.png-atlas
-[09Oct2025 14:32:21.556] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
-[09Oct2025 14:32:21.557] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
-[09Oct2025 14:32:21.558] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
-[09Oct2025 14:32:21.559] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
-[09Oct2025 14:32:21.565] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
-[09Oct2025 14:32:21.566] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
-[09Oct2025 14:32:21.566] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
-[09Oct2025 14:32:21.566] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
-[09Oct2025 14:32:21.831] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
-[09Oct2025 14:32:21.971] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
-[09Oct2025 14:32:21.973] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
-[09Oct2025 14:32:21.974] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/mob_effects.png-atlas
-[09Oct2025 14:32:21.981] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 moonlight:textures/atlas/map_markers.png-atlas
-[09Oct2025 14:32:24.772] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: java.lang.RuntimeException: Failed to parse into SignedJWT: 0
-[09Oct2025 14:32:46.872] [Render thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this CLIENT instance
-[09Oct2025 14:32:47.183] [Render thread/INFO] [tacz/GunPackFinder]: Start scanning for gun packs in /Users/rai/Projects/magitacz-forge/run/tacz
-[09Oct2025 14:32:47.184] [Render thread/INFO] [tacz/GunPackFinder]: - playwrights_gunpack, Main namespace: playwrights_gunpack
-[09Oct2025 14:32:47.184] [Render thread/INFO] [tacz/GunPackFinder]: - tacz_default_gun, Main namespace: tacz
-[09Oct2025 14:32:47.184] [Render thread/INFO] [tacz/GunPackFinder]: Found 2 possible gunpack(s) and added them to resource set.
-[09Oct2025 14:32:47.571] [Render thread/INFO] [net.minecraftforge.coremod.CoreMod.apotheosis/COREMODLOG]: Replaced 2 calls to Enchantment#getMaxLevel() in net/minecraft/server/commands/EnchantCommand
-[09Oct2025 14:32:47.702] [Worker-Main-1/ERROR] [tacz/]: Couldn't parse data file tacz:stock_moe_data from tacz:data/attachments/stock_moe_data.json
+[09Oct2025 20:44:47.698] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[09Oct2025 20:44:47.908] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: UP_TO_DATE Current: 47.4.0 Target: null
+[09Oct2025 20:44:47.908] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [aquamirae] Starting version check at https://raw.githubusercontent.com/ObscuriaLithium/Minecraft/main/aquamirae/versions.json
+[09Oct2025 20:44:47.916] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [aquamirae] Found status: UP_TO_DATE Current: 6.1.0 Target: null
+[09Oct2025 20:44:48.023] [Worker-Main-15/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Unable to load model: 'magitacz:elementium#inventory' referenced from: magitacz:elementium#inventory: java.io.FileNotFoundException: magitacz:models/item/elementium.json
+[09Oct2025 20:44:48.024] [Worker-Main-15/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Unable to load model: 'magitacz:elementium_helmet#inventory' referenced from: magitacz:elementium_helmet#inventory: java.io.FileNotFoundException: magitacz:models/item/elementium_helmet.json
+[09Oct2025 20:44:48.024] [Worker-Main-15/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Unable to load model: 'magitacz:elementium_chestplate#inventory' referenced from: magitacz:elementium_chestplate#inventory: java.io.FileNotFoundException: magitacz:models/item/elementium_chestplate.json
+[09Oct2025 20:44:48.024] [Worker-Main-15/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Unable to load model: 'magitacz:elementium_leggings#inventory' referenced from: magitacz:elementium_leggings#inventory: java.io.FileNotFoundException: magitacz:models/item/elementium_leggings.json
+[09Oct2025 20:44:48.024] [Worker-Main-15/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Unable to load model: 'magitacz:elementium_boots#inventory' referenced from: magitacz:elementium_boots#inventory: java.io.FileNotFoundException: magitacz:models/item/elementium_boots.json
+[09Oct2025 20:44:48.024] [Worker-Main-15/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Unable to load model: 'magitacz:elementium_sword#inventory' referenced from: magitacz:elementium_sword#inventory: java.io.FileNotFoundException: magitacz:models/item/elementium_sword.json
+[09Oct2025 20:44:48.024] [Worker-Main-15/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Unable to load model: 'magitacz:raw_elementium#inventory' referenced from: magitacz:raw_elementium#inventory: java.io.FileNotFoundException: magitacz:models/item/raw_elementium.json
+[09Oct2025 20:44:48.024] [Worker-Main-15/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Unable to load model: 'magitacz:elementium_block#inventory' referenced from: magitacz:elementium_block#inventory: java.io.FileNotFoundException: magitacz:models/item/elementium_block.json
+[09Oct2025 20:44:48.024] [Worker-Main-15/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Unable to load model: 'magitacz:raw_elementium_block#inventory' referenced from: magitacz:raw_elementium_block#inventory: java.io.FileNotFoundException: magitacz:models/item/raw_elementium_block.json
+[09Oct2025 20:44:48.109] [Worker-Main-15/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Unable to load model: 'irons_spellbooks:item/truthseeker_gui' referenced from: irons_spellbooks:item/truthseeker_gui: java.io.FileNotFoundException: irons_spellbooks:models/item/truthseeker_gui.json
+[09Oct2025 20:44:48.109] [Worker-Main-15/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Unable to load model: 'irons_spellbooks:item/magehunter_gui' referenced from: irons_spellbooks:item/magehunter_gui: java.io.FileNotFoundException: irons_spellbooks:models/item/magehunter_gui.json
+[09Oct2025 20:44:48.110] [Worker-Main-15/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Unable to load model: 'irons_spellbooks:item/truthseeker_normal' referenced from: irons_spellbooks:item/truthseeker_normal: java.io.FileNotFoundException: irons_spellbooks:models/item/truthseeker_normal.json
+[09Oct2025 20:44:48.110] [Worker-Main-15/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Unable to load model: 'irons_spellbooks:item/magehunter_normal' referenced from: irons_spellbooks:item/magehunter_normal: java.io.FileNotFoundException: irons_spellbooks:models/item/magehunter_normal.json
+[09Oct2025 20:44:48.110] [Worker-Main-15/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Unable to load model: 'irons_spellbooks:item/keeper_flamberge_gui' referenced from: irons_spellbooks:item/keeper_flamberge_gui: java.io.FileNotFoundException: irons_spellbooks:models/item/keeper_flamberge_gui.json
+[09Oct2025 20:44:48.110] [Worker-Main-15/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Unable to load model: 'irons_spellbooks:item/keeper_flamberge_normal' referenced from: irons_spellbooks:item/keeper_flamberge_normal: java.io.FileNotFoundException: irons_spellbooks:models/item/keeper_flamberge_normal.json
+[09Oct2025 20:44:48.187] [Worker-Main-4/INFO] [net.playwright.magitacz.MagitaczMod/]: HELLO FROM CLIENT SETUP
+[09Oct2025 20:44:48.187] [Worker-Main-4/INFO] [net.playwright.magitacz.MagitaczMod/]: MINECRAFT NAME >> Dev
+[09Oct2025 20:44:48.190] [Placebo Patreon Trail Loader/INFO] [placebo/]: Loading patreon trails data...
+[09Oct2025 20:44:48.196] [Placebo Patreon Wing Loader/INFO] [placebo/]: Loading patreon wing data...
+[09Oct2025 20:44:48.237] [Placebo Patreon Trail Loader/INFO] [placebo/]: Loaded 49 patreon trails.
+[09Oct2025 20:44:48.240] [Placebo Patreon Wing Loader/INFO] [placebo/]: Loaded 43 patreon wings.
+[09Oct2025 20:44:51.651] [Worker-Main-8/INFO] [io.redspace.ironsspellbooks.IronsSpellbooks/]: Got IMC []
+[09Oct2025 20:44:52.815] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
+[09Oct2025 20:44:52.815] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[09Oct2025 20:44:52.863] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Speakers (HyperX QuadCast)
+[09Oct2025 20:44:52.864] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[09Oct2025 20:44:53.062] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 2048x1024x4 minecraft:textures/atlas/blocks.png-atlas
+[09Oct2025 20:44:53.161] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
+[09Oct2025 20:44:53.162] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[09Oct2025 20:44:53.163] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[09Oct2025 20:44:53.165] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[09Oct2025 20:44:53.167] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[09Oct2025 20:44:53.169] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[09Oct2025 20:44:53.169] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[09Oct2025 20:44:53.171] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[09Oct2025 20:44:53.452] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[09Oct2025 20:44:53.519] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader moonlight:text_alpha_color could not find sampler named Sampler2 in the specified shader program.
+[09Oct2025 20:44:53.520] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader moonlight:text_alpha_color could not find uniform named IViewRotMat in the specified shader program.
+[09Oct2025 20:44:53.542] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[09Oct2025 20:44:53.546] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[09Oct2025 20:44:53.546] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/mob_effects.png-atlas
+[09Oct2025 20:44:53.554] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 moonlight:textures/atlas/map_markers.png-atlas
+[09Oct2025 20:44:55.526] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: java.lang.RuntimeException: Failed to parse into SignedJWT: 0
+[09Oct2025 20:45:05.923] [Render thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this CLIENT instance
+[09Oct2025 20:45:05.988] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:block: Object did not get ID it asked for. Name: apotheotic_additions:sacrificial_shelf Expected: 1013 Got: 1068
+[09Oct2025 20:45:05.988] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:block: Object did not get ID it asked for. Name: apotheotic_additions:wavebinders_shelf Expected: 1014 Got: 1069
+[09Oct2025 20:45:05.988] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:block: Object did not get ID it asked for. Name: apotheotic_additions:void_shelf Expected: 1015 Got: 1070
+[09Oct2025 20:45:05.988] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:block: Object did not get ID it asked for. Name: apotheotic_additions:terra_shelf Expected: 1016 Got: 1071
+[09Oct2025 20:45:05.988] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:block: Object did not get ID it asked for. Name: apotheotic_additions:scrap_brick Expected: 1017 Got: 1072
+[09Oct2025 20:45:05.989] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:block: Object did not get ID it asked for. Name: apotheotic_additions:scrap_pillar Expected: 1018 Got: 1073
+[09Oct2025 20:45:05.989] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:block: Object did not get ID it asked for. Name: apotheotic_additions:scrap_rough Expected: 1019 Got: 1074
+[09Oct2025 20:45:05.989] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:block: Object did not get ID it asked for. Name: apotheotic_additions:scrap_carved Expected: 1020 Got: 1075
+[09Oct2025 20:45:05.989] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:block: Object did not get ID it asked for. Name: apotheotic_additions:scrap_brick_slab Expected: 1021 Got: 1076
+[09Oct2025 20:45:05.989] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:block: Object did not get ID it asked for. Name: apotheotic_additions:scrap_brick_stairs Expected: 1022 Got: 1077
+[09Oct2025 20:45:05.989] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:block: Object did not get ID it asked for. Name: apotheotic_additions:luminous_glass Expected: 1023 Got: 1078
+[09Oct2025 20:45:05.989] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:block: Object did not get ID it asked for. Name: apotheotic_additions:luminous_glass_pane Expected: 1024 Got: 1079
+[09Oct2025 20:45:05.989] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:block: Object did not get ID it asked for. Name: apotheotic_additions:timeworn_fabric Expected: 1025 Got: 1080
+[09Oct2025 20:45:05.989] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:block: Object did not get ID it asked for. Name: apotheotic_additions:timeworn_fancy Expected: 1026 Got: 1081
+[09Oct2025 20:45:05.989] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:block: Object did not get ID it asked for. Name: apotheotic_additions:infused_skyshelf Expected: 1027 Got: 1082
+[09Oct2025 20:45:05.989] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:block: Object did not get ID it asked for. Name: apotheotic_additions:gilded_aerogel_skyshelf Expected: 1028 Got: 1083
+[09Oct2025 20:45:05.989] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:block: Object did not get ID it asked for. Name: apotheotic_additions:hollowed_barrel_shelf Expected: 1029 Got: 1084
+[09Oct2025 20:45:05.989] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:block: Object did not get ID it asked for. Name: apotheotic_additions:nuclear_barrel_shelf Expected: 1030 Got: 1085
+[09Oct2025 20:45:05.989] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:block: Object did not get ID it asked for. Name: apotheotic_additions:thornshelf Expected: 1031 Got: 1086
+[09Oct2025 20:45:05.989] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:block: Object did not get ID it asked for. Name: apotheotic_additions:infused_thornshelf Expected: 1032 Got: 1087
+[09Oct2025 20:45:05.989] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:block: Object did not get ID it asked for. Name: apotheotic_additions:occult_thornshelf Expected: 1033 Got: 1088
+[09Oct2025 20:45:05.990] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: apotheotic_additions:artifact_material Expected: 1297 Got: 1603
+[09Oct2025 20:45:05.990] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: apotheotic_additions:heirloom_material Expected: 1298 Got: 1604
+[09Oct2025 20:45:05.990] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: apotheotic_additions:esoteric_material Expected: 1299 Got: 1605
+[09Oct2025 20:45:05.990] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: apotheotic_additions:sacrificial_shelf Expected: 1300 Got: 1606
+[09Oct2025 20:45:05.990] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: apotheotic_additions:wavebinders_shelf Expected: 1301 Got: 1607
+[09Oct2025 20:45:05.990] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: apotheotic_additions:void_shelf Expected: 1302 Got: 1608
+[09Oct2025 20:45:05.990] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: apotheotic_additions:terra_shelf Expected: 1303 Got: 1609
+[09Oct2025 20:45:05.990] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: apotheotic_additions:commonapple Expected: 1304 Got: 1610
+[09Oct2025 20:45:05.990] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: apotheotic_additions:uncommonapple Expected: 1305 Got: 1611
+[09Oct2025 20:45:05.990] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: apotheotic_additions:rareapple Expected: 1306 Got: 1612
+[09Oct2025 20:45:05.991] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: apotheotic_additions:epicapple Expected: 1307 Got: 1613
+[09Oct2025 20:45:05.991] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: apotheotic_additions:mythicapple Expected: 1308 Got: 1614
+[09Oct2025 20:45:05.991] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: apotheotic_additions:apotheotic_coin Expected: 1309 Got: 1615
+[09Oct2025 20:45:05.991] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: apotheotic_additions:infused_coin Expected: 1310 Got: 1616
+[09Oct2025 20:45:05.991] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: apotheotic_additions:ascended_coin Expected: 1311 Got: 1617
+[09Oct2025 20:45:05.991] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: apotheotic_additions:mythicalband Expected: 1312 Got: 1618
+[09Oct2025 20:45:05.991] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: apotheotic_additions:scrap_brick Expected: 1313 Got: 1619
+[09Oct2025 20:45:05.991] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: apotheotic_additions:scrap_pillar Expected: 1314 Got: 1620
+[09Oct2025 20:45:05.991] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: apotheotic_additions:scrap_rough Expected: 1315 Got: 1621
+[09Oct2025 20:45:05.991] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: apotheotic_additions:scrap_carved Expected: 1316 Got: 1622
+[09Oct2025 20:45:05.991] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: apotheotic_additions:scrap_brick_slab Expected: 1317 Got: 1623
+[09Oct2025 20:45:05.991] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: apotheotic_additions:scrap_brick_stairs Expected: 1318 Got: 1624
+[09Oct2025 20:45:05.991] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: apotheotic_additions:luminous_glass Expected: 1319 Got: 1625
+[09Oct2025 20:45:05.991] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: apotheotic_additions:luminous_glass_pane Expected: 1320 Got: 1626
+[09Oct2025 20:45:05.991] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: apotheotic_additions:timeworn_fabric Expected: 1321 Got: 1627
+[09Oct2025 20:45:05.991] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: apotheotic_additions:timeworn_fancy Expected: 1322 Got: 1628
+[09Oct2025 20:45:05.991] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: apotheotic_additions:gemboundsigil Expected: 1323 Got: 1629
+[09Oct2025 20:45:05.991] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: apotheotic_additions:infused_skyshelf Expected: 1324 Got: 1630
+[09Oct2025 20:45:05.991] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: apotheotic_additions:gilded_aerogel_skyshelf Expected: 1325 Got: 1631
+[09Oct2025 20:45:05.991] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: apotheotic_additions:hollowed_barrel_shelf Expected: 1326 Got: 1632
+[09Oct2025 20:45:05.992] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: apotheotic_additions:nuclear_barrel_shelf Expected: 1327 Got: 1633
+[09Oct2025 20:45:05.992] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: apotheotic_additions:thornshelf Expected: 1328 Got: 1634
+[09Oct2025 20:45:05.992] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: apotheotic_additions:infused_thornshelf Expected: 1329 Got: 1635
+[09Oct2025 20:45:05.992] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: apotheotic_additions:occult_thornshelf Expected: 1330 Got: 1636
+[09Oct2025 20:45:05.992] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:mob_effect: Object did not get ID it asked for. Name: apotheotic_additions:bad_voodoo Expected: 37 Got: 83
+[09Oct2025 20:45:06.607] [Render thread/INFO] [tacz/GunPackFinder]: Start scanning for gun packs in C:\Projects\magitacz-forge\run\tacz
+[09Oct2025 20:45:06.607] [Render thread/INFO] [tacz/GunPackFinder]: - playwrights_gunpack, Main namespace: playwrights_gunpack
+[09Oct2025 20:45:06.608] [Render thread/INFO] [tacz/GunPackFinder]: - tacz_default_gun, Main namespace: tacz
+[09Oct2025 20:45:06.608] [Render thread/INFO] [tacz/GunPackFinder]: Found 2 possible gunpack(s) and added them to resource set.
+[09Oct2025 20:45:07.876] [Render thread/INFO] [net.minecraftforge.coremod.CoreMod.apotheosis/COREMODLOG]: Replaced 2 calls to Enchantment#getMaxLevel() in net/minecraft/server/commands/EnchantCommand
+[09Oct2025 20:45:08.142] [Worker-Main-10/ERROR] [tacz/]: Couldn't parse data file tacz:stock_moe_data from tacz:data/attachments/stock_moe_data.json
 com.google.gson.JsonParseException: java.io.EOFException: End of input at line 19 column 2 path $.spell
-	at net.minecraft.util.GsonHelper.fromNullableJson(GsonHelper.java:526) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23184!/:?]
-	at net.minecraft.util.GsonHelper.fromJson(GsonHelper.java:531) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23184!/:?]
-	at com.tacz.guns.util.ResourceScanner.scanDirectory(ResourceScanner.java:41) ~[timeless-and-classics-zero-1028108-6654541_mapped_official_1.20.1.jar%23198!/:1.1.6-hotfix]
-	at com.tacz.guns.resource.manager.JsonDataManager.prepare(JsonDataManager.java:48) ~[timeless-and-classics-zero-1028108-6654541_mapped_official_1.20.1.jar%23198!/:1.1.6-hotfix]
-	at com.tacz.guns.resource.manager.JsonDataManager.prepare(JsonDataManager.java:25) ~[timeless-and-classics-zero-1028108-6654541_mapped_official_1.20.1.jar%23198!/:1.1.6-hotfix]
-	at net.minecraft.server.packs.resources.SimplePreparableReloadListener.lambda$reload$0(SimplePreparableReloadListener.java:11) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23184!/:?]
+	at net.minecraft.util.GsonHelper.fromNullableJson(GsonHelper.java:526) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23191!/:?]
+	at net.minecraft.util.GsonHelper.fromJson(GsonHelper.java:531) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23191!/:?]
+	at com.tacz.guns.util.ResourceScanner.scanDirectory(ResourceScanner.java:41) ~[timeless-and-classics-zero-1028108-6654541_mapped_official_1.20.1.jar%23206!/:1.1.6-hotfix]
+	at com.tacz.guns.resource.manager.JsonDataManager.prepare(JsonDataManager.java:48) ~[timeless-and-classics-zero-1028108-6654541_mapped_official_1.20.1.jar%23206!/:1.1.6-hotfix]
+	at com.tacz.guns.resource.manager.JsonDataManager.prepare(JsonDataManager.java:25) ~[timeless-and-classics-zero-1028108-6654541_mapped_official_1.20.1.jar%23206!/:1.1.6-hotfix]
+	at net.minecraft.server.packs.resources.SimplePreparableReloadListener.lambda$reload$0(SimplePreparableReloadListener.java:11) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23191!/:?]
 	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
 	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760) ~[?:?]
 	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373) ~[?:?]
@@ -207,59 +258,59 @@ com.google.gson.JsonParseException: java.io.EOFException: End of input at line 1
 	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[?:?]
 	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[?:?]
 Caused by: java.io.EOFException: End of input at line 19 column 2 path $.spell
-	at com.google.gson.stream.JsonReader.nextNonWhitespace(JsonReader.java:1455) ~[gson-2.10.jar%23123!/:?]
-	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:491) ~[gson-2.10.jar%23123!/:?]
-	at com.google.gson.stream.JsonReader.hasNext(JsonReader.java:422) ~[gson-2.10.jar%23123!/:?]
-	at com.google.gson.internal.bind.TypeAdapters$28.read(TypeAdapters.java:779) ~[gson-2.10.jar%23123!/:?]
-	at com.google.gson.internal.bind.TypeAdapters$28.read(TypeAdapters.java:725) ~[gson-2.10.jar%23123!/:?]
-	at com.google.gson.internal.bind.TypeAdapters$34$1.read(TypeAdapters.java:1007) ~[gson-2.10.jar%23123!/:?]
-	at net.minecraft.util.GsonHelper.fromNullableJson(GsonHelper.java:524) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23184!/:?]
+	at com.google.gson.stream.JsonReader.nextNonWhitespace(JsonReader.java:1455) ~[gson-2.10.jar%23130!/:?]
+	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:491) ~[gson-2.10.jar%23130!/:?]
+	at com.google.gson.stream.JsonReader.hasNext(JsonReader.java:422) ~[gson-2.10.jar%23130!/:?]
+	at com.google.gson.internal.bind.TypeAdapters$28.read(TypeAdapters.java:779) ~[gson-2.10.jar%23130!/:?]
+	at com.google.gson.internal.bind.TypeAdapters$28.read(TypeAdapters.java:725) ~[gson-2.10.jar%23130!/:?]
+	at com.google.gson.internal.bind.TypeAdapters$34$1.read(TypeAdapters.java:1007) ~[gson-2.10.jar%23130!/:?]
+	at net.minecraft.util.GsonHelper.fromNullableJson(GsonHelper.java:524) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23191!/:?]
 	... 12 more
-[09Oct2025 14:32:47.903] [Worker-Main-4/ERROR] [net.minecraftforge.common.ForgeHooks/]: Couldn't parse element loot_tables:apotheosis:book
+[09Oct2025 20:45:08.458] [Worker-Main-14/ERROR] [net.minecraftforge.common.ForgeHooks/]: Couldn't parse element loot_tables:apotheosis:book
 com.google.gson.JsonSyntaxException: Expected name to be an item, was unknown string 'patchouli:guide_book'
-	at net.minecraft.util.GsonHelper.lambda$convertToItem$0(GsonHelper.java:145) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23184!/:?]
+	at net.minecraft.util.GsonHelper.lambda$convertToItem$0(GsonHelper.java:145) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23191!/:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
-	at net.minecraft.util.GsonHelper.convertToItem(GsonHelper.java:145) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23184!/:?]
-	at net.minecraft.util.GsonHelper.getAsItem(GsonHelper.java:153) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23184!/:?]
-	at net.minecraft.world.level.storage.loot.entries.LootItem$Serializer.deserialize(LootItem.java:55) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23184!/:?]
-	at net.minecraft.world.level.storage.loot.entries.LootItem$Serializer.deserialize(LootItem.java:40) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23184!/:?]
-	at net.minecraft.world.level.storage.loot.entries.LootPoolSingletonContainer$Serializer.deserializeCustom(LootPoolSingletonContainer.java:151) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23184!/:?]
-	at net.minecraft.world.level.storage.loot.entries.LootPoolSingletonContainer$Serializer.deserializeCustom(LootPoolSingletonContainer.java:129) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23184!/:?]
-	at net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer$Serializer.deserialize(LootPoolEntryContainer.java:86) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23184!/:?]
-	at net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer$Serializer.deserialize(LootPoolEntryContainer.java:74) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23184!/:?]
-	at net.minecraft.world.level.storage.loot.GsonAdapterFactory$JsonAdapter.deserialize(GsonAdapterFactory.java:102) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23184!/:?]
-	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:76) ~[gson-2.10.jar%23123!/:?]
-	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.read(TypeAdapterRuntimeTypeWrapper.java:40) ~[gson-2.10.jar%23123!/:?]
-	at com.google.gson.internal.bind.ArrayTypeAdapter.read(ArrayTypeAdapter.java:72) ~[gson-2.10.jar%23123!/:?]
-	at com.google.gson.Gson.fromJson(Gson.java:1214) ~[gson-2.10.jar%23123!/:?]
-	at com.google.gson.Gson.fromJson(Gson.java:1319) ~[gson-2.10.jar%23123!/:?]
-	at com.google.gson.Gson.fromJson(Gson.java:1290) ~[gson-2.10.jar%23123!/:?]
-	at com.google.gson.internal.bind.TreeTypeAdapter$GsonContextImpl.deserialize(TreeTypeAdapter.java:179) ~[gson-2.10.jar%23123!/:?]
-	at net.minecraft.util.GsonHelper.convertToObject(GsonHelper.java:463) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23184!/:?]
-	at net.minecraft.util.GsonHelper.getAsObject(GsonHelper.java:471) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23184!/:?]
-	at net.minecraft.world.level.storage.loot.LootPool$Serializer.deserialize(LootPool.java:192) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23184!/:?]
-	at net.minecraft.world.level.storage.loot.LootPool$Serializer.deserialize(LootPool.java:189) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23184!/:?]
-	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:76) ~[gson-2.10.jar%23123!/:?]
-	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.read(TypeAdapterRuntimeTypeWrapper.java:40) ~[gson-2.10.jar%23123!/:?]
-	at com.google.gson.internal.bind.ArrayTypeAdapter.read(ArrayTypeAdapter.java:72) ~[gson-2.10.jar%23123!/:?]
-	at com.google.gson.Gson.fromJson(Gson.java:1214) ~[gson-2.10.jar%23123!/:?]
-	at com.google.gson.Gson.fromJson(Gson.java:1319) ~[gson-2.10.jar%23123!/:?]
-	at com.google.gson.Gson.fromJson(Gson.java:1290) ~[gson-2.10.jar%23123!/:?]
-	at com.google.gson.internal.bind.TreeTypeAdapter$GsonContextImpl.deserialize(TreeTypeAdapter.java:179) ~[gson-2.10.jar%23123!/:?]
-	at net.minecraft.util.GsonHelper.convertToObject(GsonHelper.java:463) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23184!/:?]
-	at net.minecraft.util.GsonHelper.getAsObject(GsonHelper.java:481) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23184!/:?]
-	at net.minecraft.world.level.storage.loot.LootTable$Serializer.deserialize(LootTable.java:294) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23184!/:?]
-	at net.minecraft.world.level.storage.loot.LootTable$Serializer.deserialize(LootTable.java:291) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23184!/:?]
-	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:76) ~[gson-2.10.jar%23123!/:?]
-	at com.google.gson.Gson.fromJson(Gson.java:1214) ~[gson-2.10.jar%23123!/:?]
-	at com.google.gson.Gson.fromJson(Gson.java:1319) ~[gson-2.10.jar%23123!/:?]
-	at com.google.gson.Gson.fromJson(Gson.java:1261) ~[gson-2.10.jar%23123!/:?]
-	at net.minecraftforge.common.ForgeHooks.loadLootTable(ForgeHooks.java:871) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23183%23190!/:?]
-	at net.minecraftforge.common.ForgeHooks.lambda$getLootTableDeserializer$3(ForgeHooks.java:848) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23183%23190!/:?]
-	at net.minecraft.world.level.storage.loot.LootDataType.deserialize(LootDataType.java:45) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23184!/:?]
-	at net.minecraft.world.level.storage.loot.LootDataManager.lambda$scheduleElementParse$4(LootDataManager.java:56) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23184!/:?]
+	at net.minecraft.util.GsonHelper.convertToItem(GsonHelper.java:145) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23191!/:?]
+	at net.minecraft.util.GsonHelper.getAsItem(GsonHelper.java:153) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23191!/:?]
+	at net.minecraft.world.level.storage.loot.entries.LootItem$Serializer.deserialize(LootItem.java:55) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23191!/:?]
+	at net.minecraft.world.level.storage.loot.entries.LootItem$Serializer.deserialize(LootItem.java:40) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23191!/:?]
+	at net.minecraft.world.level.storage.loot.entries.LootPoolSingletonContainer$Serializer.deserializeCustom(LootPoolSingletonContainer.java:151) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23191!/:?]
+	at net.minecraft.world.level.storage.loot.entries.LootPoolSingletonContainer$Serializer.deserializeCustom(LootPoolSingletonContainer.java:129) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23191!/:?]
+	at net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer$Serializer.deserialize(LootPoolEntryContainer.java:86) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23191!/:?]
+	at net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer$Serializer.deserialize(LootPoolEntryContainer.java:74) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23191!/:?]
+	at net.minecraft.world.level.storage.loot.GsonAdapterFactory$JsonAdapter.deserialize(GsonAdapterFactory.java:102) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23191!/:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:76) ~[gson-2.10.jar%23130!/:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.read(TypeAdapterRuntimeTypeWrapper.java:40) ~[gson-2.10.jar%23130!/:?]
+	at com.google.gson.internal.bind.ArrayTypeAdapter.read(ArrayTypeAdapter.java:72) ~[gson-2.10.jar%23130!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1214) ~[gson-2.10.jar%23130!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1319) ~[gson-2.10.jar%23130!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1290) ~[gson-2.10.jar%23130!/:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter$GsonContextImpl.deserialize(TreeTypeAdapter.java:179) ~[gson-2.10.jar%23130!/:?]
+	at net.minecraft.util.GsonHelper.convertToObject(GsonHelper.java:463) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23191!/:?]
+	at net.minecraft.util.GsonHelper.getAsObject(GsonHelper.java:471) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23191!/:?]
+	at net.minecraft.world.level.storage.loot.LootPool$Serializer.deserialize(LootPool.java:192) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23191!/:?]
+	at net.minecraft.world.level.storage.loot.LootPool$Serializer.deserialize(LootPool.java:189) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23191!/:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:76) ~[gson-2.10.jar%23130!/:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.read(TypeAdapterRuntimeTypeWrapper.java:40) ~[gson-2.10.jar%23130!/:?]
+	at com.google.gson.internal.bind.ArrayTypeAdapter.read(ArrayTypeAdapter.java:72) ~[gson-2.10.jar%23130!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1214) ~[gson-2.10.jar%23130!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1319) ~[gson-2.10.jar%23130!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1290) ~[gson-2.10.jar%23130!/:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter$GsonContextImpl.deserialize(TreeTypeAdapter.java:179) ~[gson-2.10.jar%23130!/:?]
+	at net.minecraft.util.GsonHelper.convertToObject(GsonHelper.java:463) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23191!/:?]
+	at net.minecraft.util.GsonHelper.getAsObject(GsonHelper.java:481) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23191!/:?]
+	at net.minecraft.world.level.storage.loot.LootTable$Serializer.deserialize(LootTable.java:294) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23191!/:?]
+	at net.minecraft.world.level.storage.loot.LootTable$Serializer.deserialize(LootTable.java:291) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23191!/:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:76) ~[gson-2.10.jar%23130!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1214) ~[gson-2.10.jar%23130!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1319) ~[gson-2.10.jar%23130!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1261) ~[gson-2.10.jar%23130!/:?]
+	at net.minecraftforge.common.ForgeHooks.loadLootTable(ForgeHooks.java:871) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23190%23197!/:?]
+	at net.minecraftforge.common.ForgeHooks.lambda$getLootTableDeserializer$3(ForgeHooks.java:848) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23190%23197!/:?]
+	at net.minecraft.world.level.storage.loot.LootDataType.deserialize(LootDataType.java:45) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23191!/:?]
+	at net.minecraft.world.level.storage.loot.LootDataManager.lambda$scheduleElementParse$4(LootDataManager.java:56) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23191!/:?]
 	at java.util.HashMap.forEach(HashMap.java:1421) ~[?:?]
-	at net.minecraft.world.level.storage.loot.LootDataManager.lambda$scheduleElementParse$5(LootDataManager.java:55) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23184!/:?]
+	at net.minecraft.world.level.storage.loot.LootDataManager.lambda$scheduleElementParse$5(LootDataManager.java:55) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23191!/:?]
 	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804) ~[?:?]
 	at java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796) ~[?:?]
 	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373) ~[?:?]
@@ -267,13 +318,13 @@ com.google.gson.JsonSyntaxException: Expected name to be an item, was unknown st
 	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) ~[?:?]
 	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[?:?]
 	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[?:?]
-[09Oct2025 14:32:47.948] [Render thread/INFO] [placebo/]: Registered 34 additional loot tables.
-[09Oct2025 14:32:47.979] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 13 recipes
-[09Oct2025 14:32:48.017] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 1384 advancements
-[09Oct2025 14:32:48.021] [Render thread/INFO] [placebo/]: Registered 26 additional recipes.
-[09Oct2025 14:32:48.023] [Render thread/INFO] [top.theillusivec4.curios.Curios/]: Loaded 11 curio slots
-[09Oct2025 14:32:48.025] [Render thread/INFO] [top.theillusivec4.curios.Curios/]: Loaded 1 curio entities
-[09Oct2025 14:32:48.080] [Render thread/ERROR] [tacz/AttachmentIndexLoader]: Failed to load data file tacz:stock_moe
+[09Oct2025 20:45:08.536] [Render thread/INFO] [placebo/]: Registered 34 additional loot tables.
+[09Oct2025 20:45:08.612] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 13 recipes
+[09Oct2025 20:45:08.731] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 1404 advancements
+[09Oct2025 20:45:08.749] [Render thread/INFO] [placebo/]: Registered 26 additional recipes.
+[09Oct2025 20:45:08.761] [Render thread/INFO] [top.theillusivec4.curios.Curios/]: Loaded 11 curio slots
+[09Oct2025 20:45:08.770] [Render thread/INFO] [top.theillusivec4.curios.Curios/]: Loaded 1 curio entities
+[09Oct2025 20:45:08.970] [Render thread/ERROR] [tacz/AttachmentIndexLoader]: Failed to load data file tacz:stock_moe
 com.google.gson.JsonParseException: there is no corresponding data file
 	at com.tacz.guns.resource.serialize.CommonAttachmentIndexSerializer.deserialize(CommonAttachmentIndexSerializer.java:19) ~[timeless-and-classics-zero-1028108-6654541_mapped_official_1.20.1.jar:1.1.6-hotfix]
 	at com.tacz.guns.resource.serialize.CommonAttachmentIndexSerializer.deserialize(CommonAttachmentIndexSerializer.java:12) ~[timeless-and-classics-zero-1028108-6654541_mapped_official_1.20.1.jar:1.1.6-hotfix]
@@ -311,11 +362,9 @@ com.google.gson.JsonParseException: there is no corresponding data file
 	at net.minecraft.client.MouseHandler.lambda$setup$5(MouseHandler.java:188) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
 	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43) ~[lwjgl-glfw-3.3.1.jar:build 7]
 	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.3.1.jar:build 7]
-	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3403) ~[lwjgl-glfw-3.3.1.jar:build 7]
-	at com.mojang.blaze3d.systems.RenderSystem.pollEvents(RenderSystem.java:201) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
-	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:212) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
-	at com.mojang.blaze3d.platform.Window.updateDisplay(Window.java:274) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
-	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1170) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
+	at org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3474) ~[lwjgl-glfw-3.3.1.jar:build 7]
+	at com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:237) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1173) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
 	at net.minecraft.client.Minecraft.run(Minecraft.java:718) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
 	at net.minecraft.client.main.Main.main(Main.java:218) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
@@ -334,12 +383,12 @@ com.google.gson.JsonParseException: there is no corresponding data file
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[09Oct2025 14:32:48.120] [Render thread/INFO] [placebo/]: Registered 16 gear_sets.
-[09Oct2025 14:32:48.123] [Render thread/INFO] [Apotheosis : Enchantment/]: Registered 29 enchanting_stats.
-[09Oct2025 14:32:48.124] [Render thread/INFO] [Apotheosis : Adventure/]: Registered 6 rarities.
-[09Oct2025 14:32:48.126] [Render thread/ERROR] [placebo/]: Codec failure for type affixes, message: Failure when parsing a affixes. Unrecognized type: apotheosis_modern_ragnarok:ammo_capacity
-[09Oct2025 14:32:48.126] [Render thread/ERROR] [Apotheosis : Adventure/]: Failed parsing affixes file apotheosis_modern_ragnarok:clip_expansion.
-[09Oct2025 14:32:48.126] [Render thread/ERROR] [Apotheosis : Adventure/]: Underlying Exception: 
+[09Oct2025 20:45:09.079] [Render thread/INFO] [placebo/]: Registered 19 gear_sets.
+[09Oct2025 20:45:09.086] [Render thread/INFO] [Apotheosis : Enchantment/]: Registered 33 enchanting_stats.
+[09Oct2025 20:45:09.091] [Render thread/INFO] [Apotheosis : Adventure/]: Registered 9 rarities.
+[09Oct2025 20:45:09.103] [Render thread/ERROR] [placebo/]: Codec failure for type affixes, message: Failure when parsing a affixes. Unrecognized type: apotheosis_modern_ragnarok:ammo_capacity
+[09Oct2025 20:45:09.104] [Render thread/ERROR] [Apotheosis : Adventure/]: Failed parsing affixes file apotheosis_modern_ragnarok:clip_expansion.
+[09Oct2025 20:45:09.104] [Render thread/ERROR] [Apotheosis : Adventure/]: Underlying Exception: 
 java.lang.RuntimeException: Failure when parsing a affixes. Unrecognized type: apotheosis_modern_ragnarok:ammo_capacity
 	at com.mojang.serialization.DataResult.lambda$getOrThrow$5(DataResult.java:101) ~[datafixerupper-6.0.8.jar:?]
 	at com.mojang.datafixers.util.Either$Right.map(Either.java:99) ~[datafixerupper-6.0.8.jar:?]
@@ -374,11 +423,9 @@ java.lang.RuntimeException: Failure when parsing a affixes. Unrecognized type: a
 	at net.minecraft.client.MouseHandler.lambda$setup$5(MouseHandler.java:188) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
 	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43) ~[lwjgl-glfw-3.3.1.jar:build 7]
 	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.3.1.jar:build 7]
-	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3403) ~[lwjgl-glfw-3.3.1.jar:build 7]
-	at com.mojang.blaze3d.systems.RenderSystem.pollEvents(RenderSystem.java:201) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
-	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:212) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
-	at com.mojang.blaze3d.platform.Window.updateDisplay(Window.java:274) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
-	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1170) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
+	at org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3474) ~[lwjgl-glfw-3.3.1.jar:build 7]
+	at com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:237) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1173) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
 	at net.minecraft.client.Minecraft.run(Minecraft.java:718) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
 	at net.minecraft.client.main.Main.main(Main.java:218) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
@@ -397,69 +444,9 @@ java.lang.RuntimeException: Failure when parsing a affixes. Unrecognized type: a
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[09Oct2025 14:32:48.135] [Render thread/ERROR] [placebo/]: Codec failure for type affixes, message: Failure when parsing a affixes. Unrecognized type: null
-[09Oct2025 14:32:48.135] [Render thread/ERROR] [Apotheosis : Adventure/]: Failed parsing affixes file magitacz:iron_spell.
-[09Oct2025 14:32:48.135] [Render thread/ERROR] [Apotheosis : Adventure/]: Underlying Exception: 
-java.lang.RuntimeException: Failure when parsing a affixes. Unrecognized type: null
-	at com.mojang.serialization.DataResult.lambda$getOrThrow$5(DataResult.java:101) ~[datafixerupper-6.0.8.jar:?]
-	at com.mojang.datafixers.util.Either$Right.map(Either.java:99) ~[datafixerupper-6.0.8.jar:?]
-	at com.mojang.serialization.DataResult.getOrThrow(DataResult.java:93) ~[datafixerupper-6.0.8.jar:?]
-	at dev.shadowsoffire.placebo.reload.DynamicRegistry.lambda$apply$0(DynamicRegistry.java:140) ~[Placebo-1.20.1-8.6.3_mapped_official_1.20.1.jar:8.6.3]
-	at java.util.HashMap.forEach(HashMap.java:1421) ~[?:?]
-	at dev.shadowsoffire.placebo.reload.DynamicRegistry.apply(DynamicRegistry.java:136) ~[Placebo-1.20.1-8.6.3_mapped_official_1.20.1.jar:8.6.3]
-	at dev.shadowsoffire.placebo.reload.DynamicRegistry.apply(DynamicRegistry.java:62) ~[Placebo-1.20.1-8.6.3_mapped_official_1.20.1.jar:8.6.3]
-	at net.minecraft.server.packs.resources.SimplePreparableReloadListener.lambda$reload$1(SimplePreparableReloadListener.java:13) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
-	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718) ~[?:?]
-	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482) ~[?:?]
-	at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$new$3(SimpleReloadInstance.java:69) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
-	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:156) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
-	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:23) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
-	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:130) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
-	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:139) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
-	at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.loadWorldDataBlocking(WorldOpenFlows.java:163) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
-	at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.loadWorldStem(WorldOpenFlows.java:113) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
-	at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.doLoadLevel(WorldOpenFlows.java:181) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
-	at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.doLoadLevel(WorldOpenFlows.java:169) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
-	at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.loadLevel(WorldOpenFlows.java:65) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
-	at net.minecraft.client.gui.screens.worldselection.WorldSelectionList$WorldListEntry.loadWorld(WorldSelectionList.java:575) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
-	at net.minecraft.client.gui.screens.worldselection.WorldSelectionList$WorldListEntry.joinWorld(WorldSelectionList.java:474) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
-	at net.minecraft.client.gui.screens.worldselection.WorldSelectionList$WorldListEntry.mouseClicked(WorldSelectionList.java:416) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
-	at net.minecraft.client.gui.components.AbstractSelectionList.mouseClicked(AbstractSelectionList.java:298) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
-	at net.minecraft.client.gui.components.events.ContainerEventHandler.mouseClicked(ContainerEventHandler.java:38) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
-	at net.minecraft.client.MouseHandler.lambda$onPress$0(MouseHandler.java:92) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
-	at net.minecraft.client.gui.screens.Screen.wrapScreenError(Screen.java:437) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
-	at net.minecraft.client.MouseHandler.onPress(MouseHandler.java:89) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
-	at net.minecraft.client.MouseHandler.lambda$setup$4(MouseHandler.java:189) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
-	at net.minecraft.util.thread.BlockableEventLoop.execute(BlockableEventLoop.java:102) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
-	at net.minecraft.client.MouseHandler.lambda$setup$5(MouseHandler.java:188) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
-	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43) ~[lwjgl-glfw-3.3.1.jar:build 7]
-	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.3.1.jar:build 7]
-	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3403) ~[lwjgl-glfw-3.3.1.jar:build 7]
-	at com.mojang.blaze3d.systems.RenderSystem.pollEvents(RenderSystem.java:201) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
-	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:212) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
-	at com.mojang.blaze3d.platform.Window.updateDisplay(Window.java:274) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
-	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1170) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
-	at net.minecraft.client.Minecraft.run(Minecraft.java:718) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
-	at net.minecraft.client.main.Main.main(Main.java:218) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
-	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
-	at java.lang.reflect.Method.invoke(Method.java:569) ~[?:?]
-	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:111) ~[fmlloader-1.20.1-47.4.0.jar:?]
-	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:99) ~[fmlloader-1.20.1-47.4.0.jar:?]
-	at net.minecraftforge.fml.loading.targets.ForgeClientUserdevLaunchHandler.devService(ForgeClientUserdevLaunchHandler.java:19) ~[fmlloader-1.20.1-47.4.0.jar:?]
-	at net.minecraftforge.fml.loading.targets.CommonDevLaunchHandler.lambda$makeService$7(CommonDevLaunchHandler.java:135) ~[fmlloader-1.20.1-47.4.0.jar:?]
-	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar:?]
-	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar:?]
-	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar:?]
-	at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar:?]
-	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar:?]
-	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
-	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
-	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[09Oct2025 14:32:48.140] [Render thread/ERROR] [placebo/]: Codec failure for type affixes, message: Failure when parsing a affixes. Unrecognized type: apotheosis_modern_ragnarok:damage_bonus
-[09Oct2025 14:32:48.140] [Render thread/ERROR] [Apotheosis : Adventure/]: Failed parsing affixes file apotheosis_modern_ragnarok:magnum.
-[09Oct2025 14:32:48.140] [Render thread/ERROR] [Apotheosis : Adventure/]: Underlying Exception: 
+[09Oct2025 20:45:09.137] [Render thread/ERROR] [placebo/]: Codec failure for type affixes, message: Failure when parsing a affixes. Unrecognized type: apotheosis_modern_ragnarok:damage_bonus
+[09Oct2025 20:45:09.137] [Render thread/ERROR] [Apotheosis : Adventure/]: Failed parsing affixes file apotheosis_modern_ragnarok:magnum.
+[09Oct2025 20:45:09.137] [Render thread/ERROR] [Apotheosis : Adventure/]: Underlying Exception: 
 java.lang.RuntimeException: Failure when parsing a affixes. Unrecognized type: apotheosis_modern_ragnarok:damage_bonus
 	at com.mojang.serialization.DataResult.lambda$getOrThrow$5(DataResult.java:101) ~[datafixerupper-6.0.8.jar:?]
 	at com.mojang.datafixers.util.Either$Right.map(Either.java:99) ~[datafixerupper-6.0.8.jar:?]
@@ -494,11 +481,9 @@ java.lang.RuntimeException: Failure when parsing a affixes. Unrecognized type: a
 	at net.minecraft.client.MouseHandler.lambda$setup$5(MouseHandler.java:188) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
 	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43) ~[lwjgl-glfw-3.3.1.jar:build 7]
 	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.3.1.jar:build 7]
-	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3403) ~[lwjgl-glfw-3.3.1.jar:build 7]
-	at com.mojang.blaze3d.systems.RenderSystem.pollEvents(RenderSystem.java:201) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
-	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:212) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
-	at com.mojang.blaze3d.platform.Window.updateDisplay(Window.java:274) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
-	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1170) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
+	at org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3474) ~[lwjgl-glfw-3.3.1.jar:build 7]
+	at com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:237) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1173) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
 	at net.minecraft.client.Minecraft.run(Minecraft.java:718) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
 	at net.minecraft.client.main.Main.main(Main.java:218) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
@@ -517,59 +502,135 @@ java.lang.RuntimeException: Failure when parsing a affixes. Unrecognized type: a
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[09Oct2025 14:32:48.142] [Render thread/INFO] [Apotheosis : Adventure/]: Registered 135 affixes.
-[09Oct2025 14:32:48.145] [Render thread/WARN] [Apotheosis : Adventure/]: Insufficient number of affixes to satisfy the loot rules (ignoring backup rules) of rarity apotheosis:rare for category curios:spellbookRequired: 2; Provided: 0
-[09Oct2025 14:32:48.146] [Render thread/WARN] [Apotheosis : Adventure/]: Insufficient number of affixes to satisfy the loot rules (ignoring backup rules) of rarity apotheosis:epic for category curios:spellbookRequired: 2; Provided: 0
-[09Oct2025 14:32:48.147] [Render thread/WARN] [Apotheosis : Adventure/]: Insufficient number of affixes to satisfy the loot rules (ignoring backup rules) of rarity apotheosis:mythic for category helmetRequired: 3; Provided: 2
-[09Oct2025 14:32:48.147] [Render thread/WARN] [Apotheosis : Adventure/]: Insufficient number of affixes to satisfy the loot rules (ignoring backup rules) of rarity apotheosis:mythic for category bootsRequired: 3; Provided: 2
-[09Oct2025 14:32:48.147] [Render thread/WARN] [Apotheosis : Adventure/]: Insufficient number of affixes to satisfy the loot rules (ignoring backup rules) of rarity apotheosis:mythic for category curios:spellbookRequired: 3; Provided: 0
-[09Oct2025 14:32:48.148] [Render thread/WARN] [Apotheosis : Adventure/]: Insufficient number of affixes to satisfy the loot rules (ignoring backup rules) of rarity apotheosis:ancient for category helmetRequired: 4; Provided: 2
-[09Oct2025 14:32:48.148] [Render thread/WARN] [Apotheosis : Adventure/]: Insufficient number of affixes to satisfy the loot rules (ignoring backup rules) of rarity apotheosis:ancient for category bootsRequired: 4; Provided: 2
-[09Oct2025 14:32:48.148] [Render thread/WARN] [Apotheosis : Adventure/]: Insufficient number of affixes to satisfy the loot rules (ignoring backup rules) of rarity apotheosis:ancient for category curios:spellbookRequired: 4; Provided: 0
-[09Oct2025 14:32:48.148] [Render thread/WARN] [Apotheosis : Adventure/]: Insufficient number of affixes to satisfy the loot rules (ignoring backup rules) of rarity apotheosis:ancient for category bowRequired: 5; Provided: 4
-[09Oct2025 14:32:48.148] [Render thread/WARN] [Apotheosis : Adventure/]: Insufficient number of affixes to satisfy the loot rules (ignoring backup rules) of rarity apotheosis:ancient for category crossbowRequired: 5; Provided: 4
-[09Oct2025 14:32:48.148] [Render thread/WARN] [Apotheosis : Adventure/]: Insufficient number of affixes to satisfy the loot rules (ignoring backup rules) of rarity apotheosis:ancient for category pickaxeRequired: 5; Provided: 4
-[09Oct2025 14:32:48.148] [Render thread/WARN] [Apotheosis : Adventure/]: Insufficient number of affixes to satisfy the loot rules (ignoring backup rules) of rarity apotheosis:ancient for category shovelRequired: 5; Provided: 4
-[09Oct2025 14:32:48.156] [Render thread/INFO] [Apotheosis : Adventure/]: Registered 34 gems.
-[09Oct2025 14:32:48.160] [Render thread/INFO] [Apotheosis : Adventure/]: Registered 67 affix_loot_entries.
-[09Oct2025 14:32:48.164] [Render thread/INFO] [Apotheosis : Adventure/]: Registered 18 bosses.
-[09Oct2025 14:32:48.167] [Render thread/INFO] [Apotheosis : Adventure/]: Registered 8 rogue_spawners.
-[09Oct2025 14:32:48.168] [Render thread/INFO] [Apotheosis : Adventure/]: Registered 5 minibosses.
-[09Oct2025 14:32:48.170] [Render thread/INFO] [Apotheosis : Village/]: Registered 28 wanderer_trades.
-[09Oct2025 14:32:48.174] [Render thread/INFO] [mod.chloeprime.apotheosismodernragnarok.common.gem.framework.GemInjectionRegistry/]: Registered 15 amr_gem_injections.
-[09Oct2025 14:32:48.466] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.20.1
-[09Oct2025 14:32:48.466] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
-[09Oct2025 14:32:48.574] [Server thread/INFO] [net.minecraftforge.coremod.CoreMod.apotheosis/COREMODLOG]: Replaced 1 calls to Enchantment#getMaxLevel() in net/minecraft/world/entity/npc/VillagerTrades$EnchantBookForEmeralds
-[09Oct2025 14:32:48.574] [Server thread/INFO] [net.minecraftforge.coremod.CoreMod.apotheosis/COREMODLOG]: Replaced 1 calls to Enchantment#isTreasureOnly() in net/minecraft/world/entity/npc/VillagerTrades$EnchantBookForEmeralds
-[09Oct2025 14:32:48.574] [Server thread/INFO] [net.minecraftforge.coremod.CoreMod.apotheosis/COREMODLOG]: Replaced 1 calls to Enchantment#isTradeable() in net/minecraft/world/entity/npc/VillagerTrades$EnchantBookForEmeralds
-[09Oct2025 14:32:50.346] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
-[09Oct2025 14:32:56.177] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[09Oct2025 14:32:56.178] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[09Oct2025 14:32:56.212] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[09Oct2025 14:32:56.245] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[09Oct2025 14:32:56.346] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[09Oct2025 14:32:56.378] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[09Oct2025 14:32:56.378] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[09Oct2025 14:32:56.378] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[09Oct2025 14:32:56.412] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[09Oct2025 14:32:56.412] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[09Oct2025 14:32:56.412] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[09Oct2025 14:32:56.412] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[09Oct2025 14:32:56.412] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[09Oct2025 14:32:56.878] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 6%
-[09Oct2025 14:32:57.379] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 26%
-[09Oct2025 14:32:57.884] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 75%
-[09Oct2025 14:32:58.191] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
-[09Oct2025 14:32:58.191] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: HELLO from server starting
-[09Oct2025 14:32:58.211] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 7850 ms
-[09Oct2025 14:32:58.388] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 12, from 10
-[09Oct2025 14:32:58.391] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 12, from 0
-[09Oct2025 14:32:58.462] [Render thread/WARN] [io.netty.util.internal.SystemPropertyUtil/]: Unable to parse the boolean system property 'java.net.preferIPv6Addresses':system - using the default value: false
-[09Oct2025 14:32:59.371] [Netty Local Client IO #0/INFO] [net.minecraftforge.network.NetworkHooks/]: Connected to a modded server.
-[09Oct2025 14:32:59.439] [Netty Local Client IO #0/WARN] [mixin/]: @Inject(@At("INVOKE")) Shift.BY=5 on attributeslib.mixins.json:client.ClientPacketListenerMixin::handler$zib000$apoth_postAttrChangedEvent exceeds the maximum allowed value: 0. Increase the value of maxShiftBy to suppress this warning.
-[09Oct2025 14:32:59.571] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:036de693] logged in with entity id 218 at (-63.8653973980188, 73.49319524393387, -379.3321915186979)
-[09Oct2025 14:32:59.752] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
-[09Oct2025 14:32:59.755] [Render thread/WARN] [tacz/]: Failed to parse data from network for ATTACHMENT_INDEX with id tacz:stock_moe
+[09Oct2025 20:45:09.142] [Render thread/ERROR] [placebo/]: Codec failure for type affixes, message: Failure when parsing a affixes. Unrecognized type: null
+[09Oct2025 20:45:09.143] [Render thread/ERROR] [Apotheosis : Adventure/]: Failed parsing affixes file magitacz:iron_spell.
+[09Oct2025 20:45:09.143] [Render thread/ERROR] [Apotheosis : Adventure/]: Underlying Exception: 
+java.lang.RuntimeException: Failure when parsing a affixes. Unrecognized type: null
+	at com.mojang.serialization.DataResult.lambda$getOrThrow$5(DataResult.java:101) ~[datafixerupper-6.0.8.jar:?]
+	at com.mojang.datafixers.util.Either$Right.map(Either.java:99) ~[datafixerupper-6.0.8.jar:?]
+	at com.mojang.serialization.DataResult.getOrThrow(DataResult.java:93) ~[datafixerupper-6.0.8.jar:?]
+	at dev.shadowsoffire.placebo.reload.DynamicRegistry.lambda$apply$0(DynamicRegistry.java:140) ~[Placebo-1.20.1-8.6.3_mapped_official_1.20.1.jar:8.6.3]
+	at java.util.HashMap.forEach(HashMap.java:1421) ~[?:?]
+	at dev.shadowsoffire.placebo.reload.DynamicRegistry.apply(DynamicRegistry.java:136) ~[Placebo-1.20.1-8.6.3_mapped_official_1.20.1.jar:8.6.3]
+	at dev.shadowsoffire.placebo.reload.DynamicRegistry.apply(DynamicRegistry.java:62) ~[Placebo-1.20.1-8.6.3_mapped_official_1.20.1.jar:8.6.3]
+	at net.minecraft.server.packs.resources.SimplePreparableReloadListener.lambda$reload$1(SimplePreparableReloadListener.java:13) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718) ~[?:?]
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$new$3(SimpleReloadInstance.java:69) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:156) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:23) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:130) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:139) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
+	at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.loadWorldDataBlocking(WorldOpenFlows.java:163) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
+	at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.loadWorldStem(WorldOpenFlows.java:113) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
+	at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.doLoadLevel(WorldOpenFlows.java:181) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
+	at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.doLoadLevel(WorldOpenFlows.java:169) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
+	at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.loadLevel(WorldOpenFlows.java:65) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
+	at net.minecraft.client.gui.screens.worldselection.WorldSelectionList$WorldListEntry.loadWorld(WorldSelectionList.java:575) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
+	at net.minecraft.client.gui.screens.worldselection.WorldSelectionList$WorldListEntry.joinWorld(WorldSelectionList.java:474) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
+	at net.minecraft.client.gui.screens.worldselection.WorldSelectionList$WorldListEntry.mouseClicked(WorldSelectionList.java:416) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
+	at net.minecraft.client.gui.components.AbstractSelectionList.mouseClicked(AbstractSelectionList.java:298) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
+	at net.minecraft.client.gui.components.events.ContainerEventHandler.mouseClicked(ContainerEventHandler.java:38) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
+	at net.minecraft.client.MouseHandler.lambda$onPress$0(MouseHandler.java:92) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
+	at net.minecraft.client.gui.screens.Screen.wrapScreenError(Screen.java:437) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
+	at net.minecraft.client.MouseHandler.onPress(MouseHandler.java:89) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
+	at net.minecraft.client.MouseHandler.lambda$setup$4(MouseHandler.java:189) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
+	at net.minecraft.util.thread.BlockableEventLoop.execute(BlockableEventLoop.java:102) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
+	at net.minecraft.client.MouseHandler.lambda$setup$5(MouseHandler.java:188) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
+	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43) ~[lwjgl-glfw-3.3.1.jar:build 7]
+	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.3.1.jar:build 7]
+	at org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3474) ~[lwjgl-glfw-3.3.1.jar:build 7]
+	at com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:237) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1173) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:718) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
+	at net.minecraft.client.main.Main.main(Main.java:218) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:569) ~[?:?]
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:111) ~[fmlloader-1.20.1-47.4.0.jar:?]
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:99) ~[fmlloader-1.20.1-47.4.0.jar:?]
+	at net.minecraftforge.fml.loading.targets.ForgeClientUserdevLaunchHandler.devService(ForgeClientUserdevLaunchHandler.java:19) ~[fmlloader-1.20.1-47.4.0.jar:?]
+	at net.minecraftforge.fml.loading.targets.CommonDevLaunchHandler.lambda$makeService$7(CommonDevLaunchHandler.java:135) ~[fmlloader-1.20.1-47.4.0.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
+[09Oct2025 20:45:09.164] [Render thread/INFO] [Apotheosis : Adventure/]: Registered 203 affixes.
+[09Oct2025 20:45:09.170] [Render thread/ERROR] [Apotheosis : Adventure/]: Missing Affix Lang Keys:
+"affix.apotheotic_additions:ragnarok/shotgun/mob_effect/rage": "",
+"affix.apotheotic_additions:ragnarok/shotgun/mob_effect/rage.suffix": "",
+"affix.apotheotic_additions:ragnarok/bolt_action/attribute/life_steal_x": "",
+"affix.apotheotic_additions:ragnarok/bolt_action/attribute/life_steal_x.suffix": "",
+
+[09Oct2025 20:45:09.183] [Render thread/WARN] [Apotheosis : Adventure/]: Insufficient number of affixes to satisfy the loot rules (ignoring backup rules) of rarity apotheosis:rare for category curios:spellbookRequired: 2; Provided: 0
+[09Oct2025 20:45:09.185] [Render thread/WARN] [Apotheosis : Adventure/]: Insufficient number of affixes to satisfy the loot rules (ignoring backup rules) of rarity apotheosis:epic for category curios:spellbookRequired: 2; Provided: 0
+[09Oct2025 20:45:09.186] [Render thread/WARN] [Apotheosis : Adventure/]: Insufficient number of affixes to satisfy the loot rules (ignoring backup rules) of rarity apotheotic_additions:artifact for category heavy_weaponRequired: 1; Provided: 0
+[09Oct2025 20:45:09.186] [Render thread/WARN] [Apotheosis : Adventure/]: Insufficient number of affixes to satisfy the loot rules (ignoring backup rules) of rarity apotheotic_additions:artifact for category curios:spellbookRequired: 1; Provided: 0
+[09Oct2025 20:45:09.187] [Render thread/WARN] [Apotheosis : Adventure/]: Insufficient number of affixes to satisfy the loot rules (ignoring backup rules) of rarity apotheotic_additions:artifact for category curios:spellbookRequired: 2; Provided: 0
+[09Oct2025 20:45:09.187] [Render thread/WARN] [Apotheosis : Adventure/]: Insufficient number of affixes to satisfy the loot rules (ignoring backup rules) of rarity apotheotic_additions:heirloom for category heavy_weaponRequired: 1; Provided: 0
+[09Oct2025 20:45:09.188] [Render thread/WARN] [Apotheosis : Adventure/]: Insufficient number of affixes to satisfy the loot rules (ignoring backup rules) of rarity apotheotic_additions:heirloom for category curios:spellbookRequired: 1; Provided: 0
+[09Oct2025 20:45:09.189] [Render thread/WARN] [Apotheosis : Adventure/]: Insufficient number of affixes to satisfy the loot rules (ignoring backup rules) of rarity apotheotic_additions:heirloom for category curios:spellbookRequired: 1; Provided: 0
+[09Oct2025 20:45:09.189] [Render thread/WARN] [Apotheosis : Adventure/]: Insufficient number of affixes to satisfy the loot rules (ignoring backup rules) of rarity apotheosis:mythic for category bootsRequired: 3; Provided: 2
+[09Oct2025 20:45:09.189] [Render thread/WARN] [Apotheosis : Adventure/]: Insufficient number of affixes to satisfy the loot rules (ignoring backup rules) of rarity apotheosis:mythic for category curios:spellbookRequired: 3; Provided: 0
+[09Oct2025 20:45:09.191] [Render thread/WARN] [Apotheosis : Adventure/]: Insufficient number of affixes to satisfy the loot rules (ignoring backup rules) of rarity apotheotic_additions:esoteric for category bowRequired: 5; Provided: 3
+[09Oct2025 20:45:09.191] [Render thread/WARN] [Apotheosis : Adventure/]: Insufficient number of affixes to satisfy the loot rules (ignoring backup rules) of rarity apotheotic_additions:esoteric for category crossbowRequired: 5; Provided: 3
+[09Oct2025 20:45:09.191] [Render thread/WARN] [Apotheosis : Adventure/]: Insufficient number of affixes to satisfy the loot rules (ignoring backup rules) of rarity apotheotic_additions:esoteric for category pickaxeRequired: 5; Provided: 4
+[09Oct2025 20:45:09.191] [Render thread/WARN] [Apotheosis : Adventure/]: Insufficient number of affixes to satisfy the loot rules (ignoring backup rules) of rarity apotheotic_additions:esoteric for category shovelRequired: 5; Provided: 4
+[09Oct2025 20:45:09.191] [Render thread/WARN] [Apotheosis : Adventure/]: Insufficient number of affixes to satisfy the loot rules (ignoring backup rules) of rarity apotheotic_additions:esoteric for category heavy_weaponRequired: 5; Provided: 0
+[09Oct2025 20:45:09.191] [Render thread/WARN] [Apotheosis : Adventure/]: Insufficient number of affixes to satisfy the loot rules (ignoring backup rules) of rarity apotheotic_additions:esoteric for category curios:spellbookRequired: 5; Provided: 0
+[09Oct2025 20:45:09.191] [Render thread/WARN] [Apotheosis : Adventure/]: Insufficient number of affixes to satisfy the loot rules (ignoring backup rules) of rarity apotheotic_additions:esoteric for category swordRequired: 5; Provided: 4
+[09Oct2025 20:45:09.191] [Render thread/WARN] [Apotheosis : Adventure/]: Insufficient number of affixes to satisfy the loot rules (ignoring backup rules) of rarity apotheotic_additions:esoteric for category apotheosis_modern_ragnarok:bolt_actionRequired: 5; Provided: 4
+[09Oct2025 20:45:09.192] [Render thread/WARN] [Apotheosis : Adventure/]: Insufficient number of affixes to satisfy the loot rules (ignoring backup rules) of rarity apotheotic_additions:esoteric for category apotheosis_modern_ragnarok:full_autoRequired: 5; Provided: 4
+[09Oct2025 20:45:09.192] [Render thread/WARN] [Apotheosis : Adventure/]: Insufficient number of affixes to satisfy the loot rules (ignoring backup rules) of rarity apotheotic_additions:esoteric for category apotheosis_modern_ragnarok:semi_autoRequired: 5; Provided: 4
+[09Oct2025 20:45:09.192] [Render thread/WARN] [Apotheosis : Adventure/]: Insufficient number of affixes to satisfy the loot rules (ignoring backup rules) of rarity apotheotic_additions:esoteric for category helmetRequired: 5; Provided: 4
+[09Oct2025 20:45:09.192] [Render thread/WARN] [Apotheosis : Adventure/]: Insufficient number of affixes to satisfy the loot rules (ignoring backup rules) of rarity apotheotic_additions:esoteric for category chestplateRequired: 5; Provided: 4
+[09Oct2025 20:45:09.192] [Render thread/WARN] [Apotheosis : Adventure/]: Insufficient number of affixes to satisfy the loot rules (ignoring backup rules) of rarity apotheotic_additions:esoteric for category leggingsRequired: 5; Provided: 4
+[09Oct2025 20:45:09.192] [Render thread/WARN] [Apotheosis : Adventure/]: Insufficient number of affixes to satisfy the loot rules (ignoring backup rules) of rarity apotheotic_additions:esoteric for category bootsRequired: 5; Provided: 4
+[09Oct2025 20:45:09.192] [Render thread/WARN] [Apotheosis : Adventure/]: Insufficient number of affixes to satisfy the loot rules (ignoring backup rules) of rarity apotheotic_additions:esoteric for category shieldRequired: 5; Provided: 4
+[09Oct2025 20:45:09.193] [Render thread/WARN] [Apotheosis : Adventure/]: Insufficient number of affixes to satisfy the loot rules (ignoring backup rules) of rarity apotheotic_additions:esoteric for category curios:spellbookRequired: 5; Provided: 0
+[09Oct2025 20:45:09.193] [Render thread/WARN] [Apotheosis : Adventure/]: Insufficient number of affixes to satisfy the loot rules (ignoring backup rules) of rarity apotheotic_additions:esoteric for category apotheosis_modern_ragnarok:shotgunRequired: 5; Provided: 4
+[09Oct2025 20:45:09.193] [Render thread/WARN] [Apotheosis : Adventure/]: Insufficient number of affixes to satisfy the loot rules (ignoring backup rules) of rarity apotheotic_additions:esoteric for category apotheosis_modern_ragnarok:full_autoRequired: 5; Provided: 4
+[09Oct2025 20:45:09.193] [Render thread/WARN] [Apotheosis : Adventure/]: Insufficient number of affixes to satisfy the loot rules (ignoring backup rules) of rarity apotheotic_additions:esoteric for category apotheosis_modern_ragnarok:semi_autoRequired: 5; Provided: 4
+[09Oct2025 20:45:09.193] [Render thread/WARN] [Apotheosis : Adventure/]: Insufficient number of affixes to satisfy the loot rules (ignoring backup rules) of rarity apotheosis:ancient for category bootsRequired: 4; Provided: 2
+[09Oct2025 20:45:09.193] [Render thread/WARN] [Apotheosis : Adventure/]: Insufficient number of affixes to satisfy the loot rules (ignoring backup rules) of rarity apotheosis:ancient for category curios:spellbookRequired: 4; Provided: 0
+[09Oct2025 20:45:09.217] [Render thread/INFO] [Apotheosis : Adventure/]: Registered 42 gems.
+[09Oct2025 20:45:09.239] [Render thread/INFO] [Apotheosis : Adventure/]: Registered 109 affix_loot_entries.
+[09Oct2025 20:45:09.249] [Render thread/INFO] [Apotheosis : Adventure/]: Registered 27 bosses.
+[09Oct2025 20:45:09.270] [Render thread/INFO] [Apotheosis : Adventure/]: Registered 11 rogue_spawners.
+[09Oct2025 20:45:09.277] [Render thread/INFO] [Apotheosis : Adventure/]: Registered 13 minibosses.
+[09Oct2025 20:45:09.287] [Render thread/INFO] [Apotheosis : Village/]: Registered 35 wanderer_trades.
+[09Oct2025 20:45:09.305] [Render thread/INFO] [mod.chloeprime.apotheosismodernragnarok.common.gem.framework.GemInjectionRegistry/]: Registered 15 amr_gem_injections.
+[09Oct2025 20:45:09.760] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.20.1
+[09Oct2025 20:45:09.760] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[09Oct2025 20:45:09.952] [Server thread/INFO] [net.minecraftforge.coremod.CoreMod.apotheosis/COREMODLOG]: Replaced 1 calls to Enchantment#getMaxLevel() in net/minecraft/world/entity/npc/VillagerTrades$EnchantBookForEmeralds
+[09Oct2025 20:45:09.952] [Server thread/INFO] [net.minecraftforge.coremod.CoreMod.apotheosis/COREMODLOG]: Replaced 1 calls to Enchantment#isTreasureOnly() in net/minecraft/world/entity/npc/VillagerTrades$EnchantBookForEmeralds
+[09Oct2025 20:45:09.952] [Server thread/INFO] [net.minecraftforge.coremod.CoreMod.apotheosis/COREMODLOG]: Replaced 1 calls to Enchantment#isTradeable() in net/minecraft/world/entity/npc/VillagerTrades$EnchantBookForEmeralds
+[09Oct2025 20:45:10.998] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[09Oct2025 20:45:13.947] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[09Oct2025 20:45:13.967] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[09Oct2025 20:45:13.987] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[09Oct2025 20:45:13.987] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[09Oct2025 20:45:14.005] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[09Oct2025 20:45:14.005] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[09Oct2025 20:45:14.023] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[09Oct2025 20:45:14.524] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 4%
+[09Oct2025 20:45:15.014] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 83%
+[09Oct2025 20:45:15.113] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
+[09Oct2025 20:45:15.113] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: HELLO from server starting
+[09Oct2025 20:45:15.123] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 4111 ms
+[09Oct2025 20:45:15.237] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 12, from 10
+[09Oct2025 20:45:15.239] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 12, from 0
+[09Oct2025 20:45:15.385] [Render thread/WARN] [io.netty.util.internal.SystemPropertyUtil/]: Unable to parse the boolean system property 'java.net.preferIPv6Addresses':system - using the default value: false
+[09Oct2025 20:45:16.745] [Netty Local Client IO #0/INFO] [net.minecraftforge.network.NetworkHooks/]: Connected to a modded server.
+[09Oct2025 20:45:16.793] [Netty Local Client IO #0/WARN] [mixin/]: @Inject(@At("INVOKE")) Shift.BY=5 on attributeslib.mixins.json:client.ClientPacketListenerMixin::handler$zib000$apoth_postAttrChangedEvent exceeds the maximum allowed value: 0. Increase the value of maxShiftBy to suppress this warning.
+[09Oct2025 20:45:16.964] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:a6fa651a] logged in with entity id 113 at (-91.78892978805726, 93.0, -482.55249994778524)
+[09Oct2025 20:45:17.202] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[09Oct2025 20:45:17.759] [Render thread/WARN] [tacz/]: Failed to parse data from network for ATTACHMENT_INDEX with id tacz:stock_moe
 com.google.gson.JsonParseException: there is no corresponding data file
 	at com.tacz.guns.resource.serialize.CommonAttachmentIndexSerializer.deserialize(CommonAttachmentIndexSerializer.java:19) ~[timeless-and-classics-zero-1028108-6654541_mapped_official_1.20.1.jar:1.1.6-hotfix]
 	at com.tacz.guns.resource.serialize.CommonAttachmentIndexSerializer.deserialize(CommonAttachmentIndexSerializer.java:12) ~[timeless-and-classics-zero-1028108-6654541_mapped_official_1.20.1.jar:1.1.6-hotfix]
@@ -608,7 +669,7 @@ com.google.gson.JsonParseException: there is no corresponding data file
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[09Oct2025 14:32:59.766] [Render thread/WARN] [tacz/]: playwrights_gunpack:rifle_assult_peacock_display display init read fail!
+[09Oct2025 20:45:17.814] [Render thread/WARN] [tacz/]: playwrights_gunpack:rifle_assult_peacock_display display init read fail!
 java.lang.IllegalArgumentException: animation not found: create_armorer:rifle_assult_crane
 	at com.tacz.guns.client.resource.GunDisplayInstance.checkAnimation(GunDisplayInstance.java:196) ~[timeless-and-classics-zero-1028108-6654541_mapped_official_1.20.1.jar:1.1.6-hotfix]
 	at com.tacz.guns.client.resource.GunDisplayInstance.<init>(GunDisplayInstance.java:83) ~[timeless-and-classics-zero-1028108-6654541_mapped_official_1.20.1.jar:1.1.6-hotfix]
@@ -644,7 +705,7 @@ java.lang.IllegalArgumentException: animation not found: create_armorer:rifle_as
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[09Oct2025 14:32:59.812] [Render thread/WARN] [tacz/]: playwrights_gunpack:shotgun_db_rock_display display init read fail!
+[09Oct2025 20:45:17.932] [Render thread/WARN] [tacz/]: playwrights_gunpack:shotgun_db_rock_display display init read fail!
 java.lang.IllegalArgumentException: animation not found: create_armorer:shotgun_db_stone
 	at com.tacz.guns.client.resource.GunDisplayInstance.checkAnimation(GunDisplayInstance.java:196) ~[timeless-and-classics-zero-1028108-6654541_mapped_official_1.20.1.jar:1.1.6-hotfix]
 	at com.tacz.guns.client.resource.GunDisplayInstance.<init>(GunDisplayInstance.java:83) ~[timeless-and-classics-zero-1028108-6654541_mapped_official_1.20.1.jar:1.1.6-hotfix]
@@ -680,7 +741,7 @@ java.lang.IllegalArgumentException: animation not found: create_armorer:shotgun_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[09Oct2025 14:32:59.843] [Render thread/WARN] [tacz/]: playwrights_gunpack:pistol_revolver_whirly_display display init read fail!
+[09Oct2025 20:45:17.962] [Render thread/WARN] [tacz/]: playwrights_gunpack:pistol_revolver_whirly_display display init read fail!
 java.lang.IllegalArgumentException: animation not found: create_armorer:pistol_revolver_torque
 	at com.tacz.guns.client.resource.GunDisplayInstance.checkAnimation(GunDisplayInstance.java:196) ~[timeless-and-classics-zero-1028108-6654541_mapped_official_1.20.1.jar:1.1.6-hotfix]
 	at com.tacz.guns.client.resource.GunDisplayInstance.<init>(GunDisplayInstance.java:83) ~[timeless-and-classics-zero-1028108-6654541_mapped_official_1.20.1.jar:1.1.6-hotfix]
@@ -716,7 +777,7 @@ java.lang.IllegalArgumentException: animation not found: create_armorer:pistol_r
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[09Oct2025 14:32:59.847] [Render thread/WARN] [tacz/]: playwrights_gunpack:sniper_semi_unclassical_display display init read fail!
+[09Oct2025 20:45:17.969] [Render thread/WARN] [tacz/]: playwrights_gunpack:sniper_semi_unclassical_display display init read fail!
 java.lang.IllegalArgumentException: there is no corresponding model file
 	at com.google.common.base.Preconditions.checkArgument(Preconditions.java:145) ~[guava-31.1-jre.jar:?]
 	at com.tacz.guns.client.resource.GunDisplayInstance.checkTextureAndModel(GunDisplayInstance.java:138) ~[timeless-and-classics-zero-1028108-6654541_mapped_official_1.20.1.jar:1.1.6-hotfix]
@@ -753,7 +814,7 @@ java.lang.IllegalArgumentException: there is no corresponding model file
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[09Oct2025 14:32:59.969] [Render thread/WARN] [tacz/]: playwrights_gunpack:sniper_semi_unclassical index file read fail!
+[09Oct2025 20:45:18.141] [Render thread/WARN] [tacz/]: playwrights_gunpack:sniper_semi_unclassical index file read fail!
 java.lang.IllegalArgumentException: there is no corresponding model file
 	at com.google.common.base.Preconditions.checkArgument(Preconditions.java:145) ~[guava-31.1-jre.jar:?]
 	at com.tacz.guns.client.resource.GunDisplayInstance.checkTextureAndModel(GunDisplayInstance.java:138) ~[timeless-and-classics-zero-1028108-6654541_mapped_official_1.20.1.jar:1.1.6-hotfix]
@@ -791,7 +852,7 @@ java.lang.IllegalArgumentException: there is no corresponding model file
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[09Oct2025 14:32:59.976] [Render thread/WARN] [tacz/]: playwrights_gunpack:rifle_assult_peacock index file read fail!
+[09Oct2025 20:45:18.153] [Render thread/WARN] [tacz/]: playwrights_gunpack:rifle_assult_peacock index file read fail!
 java.lang.IllegalArgumentException: animation not found: create_armorer:rifle_assult_crane
 	at com.tacz.guns.client.resource.GunDisplayInstance.checkAnimation(GunDisplayInstance.java:196) ~[timeless-and-classics-zero-1028108-6654541_mapped_official_1.20.1.jar:1.1.6-hotfix]
 	at com.tacz.guns.client.resource.GunDisplayInstance.<init>(GunDisplayInstance.java:83) ~[timeless-and-classics-zero-1028108-6654541_mapped_official_1.20.1.jar:1.1.6-hotfix]
@@ -828,7 +889,7 @@ java.lang.IllegalArgumentException: animation not found: create_armorer:rifle_as
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[09Oct2025 14:32:59.979] [Render thread/WARN] [tacz/]: playwrights_gunpack:shotgun_db_rock index file read fail!
+[09Oct2025 20:45:18.157] [Render thread/WARN] [tacz/]: playwrights_gunpack:shotgun_db_rock index file read fail!
 java.lang.IllegalArgumentException: animation not found: create_armorer:shotgun_db_stone
 	at com.tacz.guns.client.resource.GunDisplayInstance.checkAnimation(GunDisplayInstance.java:196) ~[timeless-and-classics-zero-1028108-6654541_mapped_official_1.20.1.jar:1.1.6-hotfix]
 	at com.tacz.guns.client.resource.GunDisplayInstance.<init>(GunDisplayInstance.java:83) ~[timeless-and-classics-zero-1028108-6654541_mapped_official_1.20.1.jar:1.1.6-hotfix]
@@ -865,7 +926,7 @@ java.lang.IllegalArgumentException: animation not found: create_armorer:shotgun_
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[09Oct2025 14:32:59.980] [Render thread/WARN] [tacz/]: playwrights_gunpack:pistol_revolver_whirly index file read fail!
+[09Oct2025 20:45:18.158] [Render thread/WARN] [tacz/]: playwrights_gunpack:pistol_revolver_whirly index file read fail!
 java.lang.IllegalArgumentException: animation not found: create_armorer:pistol_revolver_torque
 	at com.tacz.guns.client.resource.GunDisplayInstance.checkAnimation(GunDisplayInstance.java:196) ~[timeless-and-classics-zero-1028108-6654541_mapped_official_1.20.1.jar:1.1.6-hotfix]
 	at com.tacz.guns.client.resource.GunDisplayInstance.<init>(GunDisplayInstance.java:83) ~[timeless-and-classics-zero-1028108-6654541_mapped_official_1.20.1.jar:1.1.6-hotfix]
@@ -902,74 +963,113 @@ java.lang.IllegalArgumentException: animation not found: create_armorer:pistol_r
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[09Oct2025 14:33:00.016] [Render thread/INFO] [placebo/]: Starting sync for enchanting_stats
-[09Oct2025 14:33:00.018] [Render thread/INFO] [placebo/]: Starting sync for rarities
-[09Oct2025 14:33:00.018] [Render thread/INFO] [placebo/]: Starting sync for affixes
-[09Oct2025 14:33:00.043] [Render thread/INFO] [placebo/]: Starting sync for gems
-[09Oct2025 14:33:00.056] [Render thread/INFO] [placebo/]: Starting sync for amr_gem_injections
-[09Oct2025 14:33:00.063] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: apotheosis:fletching/apotheosis:fletching/arrow
-[09Oct2025 14:33:00.068] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: apotheosis:fletching/apotheosis:fletching/obsidian_arrow
-[09Oct2025 14:33:00.069] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: apotheosis:fletching/apotheosis:fletching/explosive_arrow
-[09Oct2025 14:33:00.070] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: apotheosis:fletching/apotheosis:fletching/iron_mining_arrow
-[09Oct2025 14:33:00.070] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: apotheosis:fletching/apotheosis:fletching/spectral_arrow
-[09Oct2025 14:33:00.073] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: apotheosis:fletching/apotheosis:fletching/broadhead_arrow
-[09Oct2025 14:33:00.075] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: apotheosis:fletching/apotheosis:fletching/diamond_mining_arrow
-[09Oct2025 14:33:01.420] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 223 advancements
-[09Oct2025 14:33:02.518] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[09Oct2025 14:33:02.663] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[09Oct2025 14:33:07.313] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[09Oct2025 14:33:07.314] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[09Oct2025 14:33:07.354] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 5812ms or 116 ticks behind
-[09Oct2025 14:33:37.833] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:stock_carbon_bone_c5
-[09Oct2025 14:33:37.835] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:stock_carbon_bone_c5
-[09Oct2025 14:33:37.955] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:stock_carbon_bone_c5
-[09Oct2025 14:33:37.956] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:stock_carbon_bone_c5
-[09Oct2025 14:33:37.962] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: [Damage] Ghost of Captain Cornelia took 9.0 damage | type=irons_spellbooks:lightning_magic | direct=bullet | attacker=player
-[09Oct2025 14:33:37.987] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:stock_carbon_bone_c5
-[09Oct2025 14:33:37.987] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:stock_carbon_bone_c5
-[09Oct2025 14:33:38.780] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:stock_carbon_bone_c5
-[09Oct2025 14:33:38.780] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:stock_carbon_bone_c5
-[09Oct2025 14:33:38.946] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:stock_carbon_bone_c5
-[09Oct2025 14:33:38.946] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:stock_carbon_bone_c5
-[09Oct2025 14:33:39.149] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:stock_carbon_bone_c5
-[09Oct2025 14:33:39.150] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:stock_carbon_bone_c5
-[09Oct2025 14:33:39.213] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:stock_carbon_bone_c5
-[09Oct2025 14:33:39.214] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:stock_carbon_bone_c5
-[09Oct2025 14:33:39.253] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:stock_carbon_bone_c5
-[09Oct2025 14:33:39.254] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:stock_carbon_bone_c5
-[09Oct2025 14:33:39.254] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: SHOOT HURT
-[09Oct2025 14:33:39.260] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: [Damage] Ghost of Captain Cornelia took 9.0 damage | type=irons_spellbooks:lightning_magic | direct=bullet | attacker=player
-[09Oct2025 14:33:39.260] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:stock_carbon_bone_c5
-[09Oct2025 14:33:39.260] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:stock_carbon_bone_c5
-[09Oct2025 14:33:39.260] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: SHOOT HURT
-[09Oct2025 14:33:39.332] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: [Damage] Ghost of Captain Cornelia took 7.0 damage | type=irons_spellbooks:lightning_magic | direct=chain_lightning | attacker=player
-[09Oct2025 14:33:39.337] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:stock_carbon_bone_c5
-[09Oct2025 14:33:39.337] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:stock_carbon_bone_c5
-[09Oct2025 14:33:39.431] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:stock_carbon_bone_c5
-[09Oct2025 14:33:39.431] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:stock_carbon_bone_c5
-[09Oct2025 14:33:39.593] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:stock_carbon_bone_c5
-[09Oct2025 14:33:39.594] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:stock_carbon_bone_c5
-[09Oct2025 14:33:39.627] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:stock_carbon_bone_c5
-[09Oct2025 14:33:39.627] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:stock_carbon_bone_c5
-[09Oct2025 14:33:39.731] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:stock_carbon_bone_c5
-[09Oct2025 14:33:39.731] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:stock_carbon_bone_c5
-[09Oct2025 14:33:39.835] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:stock_carbon_bone_c5
-[09Oct2025 14:33:39.836] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:stock_carbon_bone_c5
-[09Oct2025 14:33:39.958] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:stock_carbon_bone_c5
-[09Oct2025 14:33:39.958] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:stock_carbon_bone_c5
-[09Oct2025 14:33:40.083] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:stock_carbon_bone_c5
-[09Oct2025 14:33:40.083] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:stock_carbon_bone_c5
-[09Oct2025 14:33:40.218] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:stock_carbon_bone_c5
-[09Oct2025 14:33:40.218] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:stock_carbon_bone_c5
-[09Oct2025 14:33:40.262] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:stock_carbon_bone_c5
-[09Oct2025 14:33:40.262] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:stock_carbon_bone_c5
-[09Oct2025 14:33:40.373] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:stock_carbon_bone_c5
-[09Oct2025 14:33:40.373] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:stock_carbon_bone_c5
-[09Oct2025 14:33:41.041] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[09Oct2025 14:33:41.051] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[09Oct2025 14:33:41.069] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[09Oct2025 14:33:41.070] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[09Oct2025 14:34:13.268] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:stock_carbon_bone_c5
-[09Oct2025 14:34:13.269] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:stock_carbon_bone_c5
-[09Oct2025 14:34:13.390] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:stock_carbon_bone_c5
-[09Oct2025 14:34:13.390] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:stock_carbon_bone_c5
+[09Oct2025 20:45:18.202] [Render thread/INFO] [placebo/]: Starting sync for enchanting_stats
+[09Oct2025 20:45:18.205] [Render thread/INFO] [placebo/]: Starting sync for rarities
+[09Oct2025 20:45:18.205] [Render thread/INFO] [placebo/]: Starting sync for affixes
+[09Oct2025 20:45:18.246] [Render thread/INFO] [placebo/]: Starting sync for gems
+[09Oct2025 20:45:18.259] [Render thread/INFO] [placebo/]: Starting sync for amr_gem_injections
+[09Oct2025 20:45:18.269] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: apotheosis:fletching/apotheosis:fletching/diamond_mining_arrow
+[09Oct2025 20:45:18.270] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: apotheosis:fletching/apotheosis:fletching/explosive_arrow
+[09Oct2025 20:45:18.275] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: apotheosis:fletching/apotheosis:fletching/arrow
+[09Oct2025 20:45:18.278] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: apotheosis:fletching/apotheosis:fletching/broadhead_arrow
+[09Oct2025 20:45:18.278] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: apotheosis:fletching/apotheosis:fletching/iron_mining_arrow
+[09Oct2025 20:45:18.280] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: apotheosis:fletching/apotheosis:fletching/spectral_arrow
+[09Oct2025 20:45:18.281] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: apotheosis:fletching/apotheosis:fletching/obsidian_arrow
+[09Oct2025 20:45:18.914] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 230 advancements
+[09Oct2025 20:45:24.026] [Render thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:empty
+[09Oct2025 20:45:24.028] [Render thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:empty
+[09Oct2025 20:45:24.029] [Render thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:empty
+[09Oct2025 20:45:24.029] [Render thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:empty
+[09Oct2025 20:45:24.029] [Render thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:empty
+[09Oct2025 20:45:24.029] [Render thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:empty
+[09Oct2025 20:45:24.030] [Render thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:empty
+[09Oct2025 20:45:24.030] [Render thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:empty
+[09Oct2025 20:45:24.030] [Render thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:empty
+[09Oct2025 20:45:24.031] [Render thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:empty
+[09Oct2025 20:45:24.031] [Render thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:empty
+[09Oct2025 20:45:24.031] [Render thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:empty
+[09Oct2025 20:45:24.031] [Render thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:empty
+[09Oct2025 20:45:24.031] [Render thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:empty
+[09Oct2025 20:45:24.032] [Render thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:empty
+[09Oct2025 20:45:24.032] [Render thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:empty
+[09Oct2025 20:45:24.032] [Render thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:empty
+[09Oct2025 20:45:24.032] [Render thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:empty
+[09Oct2025 20:45:24.033] [Render thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:empty
+[09Oct2025 20:45:24.033] [Render thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:empty
+[09Oct2025 20:45:24.033] [Render thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:empty
+[09Oct2025 20:45:24.033] [Render thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:empty
+[09Oct2025 20:45:24.034] [Render thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:empty
+[09Oct2025 20:45:24.034] [Render thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:empty
+[09Oct2025 20:45:24.034] [Render thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:empty
+[09Oct2025 20:45:24.034] [Render thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:empty
+[09Oct2025 20:45:24.034] [Render thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:empty
+[09Oct2025 20:45:24.035] [Render thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:empty
+[09Oct2025 20:45:24.035] [Render thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:empty
+[09Oct2025 20:45:24.035] [Render thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:empty
+[09Oct2025 20:45:24.035] [Render thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:empty
+[09Oct2025 20:45:24.036] [Render thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:empty
+[09Oct2025 20:45:24.036] [Render thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:empty
+[09Oct2025 20:45:24.036] [Render thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:empty
+[09Oct2025 20:45:24.036] [Render thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:empty
+[09Oct2025 20:45:24.036] [Render thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:empty
+[09Oct2025 20:45:24.037] [Render thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:empty
+[09Oct2025 20:45:24.037] [Render thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:empty
+[09Oct2025 20:45:24.037] [Render thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:empty
+[09Oct2025 20:45:24.038] [Render thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:empty
+[09Oct2025 20:45:24.038] [Render thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:empty
+[09Oct2025 20:45:24.038] [Render thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:empty
+[09Oct2025 20:45:24.038] [Render thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:empty
+[09Oct2025 20:45:24.039] [Render thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:empty
+[09Oct2025 20:45:24.039] [Render thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:empty
+[09Oct2025 20:45:24.039] [Render thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:empty
+[09Oct2025 20:45:24.039] [Render thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:empty
+[09Oct2025 20:46:06.670] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: [Damage] Glow Squid took 9.0 damage | type=minecraft:fall | direct=null | attacker=null
+[09Oct2025 20:46:21.618] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: [Damage] Glow Squid took 2.0 damage | type=minecraft:drown | direct=null | attacker=null
+[09Oct2025 20:46:24.213] [Render thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:stock_carbon_bone_c5
+[09Oct2025 20:46:24.238] [Render thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:stock_carbon_bone_c5
+[09Oct2025 20:46:24.254] [Render thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:stock_carbon_bone_c5
+[09Oct2025 20:46:24.270] [Render thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:stock_carbon_bone_c5
+[09Oct2025 20:46:24.285] [Render thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:stock_carbon_bone_c5
+[09Oct2025 20:46:24.301] [Render thread/INFO] [net.playwright.magitacz.MagitaczMod/]: tacz:stock_carbon_bone_c5
+[09Oct2025 20:48:12.468] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: [Damage] Zombie took 1.0 damage | type=minecraft:on_fire | direct=null | attacker=null
+[09Oct2025 20:48:13.318] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: [Damage] Zombie took 1.0 damage | type=minecraft:on_fire | direct=null | attacker=null
+[09Oct2025 20:48:13.817] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: [Damage] Zombie took 1.0 damage | type=minecraft:on_fire | direct=null | attacker=null
+[09Oct2025 20:48:14.818] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: [Damage] Zombie took 1.0 damage | type=minecraft:on_fire | direct=null | attacker=null
+[09Oct2025 20:48:15.817] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: [Damage] Zombie took 1.0 damage | type=minecraft:on_fire | direct=null | attacker=null
+[09Oct2025 20:48:16.917] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: [Damage] Zombie took 1.0 damage | type=minecraft:on_fire | direct=null | attacker=null
+[09Oct2025 20:48:17.717] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: [Damage] Zombie took 1.0 damage | type=minecraft:on_fire | direct=null | attacker=null
+[09Oct2025 20:48:18.717] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: [Damage] Zombie took 1.0 damage | type=minecraft:on_fire | direct=null | attacker=null
+[09Oct2025 20:48:19.717] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: [Damage] Zombie took 1.0 damage | type=minecraft:on_fire | direct=null | attacker=null
+[09Oct2025 20:48:20.718] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: [Damage] Zombie took 1.0 damage | type=minecraft:on_fire | direct=null | attacker=null
+[09Oct2025 20:48:21.717] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: [Damage] Zombie took 1.0 damage | type=minecraft:on_fire | direct=null | attacker=null
+[09Oct2025 20:48:22.717] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: [Damage] Zombie took 1.0 damage | type=minecraft:on_fire | direct=null | attacker=null
+[09Oct2025 20:48:23.717] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: [Damage] Zombie took 1.0 damage | type=minecraft:on_fire | direct=null | attacker=null
+[09Oct2025 20:48:24.717] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: [Damage] Zombie took 1.0 damage | type=minecraft:on_fire | direct=null | attacker=null
+[09Oct2025 20:48:36.468] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: [Damage] Glow Squid took 2.0 damage | type=minecraft:drown | direct=null | attacker=null
+[09Oct2025 20:48:37.467] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: [Damage] Glow Squid took 2.0 damage | type=minecraft:drown | direct=null | attacker=null
+[09Oct2025 20:48:38.468] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: [Damage] Glow Squid took 2.0 damage | type=minecraft:drown | direct=null | attacker=null
+[09Oct2025 20:48:39.466] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: [Damage] Glow Squid took 2.0 damage | type=minecraft:drown | direct=null | attacker=null
+[09Oct2025 20:48:40.467] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: [Damage] Glow Squid took 2.0 damage | type=minecraft:drown | direct=null | attacker=null
+[09Oct2025 20:48:45.418] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: [Damage] Glow Squid took 2.0 damage | type=minecraft:drown | direct=null | attacker=null
+[09Oct2025 20:48:46.417] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: [Damage] Glow Squid took 2.0 damage | type=minecraft:drown | direct=null | attacker=null
+[09Oct2025 20:48:47.419] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: [Damage] Glow Squid took 2.0 damage | type=minecraft:drown | direct=null | attacker=null
+[09Oct2025 20:48:48.418] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: [Damage] Glow Squid took 2.0 damage | type=minecraft:drown | direct=null | attacker=null
+[09Oct2025 20:48:49.418] [Server thread/INFO] [net.playwright.magitacz.MagitaczMod/]: [Damage] Glow Squid took 2.0 damage | type=minecraft:drown | direct=null | attacker=null
+[09Oct2025 20:48:51.314] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[09Oct2025 20:48:51.337] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[09Oct2025 20:48:51.356] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[09Oct2025 20:48:51.358] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[09Oct2025 20:48:53.375] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
+[09Oct2025 20:48:53.375] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[09Oct2025 20:48:53.388] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Stopping singleplayer server as player logged out
+[09Oct2025 20:48:53.443] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[09Oct2025 20:48:53.444] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[09Oct2025 20:48:53.444] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[09Oct2025 20:48:53.616] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[09Oct2025 20:48:53.706] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[09Oct2025 20:48:53.708] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[09Oct2025 20:48:53.730] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (New World): All chunks are saved
+[09Oct2025 20:48:53.730] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[09Oct2025 20:48:53.730] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[09Oct2025 20:48:53.730] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[09Oct2025 20:48:54.790] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
