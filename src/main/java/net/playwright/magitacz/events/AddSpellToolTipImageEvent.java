@@ -6,6 +6,8 @@ package net.playwright.magitacz.events;
 import com.tacz.guns.api.item.attachment.AttachmentType;
 import com.tacz.guns.item.ModernKineticGunItem;
 import com.tacz.guns.item.ModernKineticGunScriptAPI;
+import com.tacz.guns.resource.index.CommonGunIndex;
+import com.tacz.guns.resource.pojo.data.gun.GunData;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.event.entity.player.ItemTooltipEvent;
@@ -26,9 +28,14 @@ public class AddSpellToolTipImageEvent {
         ModernKineticGunScriptAPI api = new ModernKineticGunScriptAPI();
         api.setItemStack(gunItemStack);
 
-        if (gunItemStack.getItem() instanceof ModernKineticGunItem gunItem) {
+        CommonGunIndex gunIndex =  api.getGunIndex();
 
-            AttachedSpell attachedSpell = MagitaczDataUtils.getAttachmentSpellData(gunItemStack, api.getGunIndex().getGunData(),AttachmentType.STOCK);
+
+        if (gunItemStack.getItem() instanceof ModernKineticGunItem gunItem && gunIndex != null) {
+
+            GunData gunData = api.getGunIndex().getGunData();
+
+            AttachedSpell attachedSpell = MagitaczDataUtils.getAttachmentSpellData(gunItemStack, gunData,AttachmentType.STOCK);
 
             Component component = MagitaczTooltipUtils.getGunAttachmentTooltip(attachedSpell);
 
