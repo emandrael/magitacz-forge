@@ -5,6 +5,7 @@ import com.tacz.guns.api.event.common.GunFireEvent;
 import com.tacz.guns.api.item.attachment.AttachmentType;
 import com.tacz.guns.item.ModernKineticGunScriptAPI;
 import com.tacz.guns.resource.pojo.data.gun.GunData;
+import io.redspace.ironsspellbooks.IronsSpellbooks;
 import io.redspace.ironsspellbooks.api.magic.MagicData;
 import io.redspace.ironsspellbooks.capabilities.magic.TargetEntityCastData;
 import io.redspace.ironsspellbooks.api.spells.AbstractSpell;
@@ -66,8 +67,8 @@ public class CastSpellOnHurtEvent {
 
 
 
-        AbstractSpell spell  = MagitaczDataUtils.getSpellOnAttachment(gunItem, gunData, AttachmentType.STOCK);
-        AttachedSpell attachedSpell = MagitaczDataUtils.getAttachmentSpellData(gunItem, gunData, AttachmentType.STOCK);
+        AbstractSpell spell  = MagitaczDataUtils.getSpellOnAttachment(gunItem, gunData, AttachmentType.MUZZLE);
+        AttachedSpell attachedSpell = MagitaczDataUtils.getAttachmentSpellData(gunItem, gunData, AttachmentType.MUZZLE);
 
 
 
@@ -103,7 +104,7 @@ public class CastSpellOnHurtEvent {
                 boolean shouldTrigger = count % castPerX == 0;
 
                 if (shouldTrigger) {
-                    MagitaczMod.LOGGER.info("SHOOT HURT");
+                    MagitaczMod.LOGGER.info("Triggering On Hurt spell");
                     doSpellCastOnEntity( shooter, spell, world, spellLevel);
                 }
 
@@ -118,6 +119,7 @@ public class CastSpellOnHurtEvent {
                     chance = params.get("chance_to_cast");
                 }
                 if (random.nextDouble() < chance) {
+                    MagitaczMod.LOGGER.info("Triggering On Chance spell");
                     doSpellCastOnEntity( shooter, spell, world, spellLevel);
                 }
                 break;

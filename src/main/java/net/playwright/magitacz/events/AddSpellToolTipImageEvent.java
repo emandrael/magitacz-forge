@@ -35,7 +35,7 @@ public class AddSpellToolTipImageEvent {
 
             GunData gunData = api.getGunIndex().getGunData();
 
-            AttachedSpell attachedSpell = MagitaczDataUtils.getAttachmentSpellData(gunItemStack, gunData,AttachmentType.STOCK);
+            AttachedSpell attachedSpell = MagitaczDataUtils.getAttachmentSpellData(gunItemStack, gunData,AttachmentType.MUZZLE);
 
             Component component = MagitaczTooltipUtils.getGunAttachmentTooltip(attachedSpell);
 

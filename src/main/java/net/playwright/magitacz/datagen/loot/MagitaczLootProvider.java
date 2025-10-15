@@ -47,6 +47,7 @@ public class MagitaczLootProvider {
 
         }
 
+
         @Override
         public void generate(BiConsumer<ResourceLocation, LootTable.Builder> output) {
             output.accept(MagitaczMod.loc("kits/tacz/pistol/deagle"), this.gunAndAmmo("tacz:deagle", "tacz:50ae", 1, 18));
@@ -59,8 +60,6 @@ public class MagitaczLootProvider {
                                                     .setWeight(100000)
                                                     .setQuality(2)
                                                     .apply(ApothReforgeFunction.apothReforge(new ResourceLocation("apotheosis:mythic"))))));
-
-
         }
     }
 

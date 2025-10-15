@@ -4,6 +4,7 @@ import com.tacz.guns.api.event.common.GunFireEvent;
 import com.tacz.guns.api.item.attachment.AttachmentType;
 import com.tacz.guns.item.ModernKineticGunScriptAPI;
 import com.tacz.guns.resource.pojo.data.gun.GunData;
+import io.redspace.ironsspellbooks.api.magic.MagicData;
 import io.redspace.ironsspellbooks.api.spells.AbstractSpell;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.nbt.CompoundTag;
@@ -36,8 +37,8 @@ public class CastSpellOnShootEvent {
         api.setItemStack(gunItem);
         GunData gunData = api.getGunIndex().getGunData();
 
-        AbstractSpell spell  = MagitaczDataUtils.getSpellOnAttachment(gunItem, gunData, AttachmentType.STOCK);
-        AttachedSpell attachedSpell = MagitaczDataUtils.getAttachmentSpellData(gunItem, gunData, AttachmentType.STOCK);
+        AbstractSpell spell  = MagitaczDataUtils.getSpellOnAttachment(gunItem, gunData, AttachmentType.MUZZLE);
+        AttachedSpell attachedSpell = MagitaczDataUtils.getAttachmentSpellData(gunItem, gunData, AttachmentType.MUZZLE);
 
         if (spell == null || attachedSpell == null) return; // bad id
 
@@ -61,6 +62,7 @@ public class CastSpellOnShootEvent {
                 boolean shouldTrigger = count % castPerX == 0;
 
                 if (shouldTrigger) {
+                    MagitaczMod.LOGGER.info("Triggering On Shoot spell");
                     doSpellCastOnEntity(shooter, spell, world, attachedSpell.getSpellLevel());
                 }
 

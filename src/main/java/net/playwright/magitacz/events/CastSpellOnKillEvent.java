@@ -49,8 +49,8 @@ public class CastSpellOnKillEvent {
         api.setItemStack(gunItem);
         GunData gunData = api.getGunIndex().getGunData();
 
-        AbstractSpell spell  = MagitaczDataUtils.getSpellOnAttachment(gunItem, gunData, AttachmentType.STOCK);
-        AttachedSpell attachedSpell = MagitaczDataUtils.getAttachmentSpellData(gunItem, gunData, AttachmentType.STOCK);
+        AbstractSpell spell  = MagitaczDataUtils.getSpellOnAttachment(gunItem, gunData, AttachmentType.MUZZLE);
+        AttachedSpell attachedSpell = MagitaczDataUtils.getAttachmentSpellData(gunItem, gunData, AttachmentType.MUZZLE);
 
         if(attachedSpell == null) return;
 
@@ -77,8 +77,10 @@ public class CastSpellOnKillEvent {
         MagitaczMod.LOGGER.info("{} % {}",killCount, castPerX);
 
         if (shouldTrigger) {
+            MagitaczMod.LOGGER.info("Triggering On Kill spell");
             assert victim != null;
             shooterData.setAdditionalCastData(new TargetEntityCastData(victim));
+            assert spell != null;
             doSpellCastOnEntity( shooter, spell, world, spellLevel);
         }
 

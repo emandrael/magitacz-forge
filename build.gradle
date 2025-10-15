@@ -35,6 +35,15 @@ java {
 }
 
 minecraft {
+
+    runs {
+        client {
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+        }
+        // should be analogue for any other runs you have
+    }
+
     // The mappings can be changed at any time and must be in the following format.
     // Channel:   Version:
     // official   MCVersion             Official field/method names from Mojang mapping files
@@ -140,6 +149,22 @@ repositories {
     //     dir 'libs'
     // }
 
+    repositories {
+        maven {
+            url "https://maven.latvian.dev/releases"
+            content {
+                includeGroup "dev.latvian.mods"
+                includeGroup "dev.latvian.apps"
+            }
+        }
+
+        maven {
+            url 'https://jitpack.io'
+            content {
+                includeGroup "com.github.rtyley"
+            }
+        }
+    }
 
     maven {
         name = "Iron's Maven - Release"

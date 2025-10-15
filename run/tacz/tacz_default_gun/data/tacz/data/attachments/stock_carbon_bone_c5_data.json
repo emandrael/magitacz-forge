@@ -29,13 +29,5 @@
     "knockback": 0.4,
     // 前摇时长，单位：秒
     "prep": 0.1
-  },
-  "spell" : {
-    "spell_name" : "chain_lightning",
-    "spell_level" : 2,
-    "cast_type" : "ONHIT",
-    "cast_type_parameters" : {
-      "per_x" : 5
-    }
   }
 }
