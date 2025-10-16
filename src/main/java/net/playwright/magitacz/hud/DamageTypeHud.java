@@ -39,6 +39,8 @@ public class DamageTypeHud implements TESHudElement {
 
     @Override
     public int render(GuiGraphics guiGraphics, Minecraft minecraft, float partialTick, LivingEntity livingEntity, float opacity, boolean inWorldHud) {
+
+
         if (inWorldHud) {
             if (!TESAPI.getConfig().inWorldHudEntityIcons()) {
                 return 0;

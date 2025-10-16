@@ -66,7 +66,7 @@ public class MagitaczTooltipUtils {
 
                     }
 
-                    var onShootComponent = Component.translatable("hit").withStyle(ChatFormatting.DARK_GREEN).withStyle(ChatFormatting.UNDERLINE);
+                    var onShootComponent = Component.translatable("shot").withStyle(ChatFormatting.DARK_GREEN).withStyle(ChatFormatting.UNDERLINE);
                     return (Component.translatable("guns.magitacz:spell_attachment_on_shoot", spellNameComponent, attachedSpell.getCastTypeParameters().get("per_x").intValue(), onShootComponent));
 
                 }

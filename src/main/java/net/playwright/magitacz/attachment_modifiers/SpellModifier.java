@@ -67,11 +67,18 @@ public class SpellModifier implements IAttachmentModifier<AttachedSpell, Attache
         }
 
         public void initComponents() {
-            AttachedSpell attachedSpell = (AttachedSpell) this.getValue();
-            if (attachedSpell != null) {
-                this.resolveComponent(attachedSpell);
+            try {
+                AttachedSpell attachedSpell = (AttachedSpell) this.getValue();
+                if (attachedSpell != null) {
+                    this.resolveComponent(attachedSpell);
 
+                }
             }
+            catch (Exception e) {
+                MagitaczMod.LOGGER.info("wht hao",e.getMessage());
+            }
+
+
         }
 
         private void resolveComponent(AttachedSpell spell) {

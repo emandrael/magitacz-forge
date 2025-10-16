@@ -64,5 +64,10 @@ versionRange = "${minecraft_version_range}"
 ordering = "NONE"
 side = "BOTH"
 
-
+[[dependencies.magitacz]]
+modId="tslatentitystatus"
+mandatory=false
+versionRange="1.5.1"
+ordering="NONE"
+side="CLIENT"
 

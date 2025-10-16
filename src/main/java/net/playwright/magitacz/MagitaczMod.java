@@ -24,6 +24,7 @@ import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
@@ -39,12 +40,12 @@ import net.playwright.magitacz.blocks.MagitaczBlocks;
 import net.playwright.magitacz.enchantments.ModEnchantments;
 import net.playwright.magitacz.hud.DamageTypeHud;
 import net.playwright.magitacz.item.MagitaczItems;
-import net.tslat.tes.api.TESAPI;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(MagitaczMod.MODID)
 public class MagitaczMod {
+
 
     // Define mod id in a common place for everything to reference
     public static final String MODID = "magitacz";
@@ -68,6 +69,8 @@ public class MagitaczMod {
 
 
 
+
+
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
@@ -75,6 +78,7 @@ public class MagitaczMod {
         MinecraftForge.EVENT_BUS.register(this);
 
         ModEnchantments.register(modEventBus);
+
 
 
         // Register the item to a creative tab
@@ -92,8 +96,6 @@ public class MagitaczMod {
 
         ResourceLocation hudResource = new ResourceLocation("magitacz","textures/item/elementium.png");
 
-
-        TESAPI.addTESHudElement(hudResource, new DamageTypeHud());
 
         LOGGER.info("HELLO THERE:"+ AttachmentPropertyManager.getModifiers());
 
