@@ -69,15 +69,12 @@ public class CastSpellOnKillEvent {
             castPerX = params.get("per_x").intValue();
         }
 
-        MagitaczMod.LOGGER.info("Kill Count: {}", killCount);
 
 
         boolean shouldTrigger = killCount % castPerX == 0;
 
-        MagitaczMod.LOGGER.info("{} % {}",killCount, castPerX);
-
         if (shouldTrigger) {
-            MagitaczMod.LOGGER.info("Triggering On Kill spell");
+
             assert victim != null;
             shooterData.setAdditionalCastData(new TargetEntityCastData(victim));
             assert spell != null;

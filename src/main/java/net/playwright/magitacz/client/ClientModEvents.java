@@ -16,9 +16,6 @@ import static net.playwright.magitacz.MagitaczMod.MODID;
 public class ClientModEvents {
     @SubscribeEvent
     public static void onClientSetup(FMLClientSetupEvent event) {
-        MagitaczMod.LOGGER.info("HELLO FROM CLIENT SETUP");
-        MagitaczMod.LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
-
         if (ModList.get().isLoaded("tslatentitystatus")) {
             event.enqueueWork(() -> {
                 ResourceLocation hudId = new ResourceLocation(MagitaczMod.MODID, "damage_type_hud");

@@ -1,63 +1,65 @@
-[06Oct2025 15:42:43.373] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\Hell-\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.4.0, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, magitacz, --all, --output, C:\Projects\magitacz-forge\src\generated\resources, --existing, C:\Projects\magitacz-forge\src\main\resources]
-[06Oct2025 15:42:43.378] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.15 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
-[06Oct2025 15:42:43.530] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
-[06Oct2025 15:42:43.589] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/Hell-/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
-[06Oct2025 15:42:44.096] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Hell-\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.4.0\f0c0b352173d0a378cbdcec9cfc4ba65899a721\javafmllanguage-1.20.1-47.4.0.jar is missing mods.toml file
-[06Oct2025 15:42:44.100] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Hell-\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.4.0\e862740d8c84d08dbfedea412bef88fe42e727c5\lowcodelanguage-1.20.1-47.4.0.jar is missing mods.toml file
-[06Oct2025 15:42:44.104] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Hell-\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.4.0\5719b3a297a33f877ed5dde4cb4bd75c859096af\mclanguage-1.20.1-47.4.0.jar is missing mods.toml file
-[06Oct2025 15:42:44.108] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Hell-\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.4.0\235975dafa4309945b59c56b53f31dc5b65a6051\fmlcore-1.20.1-47.4.0.jar is missing mods.toml file
-[06Oct2025 15:42:44.701] [main/WARN] [net.minecraftforge.jarjar.selection.JarSelector/]: Attempted to select a dependency jar for JarJar which was passed in as source: gunsmithlib. Using Mod File: C:\Users\Hell-\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\gunsmith-lib-1264058\7049169_mapped_official_1.20.1\gunsmith-lib-1264058-7049169_mapped_official_1.20.1.jar
-[06Oct2025 15:42:44.701] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 7 dependencies adding them to mods collection
-[06Oct2025 15:42:47.492] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
-[06Oct2025 15:42:47.528] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\Hell-\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, magitacz, --all, --output, C:\Projects\magitacz-forge\src\generated\resources, --existing, C:\Projects\magitacz-forge\src\main\resources]
-[06Oct2025 15:42:47.826] [main/INFO] [mixin/]: Remapping refMap attributeslib.refmap.json using C:\Projects\magitacz-forge\build\createSrgToMcp\output.srg
-[06Oct2025 15:42:47.827] [main/INFO] [mixin/]: Remapping refMap tslatentitystatus.refmap.json using C:\Projects\magitacz-forge\build\createSrgToMcp\output.srg
-[06Oct2025 15:42:47.835] [main/INFO] [mixin/]: Remapping refMap moonlight-common-refmap.json using C:\Projects\magitacz-forge\build\createSrgToMcp\output.srg
-[06Oct2025 15:42:47.835] [main/INFO] [mixin/]: Remapping refMap moonlight-forge-refmap.json using C:\Projects\magitacz-forge\build\createSrgToMcp\output.srg
-[06Oct2025 15:42:47.836] [main/INFO] [mixin/]: Remapping refMap gunsmithlib.refmap.json using C:\Projects\magitacz-forge\build\createSrgToMcp\output.srg
-[06Oct2025 15:42:47.837] [main/INFO] [mixin/]: Remapping refMap apotheosis.refmap.json using C:\Projects\magitacz-forge\build\createSrgToMcp\output.srg
-[06Oct2025 15:42:47.838] [main/INFO] [mixin/]: Remapping refMap geckolib.refmap.json using C:\Projects\magitacz-forge\build\createSrgToMcp\output.srg
-[06Oct2025 15:42:47.840] [main/INFO] [mixin/]: Remapping refMap player-animation-lib-minecraft_common-refmap.json using C:\Projects\magitacz-forge\build\createSrgToMcp\output.srg
-[06Oct2025 15:42:47.841] [main/INFO] [mixin/]: Remapping refMap irons_spellbooks.refmap.json using C:\Projects\magitacz-forge\build\createSrgToMcp\output.srg
-[06Oct2025 15:42:47.842] [main/INFO] [mixin/]: Remapping refMap apotheosis_modern_ragnarok.refmap.json using C:\Projects\magitacz-forge\build\createSrgToMcp\output.srg
-[06Oct2025 15:42:47.843] [main/INFO] [mixin/]: Remapping refMap tacz.refmap.json using C:\Projects\magitacz-forge\build\createSrgToMcp\output.srg
-[06Oct2025 15:42:47.844] [main/INFO] [mixin/]: Remapping refMap caelus.refmap.json using C:\Projects\magitacz-forge\build\createSrgToMcp\output.srg
-[06Oct2025 15:42:47.845] [main/INFO] [mixin/]: Remapping refMap dummmmmmy-common-refmap.json using C:\Projects\magitacz-forge\build\createSrgToMcp\output.srg
-[06Oct2025 15:42:47.847] [main/INFO] [mixin/]: Remapping refMap curios.refmap.json using C:\Projects\magitacz-forge\build\createSrgToMcp\output.srg
-[06Oct2025 15:42:47.848] [main/INFO] [mixin/]: Remapping refMap placebo.refmap.json using C:\Projects\magitacz-forge\build\createSrgToMcp\output.srg
-[06Oct2025 15:42:48.091] [main/INFO] [net.minecraftforge.coremod.CoreMod.placebo/COREMODLOG]: Patching IForgeItemStack#getEnchantmentLevel
-[06Oct2025 15:42:48.207] [main/INFO] [net.minecraftforge.coremod.CoreMod.placebo/COREMODLOG]: Patching IForgeItemStack#getEnchantmentLevel
-[06Oct2025 15:42:48.799] [main/INFO] [net.minecraftforge.coremod.CoreMod.apotheosis/COREMODLOG]: Replaced 2 calls to Enchantment#getMaxLevel() in net/minecraft/world/inventory/AnvilMenu
-[06Oct2025 15:42:48.816] [main/WARN] [mixin/]: Error loading class: org/violetmoon/quark/content/tweaks/module/GoldToolsHaveFortuneModule (java.lang.ClassNotFoundException: org.violetmoon.quark.content.tweaks.module.GoldToolsHaveFortuneModule)
-[06Oct2025 15:42:48.819] [main/INFO] [net.minecraftforge.coremod.CoreMod.placebo/COREMODLOG]: Patching IForgeItemStack#getEnchantmentLevel
-[06Oct2025 15:42:48.820] [main/INFO] [net.minecraftforge.coremod.CoreMod.placebo/COREMODLOG]: Patching IForgeItemStack#getEnchantmentLevel
-[06Oct2025 15:42:48.828] [main/WARN] [mixin/]: Error loading class: com/hollingsworth/arsnouveau/common/items/SpellCrossbow (java.lang.ClassNotFoundException: com.hollingsworth.arsnouveau.common.items.SpellCrossbow)
-[06Oct2025 15:42:48.841] [main/WARN] [mixin/]: Error loading class: org/violetmoon/quark/content/client/tooltip/AttributeTooltips (java.lang.ClassNotFoundException: org.violetmoon.quark.content.client.tooltip.AttributeTooltips)
-[06Oct2025 15:42:49.615] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [magitacz]
-[06Oct2025 15:42:49.701] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0).
-[06Oct2025 15:42:51.268] [main/INFO] [net.minecraftforge.coremod.CoreMod.apotheosis/COREMODLOG]: Replaced 2 calls to Enchantment#getMaxLevel() in net/minecraft/world/item/CreativeModeTabs
-[06Oct2025 15:42:53.251] [main/INFO] [net.minecraftforge.coremod.CoreMod.placebo/COREMODLOG]: Patching IForgeItemStack#getEnchantmentLevel
-[06Oct2025 15:42:53.253] [main/INFO] [net.minecraftforge.coremod.CoreMod.placebo/COREMODLOG]: Patching IForgeItemStack#getEnchantmentLevel
-[06Oct2025 15:42:53.402] [main/INFO] [net.minecraftforge.coremod.CoreMod.apotheosis/COREMODLOG]: Replaced 2 calls to Enchantment#getMaxLevel() in net/minecraft/world/inventory/AnvilMenu
-[06Oct2025 15:42:56.394] [main/INFO] [net.minecraftforge.coremod.CoreMod.apotheosis/COREMODLOG]: Patching FishingHook#catchingFish
-[06Oct2025 15:42:56.882] [main/INFO] [net.minecraftforge.coremod.CoreMod.apotheosis/COREMODLOG]: Replaced 1 calls to Enchantment#getMaxLevel() in net/minecraft/world/level/storage/loot/functions/EnchantRandomlyFunction
-[06Oct2025 15:42:56.882] [main/INFO] [net.minecraftforge.coremod.CoreMod.apotheosis/COREMODLOG]: Replaced 1 calls to Enchantment#isDiscoverable() in net/minecraft/world/level/storage/loot/functions/EnchantRandomlyFunction
-[06Oct2025 15:42:58.535] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.4.0, for MC 1.20.1 with MCP 20230612.114412
-[06Oct2025 15:42:58.545] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.4.0 Initialized
-[06Oct2025 15:42:58.896] [modloading-worker-0/INFO] [mixin/]: BeforeConstant is searching for constants in method with descriptor (Lnet/minecraft/network/chat/Component;Z)V
-[06Oct2025 15:42:58.897] [modloading-worker-0/INFO] [mixin/]:   BeforeConstant found INTEGER constant: value = 0, intValue = null
-[06Oct2025 15:42:58.897] [modloading-worker-0/INFO] [mixin/]:     BeforeConstant found a matching constant TYPE at ordinal 0
-[06Oct2025 15:42:58.897] [modloading-worker-0/INFO] [mixin/]:       BeforeConstant found Insn [ICONST_0] 
-[06Oct2025 15:42:58.897] [modloading-worker-0/INFO] [mixin/]:   BeforeConstant found INTEGER constant: value = 60, intValue = null
-[06Oct2025 15:42:58.897] [modloading-worker-0/INFO] [mixin/]:     BeforeConstant found a matching constant TYPE at ordinal 1
-[06Oct2025 15:42:58.897] [modloading-worker-0/INFO] [mixin/]:       BeforeConstant found IntInsn 60
-[06Oct2025 15:42:59.086] [modloading-worker-0/INFO] [net.minecraftforge.coremod.CoreMod.attributeslib/COREMODLOG]: Patching EffectRenderingInventoryScreen#renderEffects
-[06Oct2025 15:42:59.220] [modloading-worker-0/WARN] [software.bernie.geckolib.GeckoLib/]: Minecraft.getInstance() was null, could not register reload listeners
-[06Oct2025 15:42:59.927] [modloading-worker-0/INFO] [net.playwright.magitacz.MagitaczMod/]: HELLO THERE:{ads=com.tacz.guns.resource.modifier.custom.AdsModifier@64746cad, ammo_speed=com.tacz.guns.resource.modifier.custom.AmmoSpeedModifier@3c31c2c7, armor_ignore=com.tacz.guns.resource.modifier.custom.ArmorIgnoreModifier@7804e11, damage=com.tacz.guns.resource.modifier.custom.DamageModifier@6fc8abb1, effective_range=com.tacz.guns.resource.modifier.custom.EffectiveRangeModifier@281ea3e1, explosion=com.tacz.guns.resource.modifier.custom.ExplosionModifier@1a0b7bdf, head_shot=com.tacz.guns.resource.modifier.custom.HeadShotModifier@1f7e4e49, head_shot=com.tacz.guns.resource.modifier.custom.HeadShotModifier@3541eb34, ignite=com.tacz.guns.resource.modifier.custom.IgniteModifier@689d47d6, ignite=com.tacz.guns.resource.modifier.custom.IgniteModifier@29090c99, inaccuracy=com.tacz.guns.resource.modifier.custom.InaccuracyModifier@446813f7, knockback=com.tacz.guns.resource.modifier.custom.KnockbackModifier@7e4a5805, pierce=com.tacz.guns.resource.modifier.custom.PierceModifier@7ceb13ed, recoil=com.tacz.guns.resource.modifier.custom.RecoilModifier@1d67a52d, rpm=com.tacz.guns.resource.modifier.custom.RpmModifier@1914fadd, silence=com.tacz.guns.resource.modifier.custom.SilenceModifier@3532138a, weight_modifier=com.tacz.guns.resource.modifier.custom.WeightModifier@11e21aba, movement_speed=com.tacz.guns.resource.modifier.custom.ExtraMovementModifier@318c8b66, spell=net.playwright.magitacz.attachment_modifiers.SpellModifier@f704d98}
-[06Oct2025 15:43:00.940] [main/INFO] [Moonlight/]: Initialized block sets in 16ms
-[06Oct2025 15:43:01.926] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Hell-/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.0_mapped_official_1.20.1/forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23191!/assets/.mcassetsroot' uses unexpected schema
-[06Oct2025 15:43:01.927] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Hell-/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.0_mapped_official_1.20.1/forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23191!/data/.mcassetsroot' uses unexpected schema
-[06Oct2025 15:43:02.249] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
-[06Oct2025 15:43:02.439] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 189 ms
-[06Oct2025 15:43:02.439] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 190 ms
-[06Oct2025 15:43:02.446] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 2, old count: 2, new count: 3, removed stale: 0, written: 0
+[24Oct2025 11:24:42.422] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, /Users/rai/.gradle/caches/forge_gradle/assets, --gameDir, ., --fml.forgeVersion, 47.4.0, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, magitacz, --all, --output, /Users/rai/Projects/magitacz-forge/src/generated/resources, --existing, /Users/rai/Projects/magitacz-forge/src/main/resources, --mixin.config, magitacz.mixins.json]
+[24Oct2025 11:24:42.434] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.14 by Eclipse Adoptium; OS Mac OS X arch aarch64 version 13.4
+[24Oct2025 11:24:42.700] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
+[24Oct2025 11:24:42.826] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/Users/rai/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23121!/ Service=ModLauncher Env=CLIENT
+[24Oct2025 11:24:43.653] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /Users/rai/.gradle/caches/modules-2/files-2.1/net.minecraftforge/javafmllanguage/1.20.1-47.4.0/f0c0b352173d0a378cbdcec9cfc4ba65899a721/javafmllanguage-1.20.1-47.4.0.jar is missing mods.toml file
+[24Oct2025 11:24:43.655] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /Users/rai/.gradle/caches/modules-2/files-2.1/net.minecraftforge/lowcodelanguage/1.20.1-47.4.0/e862740d8c84d08dbfedea412bef88fe42e727c5/lowcodelanguage-1.20.1-47.4.0.jar is missing mods.toml file
+[24Oct2025 11:24:43.689] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /Users/rai/.gradle/caches/modules-2/files-2.1/net.minecraftforge/mclanguage/1.20.1-47.4.0/5719b3a297a33f877ed5dde4cb4bd75c859096af/mclanguage-1.20.1-47.4.0.jar is missing mods.toml file
+[24Oct2025 11:24:43.698] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /Users/rai/.gradle/caches/modules-2/files-2.1/net.minecraftforge/fmlcore/1.20.1-47.4.0/235975dafa4309945b59c56b53f31dc5b65a6051/fmlcore-1.20.1-47.4.0.jar is missing mods.toml file
+[24Oct2025 11:24:44.772] [main/WARN] [net.minecraftforge.jarjar.selection.JarSelector/]: Attempted to select a dependency jar for JarJar which was passed in as source: gunsmithlib. Using Mod File: /Users/rai/.gradle/caches/forge_gradle/deobf_dependencies/curse/maven/gunsmith-lib-1264058/7049169_mapped_official_1.20.1/gunsmith-lib-1264058-7049169_mapped_official_1.20.1.jar
+[24Oct2025 11:24:44.773] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 7 dependencies adding them to mods collection
+[24Oct2025 11:24:48.136] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[24Oct2025 11:24:48.194] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, /Users/rai/.gradle/caches/forge_gradle/assets, --assetIndex, 5, --mod, magitacz, --all, --output, /Users/rai/Projects/magitacz-forge/src/generated/resources, --existing, /Users/rai/Projects/magitacz-forge/src/main/resources]
+[24Oct2025 11:24:48.240] [main/WARN] [mixin/]: Reference map 'magitacz.refmap.json' for magitacz.mixins.json could not be read. If this is a development environment you can ignore this message
+[24Oct2025 11:24:48.805] [main/INFO] [mixin/]: Remapping refMap tslatentitystatus.refmap.json using /Users/rai/Projects/magitacz-forge/build/createSrgToMcp/output.srg
+[24Oct2025 11:24:48.819] [main/INFO] [mixin/]: Remapping refMap moonlight-common-refmap.json using /Users/rai/Projects/magitacz-forge/build/createSrgToMcp/output.srg
+[24Oct2025 11:24:48.820] [main/INFO] [mixin/]: Remapping refMap moonlight-forge-refmap.json using /Users/rai/Projects/magitacz-forge/build/createSrgToMcp/output.srg
+[24Oct2025 11:24:48.822] [main/INFO] [mixin/]: Remapping refMap gunsmithlib.refmap.json using /Users/rai/Projects/magitacz-forge/build/createSrgToMcp/output.srg
+[24Oct2025 11:24:48.822] [main/INFO] [mixin/]: Remapping refMap geckolib.refmap.json using /Users/rai/Projects/magitacz-forge/build/createSrgToMcp/output.srg
+[24Oct2025 11:24:48.825] [main/INFO] [mixin/]: Remapping refMap player-animation-lib-minecraft_common-refmap.json using /Users/rai/Projects/magitacz-forge/build/createSrgToMcp/output.srg
+[24Oct2025 11:24:48.827] [main/INFO] [mixin/]: Remapping refMap tacz.refmap.json using /Users/rai/Projects/magitacz-forge/build/createSrgToMcp/output.srg
+[24Oct2025 11:24:48.831] [main/INFO] [mixin/]: Remapping refMap caelus.refmap.json using /Users/rai/Projects/magitacz-forge/build/createSrgToMcp/output.srg
+[24Oct2025 11:24:48.833] [main/INFO] [mixin/]: Remapping refMap obscure_api.refmap.json using /Users/rai/Projects/magitacz-forge/build/createSrgToMcp/output.srg
+[24Oct2025 11:24:48.834] [main/INFO] [mixin/]: Remapping refMap curios.refmap.json using /Users/rai/Projects/magitacz-forge/build/createSrgToMcp/output.srg
+[24Oct2025 11:24:48.835] [main/INFO] [mixin/]: Remapping refMap placebo.refmap.json using /Users/rai/Projects/magitacz-forge/build/createSrgToMcp/output.srg
+[24Oct2025 11:24:48.837] [main/INFO] [mixin/]: Remapping refMap attributeslib.refmap.json using /Users/rai/Projects/magitacz-forge/build/createSrgToMcp/output.srg
+[24Oct2025 11:24:48.839] [main/INFO] [mixin/]: Remapping refMap irons_spellbooks.refmap.json using /Users/rai/Projects/magitacz-forge/build/createSrgToMcp/output.srg
+[24Oct2025 11:24:48.841] [main/INFO] [mixin/]: Remapping refMap apotheosis.refmap.json using /Users/rai/Projects/magitacz-forge/build/createSrgToMcp/output.srg
+[24Oct2025 11:24:48.842] [main/INFO] [mixin/]: Remapping refMap apotheosis_modern_ragnarok.refmap.json using /Users/rai/Projects/magitacz-forge/build/createSrgToMcp/output.srg
+[24Oct2025 11:24:48.845] [main/INFO] [mixin/]: Remapping refMap dummmmmmy-common-refmap.json using /Users/rai/Projects/magitacz-forge/build/createSrgToMcp/output.srg
+[24Oct2025 11:24:48.849] [main/WARN] [mixin/]: Reference map 'Aquamirae.refmap.json' for aquamirae.mixins.json could not be read. If this is a development environment you can ignore this message
+[24Oct2025 11:24:49.977] [main/INFO] [net.minecraftforge.coremod.CoreMod.placebo/COREMODLOG]: Patching IForgeItemStack#getEnchantmentLevel
+[24Oct2025 11:24:49.999] [main/INFO] [net.minecraftforge.coremod.CoreMod.placebo/COREMODLOG]: Patching IForgeItemStack#getEnchantmentLevel
+[24Oct2025 11:24:50.358] [main/INFO] [net.minecraftforge.coremod.CoreMod.apotheosis/COREMODLOG]: Replaced 2 calls to Enchantment#getMaxLevel() in net/minecraft/world/inventory/AnvilMenu
+[24Oct2025 11:24:50.404] [main/WARN] [mixin/]: Error loading class: org/violetmoon/quark/content/tweaks/module/GoldToolsHaveFortuneModule (java.lang.ClassNotFoundException: org.violetmoon.quark.content.tweaks.module.GoldToolsHaveFortuneModule)
+[24Oct2025 11:24:50.406] [main/INFO] [net.minecraftforge.coremod.CoreMod.placebo/COREMODLOG]: Patching IForgeItemStack#getEnchantmentLevel
+[24Oct2025 11:24:50.408] [main/INFO] [net.minecraftforge.coremod.CoreMod.placebo/COREMODLOG]: Patching IForgeItemStack#getEnchantmentLevel
+[24Oct2025 11:24:50.419] [main/WARN] [mixin/]: Error loading class: com/hollingsworth/arsnouveau/common/items/SpellCrossbow (java.lang.ClassNotFoundException: com.hollingsworth.arsnouveau.common.items.SpellCrossbow)
+[24Oct2025 11:24:50.435] [main/WARN] [mixin/]: Error loading class: org/violetmoon/quark/content/client/tooltip/AttributeTooltips (java.lang.ClassNotFoundException: org.violetmoon.quark.content.client.tooltip.AttributeTooltips)
+[24Oct2025 11:24:50.968] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [magitacz]
+[24Oct2025 11:24:51.110] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0).
+[24Oct2025 11:24:52.978] [main/INFO] [net.minecraftforge.coremod.CoreMod.apotheosis/COREMODLOG]: Replaced 2 calls to Enchantment#getMaxLevel() in net/minecraft/world/item/CreativeModeTabs
+[24Oct2025 11:24:54.299] [main/INFO] [net.minecraftforge.coremod.CoreMod.placebo/COREMODLOG]: Patching IForgeItemStack#getEnchantmentLevel
+[24Oct2025 11:24:54.299] [main/INFO] [net.minecraftforge.coremod.CoreMod.placebo/COREMODLOG]: Patching IForgeItemStack#getEnchantmentLevel
+[24Oct2025 11:24:54.417] [main/INFO] [net.minecraftforge.coremod.CoreMod.apotheosis/COREMODLOG]: Replaced 2 calls to Enchantment#getMaxLevel() in net/minecraft/world/inventory/AnvilMenu
+[24Oct2025 11:24:57.113] [main/INFO] [net.minecraftforge.coremod.CoreMod.apotheosis/COREMODLOG]: Patching FishingHook#catchingFish
+[24Oct2025 11:24:57.526] [main/INFO] [net.minecraftforge.coremod.CoreMod.apotheosis/COREMODLOG]: Replaced 1 calls to Enchantment#getMaxLevel() in net/minecraft/world/level/storage/loot/functions/EnchantRandomlyFunction
+[24Oct2025 11:24:57.526] [main/INFO] [net.minecraftforge.coremod.CoreMod.apotheosis/COREMODLOG]: Replaced 1 calls to Enchantment#isDiscoverable() in net/minecraft/world/level/storage/loot/functions/EnchantRandomlyFunction
+[24Oct2025 11:24:59.058] [modloading-worker-0/INFO] [mixin/]: BeforeConstant is searching for constants in method with descriptor (Lnet/minecraft/network/chat/Component;Z)V
+[24Oct2025 11:24:59.058] [modloading-worker-0/INFO] [mixin/]:   BeforeConstant found INTEGER constant: value = 0, intValue = null
+[24Oct2025 11:24:59.058] [modloading-worker-0/INFO] [mixin/]:     BeforeConstant found a matching constant TYPE at ordinal 0
+[24Oct2025 11:24:59.058] [modloading-worker-0/INFO] [mixin/]:       BeforeConstant found Insn [ICONST_0] 
+[24Oct2025 11:24:59.058] [modloading-worker-0/INFO] [mixin/]:   BeforeConstant found INTEGER constant: value = 60, intValue = null
+[24Oct2025 11:24:59.058] [modloading-worker-0/INFO] [mixin/]:     BeforeConstant found a matching constant TYPE at ordinal 1
+[24Oct2025 11:24:59.059] [modloading-worker-0/INFO] [mixin/]:       BeforeConstant found IntInsn 60
+[24Oct2025 11:24:59.183] [modloading-worker-0/INFO] [net.minecraftforge.coremod.CoreMod.attributeslib/COREMODLOG]: Patching EffectRenderingInventoryScreen#renderEffects
+[24Oct2025 11:24:59.270] [modloading-worker-0/WARN] [software.bernie.geckolib.GeckoLib/]: Minecraft.getInstance() was null, could not register reload listeners
+[24Oct2025 11:24:59.475] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.4.0, for MC 1.20.1 with MCP 20230612.114412
+[24Oct2025 11:24:59.478] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.4.0 Initialized
+[24Oct2025 11:25:00.560] [main/INFO] [Moonlight/]: Initialized block sets in 10ms
+[24Oct2025 11:25:01.084] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/Users/rai/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.0_mapped_official_1.20.1/forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23184!/assets/.mcassetsroot' uses unexpected schema
+[24Oct2025 11:25:01.084] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/Users/rai/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.0_mapped_official_1.20.1/forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23184!/data/.mcassetsroot' uses unexpected schema
+[24Oct2025 11:25:01.275] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
+[24Oct2025 11:25:01.331] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 55 ms
+[24Oct2025 11:25:01.331] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 56 ms
+[24Oct2025 11:25:01.336] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 3, old count: 2, new count: 3, removed stale: 1, written: 2

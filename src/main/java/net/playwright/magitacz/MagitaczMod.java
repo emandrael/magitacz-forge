@@ -97,8 +97,6 @@ public class MagitaczMod {
         ResourceLocation hudResource = new ResourceLocation("magitacz","textures/item/elementium.png");
 
 
-        LOGGER.info("HELLO THERE:"+ AttachmentPropertyManager.getModifiers());
-
     }
 
 
@@ -111,14 +109,6 @@ public class MagitaczMod {
 
     private void commonSetup(final FMLCommonSetupEvent event) {
         // Some common setup code
-        LOGGER.info("HELLO FROM COMMON SETUP");
-        LOGGER.info("DIRT BLOCK >> {}", ForgeRegistries.BLOCKS.getKey(Blocks.DIRT));
-
-        if (Config.injectChestLoot) LOGGER.info("INJECTING DE SHITE");
-
-        LOGGER.info(Config.magicNumberIntroduction + Config.magicNumber);
-
-        Config.items.forEach((item) -> LOGGER.info("ITEM >> {}", item.toString()));
     }
 
     // Add the example block item to the building blocks tab
@@ -138,7 +128,7 @@ public class MagitaczMod {
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
         // Do something when the server starts
-        LOGGER.info("HELLO from server starting");
+
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
@@ -148,8 +138,6 @@ public class MagitaczMod {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
             // Some client setup code
-            LOGGER.info("HELLO FROM CLIENT SETUP");
-            LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
         }
     }
 }

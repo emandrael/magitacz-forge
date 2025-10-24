@@ -67,7 +67,6 @@ public class BulletDamageResistanceEvent {
 
                 float powerMultiplier = (float) max(1.0, calculatedMultiplier);
                 amount *= powerMultiplier;
-                MagitaczMod.LOGGER.info("Bullet power multiplier: {}, calculated {}", powerMultiplier, calculatedMultiplier);
             }
 
 
@@ -84,10 +83,6 @@ public class BulletDamageResistanceEvent {
             float newDamageAmount = (float) (amount * (1 - clamped));
 
             event.setAmount(newDamageAmount);
-
-
-
-
 
             }
 

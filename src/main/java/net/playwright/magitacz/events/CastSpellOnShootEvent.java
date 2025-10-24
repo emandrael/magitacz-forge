@@ -62,7 +62,6 @@ public class CastSpellOnShootEvent {
                 boolean shouldTrigger = count % castPerX == 0;
 
                 if (shouldTrigger) {
-                    MagitaczMod.LOGGER.info("Triggering On Shoot spell");
                     doSpellCastOnEntity(shooter, spell, world, attachedSpell.getSpellLevel());
                 }
 

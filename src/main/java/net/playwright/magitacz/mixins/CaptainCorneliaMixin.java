@@ -43,8 +43,6 @@ public abstract class CaptainCorneliaMixin extends Monster {
         if (!(target instanceof LivingEntity living)) return;
         Item held = this.getMainHandItem().getItem();
 
-        MagitaczMod.LOGGER.info("ITEM: ",held.getDescriptionId());
-
 
         // Whisper of the Abyss -> ender magic
         if (held instanceof WhisperOfTheAbyssItem) {

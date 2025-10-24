@@ -55,7 +55,6 @@ public class MagitaczDataUtils {
         else{
             ResourceLocation attachmentId = iGun.getAttachmentId(gunItem, attachmentType);
 
-            MagitaczMod.LOGGER.info(attachmentId.toString());
 
             if (!DefaultAssets.isEmptyAttachmentId(attachmentId)) {
                 AttachmentData attachmentData = (AttachmentData)gunData.getExclusiveAttachments().get(attachmentId);

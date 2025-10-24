@@ -1,6 +1,7 @@
 package net.playwright.magitacz.datagen.loot;
 
 import com.tacz.guns.init.ModItems;
+import mod.chloeprime.apotheosismodernragnarok.ApotheosisModernRagnarok;
 import mod.chloeprime.apotheosismodernragnarok.common.loot.ApothReforgeFunction;
 import mod.chloeprime.gunsmithlib.api.common.GunLootFunctions;
 import net.minecraft.data.PackOutput;
@@ -20,6 +21,8 @@ import net.minecraft.world.level.storage.loot.providers.number.NumberProvider;
 import net.playwright.magitacz.MagitaczMod;
 
 import javax.annotation.ParametersAreNonnullByDefault;
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.function.BiConsumer;
@@ -48,18 +51,42 @@ public class MagitaczLootProvider {
         }
 
 
+        private static final String pillagedStr = "_pillaged";
+        List<String> guns = List.of("pistol_revolver_whirly", "pistol_auto_stress", "rifle_assult_peacock", "shotgun_db_rock", "sniper_semi_unclassical");
+
+
         @Override
         public void generate(BiConsumer<ResourceLocation, LootTable.Builder> output) {
-            output.accept(MagitaczMod.loc("kits/tacz/pistol/deagle"), this.gunAndAmmo("tacz:deagle", "tacz:50ae", 1, 18));
+
+            for (String gun : guns) {
+                String pillagedGunId = MagitaczMod.DEFAULT_PACK_NAME + ":" + gun;
+                output.accept(
+                        MagitaczMod.loc("kits/tacz/pistol/" + gun + pillagedStr),
+                        this.gunAndAmmo(pillagedGunId, "create_armorer:rbapb", 3, 4)
+                );
+            }
+
+            for (String gun : guns) {
+                String pillagedGunId = MagitaczMod.DEFAULT_PACK_NAME + ":" + gun + pillagedStr;
+                output.accept(
+                        MagitaczMod.loc("kits/tacz/pistol/" + gun + pillagedStr),
+                        this.gunAndAmmo(pillagedGunId, "create_armorer:rbapb", 3, 4)
+                );
+            }
+
+
+            output.accept(MagitaczMod.loc("kits/tacz/pistol/whirly_pillaged"), this.gunAndAmmo("playwrights_gunpack:pistol_revolver_whirly_pillaged", "create_armorer:rbapb", 3, 4));
+
             output.accept(
-                    MagitaczMod.loc("injects/chest/middle_east"),
+                    MagitaczMod.loc("injects/chest/integrated_dungeons"),
                     LootTable.lootTable()
                             .withPool(
                                     LootPool.lootPool()
-                                            .add(LootTableReference.lootTableReference(MagitaczMod.loc("kits/tacz/pistol/deagle"))
-                                                    .setWeight(100000)
+                                            .add(LootTableReference.lootTableReference(MagitaczMod.loc("kits/tacz/pistol/whirly_pillaged"))
+                                                    .setWeight(100)
                                                     .setQuality(2)
                                                     .apply(ApothReforgeFunction.apothReforge(new ResourceLocation("apotheosis:mythic"))))));
+
         }
     }
 

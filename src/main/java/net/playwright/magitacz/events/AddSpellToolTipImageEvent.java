@@ -1,8 +1,6 @@
 package net.playwright.magitacz.events;
 
 
-
-
 import com.tacz.guns.api.item.attachment.AttachmentType;
 import com.tacz.guns.item.ModernKineticGunItem;
 import com.tacz.guns.item.ModernKineticGunScriptAPI;

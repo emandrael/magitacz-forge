@@ -12,33 +12,65 @@
   "item.magitacz.elementium_boots": "Elementium Boots",
 
   "affix.magitacz.elemental_bullet.desc": "Bullets deal %s%% bonus %s damage",
+  "affix.playwrights_guns_and_buns:armor/attribute/bulletproof" : "Bulletproof",
+  "affix.playwrights_guns_and_buns:armor/attribute/bulletproof.suffix" : "of the Impenetrable",
 
-  "affix.magitacz:elemental_bullets/elemental_bullet_fire" : "Blazing",
-  "affix.magitacz:elemental_bullets/elemental_bullet_fire.suffix" : "of Inferno",
+  "affix.playwrights_guns_and_buns/armor/attribute/bulletproof_multiply" : "Roundsnapper",
+  "affix.playwrights_guns_and_buns/armor/attribute/bulletproof_multiply.suffix" : "of the Kevlar",
 
-  "affix.magitacz:elemental_bullets/elemental_bullet_ice" : "Frosted",
-  "affix.magitacz:elemental_bullets/elemental_bullet_ice.suffix" : "of Glaciers",
+  "affix.playwrights_guns_and_buns:elemental_bullets/elemental_bullet_fire" : "Blazing",
+  "affix.playwrights_guns_and_buns:elemental_bullets/elemental_bullet_fire.suffix" : "of Inferno",
 
-  "affix.magitacz:elemental_bullets/elemental_bullet_lightning" : "Electrified",
-  "affix.magitacz:elemental_bullets/elemental_bullet_lightning.suffix" : "of the Storm",
+  "affix.playwrights_guns_and_buns:elemental_bullets/elemental_bullet_ice" : "Frosted",
+  "affix.playwrights_guns_and_buns:elemental_bullets/elemental_bullet_ice.suffix" : "of Glaciers",
 
-  "affix.magitacz:elemental_bullets/elemental_bullet_blood" : "Sanguine",
-  "affix.magitacz:elemental_bullets/elemental_bullet_blood.suffix" : "of Blood",
+  "affix.playwrights_guns_and_buns:elemental_bullets/elemental_bullet_lightning" : "Electrified",
+  "affix.playwrights_guns_and_buns:elemental_bullets/elemental_bullet_lightning.suffix" : "of the Storm",
 
-  "affix.magitacz:elemental_bullets/elemental_bullet_ender" : "Warped",
-  "affix.magitacz:elemental_bullets/elemental_bullet_ender.suffix" : "of the Void",
+  "affix.playwrights_guns_and_buns:elemental_bullets/elemental_bullet_blood" : "Sanguine",
+  "affix.playwrights_guns_and_buns:elemental_bullets/elemental_bullet_blood.suffix" : "of Blood",
 
-  "affix.magitacz:elemental_bullets/elemental_bullet_evocation" : "Evoked",
-  "affix.magitacz:elemental_bullets/elemental_bullet_evocation.suffix" : "of Evocation",
+  "affix.playwrights_guns_and_buns:elemental_bullets/elemental_bullet_ender" : "Warped",
+  "affix.playwrights_guns_and_buns:elemental_bullets/elemental_bullet_ender.suffix" : "of the Void",
 
-  "affix.magitacz:elemental_bullets/elemental_bullet_eldritch" : "Eldritch",
-  "affix.magitacz:elemental_bullets/elemental_bullet_eldritch.suffix" : "of Aberration",
+  "affix.playwrights_guns_and_buns:elemental_bullets/elemental_bullet_evocation" : "Evoked",
+  "affix.playwrights_guns_and_buns:elemental_bullets/elemental_bullet_evocation.suffix" : "of Evocation",
 
-  "affix.magitacz:elemental_bullets/elemental_bullet_holy" : "Blessed",
-  "affix.magitacz:elemental_bullets/elemental_bullet_holy.suffix" : "of Light",
+  "affix.playwrights_guns_and_buns:elemental_bullets/elemental_bullet_eldritch" : "Eldritch",
+  "affix.playwrights_guns_and_buns:elemental_bullets/elemental_bullet_eldritch.suffix" : "of Aberration",
 
-  "affix.magitacz:elemental_bullets/elemental_bullet_nature" : "Wild",
-  "affix.magitacz:elemental_bullets/elemental_bullet_nature.suffix" : "of Nature",
+  "affix.playwrights_guns_and_buns:elemental_bullets/elemental_bullet_holy" : "Blessed",
+  "affix.playwrights_guns_and_buns:elemental_bullets/elemental_bullet_holy.suffix" : "of Light",
+
+  "affix.playwrights_guns_and_buns:elemental_bullets/elemental_bullet_nature" : "Wild",
+  "affix.playwrights_guns_and_buns:elemental_bullets/elemental_bullet_nature.suffix" : "of Nature",
+
+  "affix.playwrights_guns_and_buns:armor/attribute/blood_resistance" : "Ironclot",
+  "affix.playwrights_guns_and_buns:armor/attribute/blood_resistance.suffix" : "of Staunching",
+
+  "affix.playwrights_guns_and_buns:armor/attribute/bulletproof_multiply" : "Composite",
+  "affix.playwrights_guns_and_buns:armor/attribute/bulletproof_multiply.suffix" : "of the Bulwark",
+
+  "affix.playwrights_guns_and_buns:armor/attribute/ender_resistance" : "Voidwoven",
+  "affix.playwrights_guns_and_buns:armor/attribute/ender_resistance.suffix" : "of the Void",
+
+  "affix.playwrights_guns_and_buns:armor/attribute/evocation_resistance" : "Magebane",
+  "affix.playwrights_guns_and_buns:armor/attribute/evocation_resistance.suffix" : "of Warding",
+
+  "affix.playwrights_guns_and_buns:armor/attribute/fire_resistance" : "Flameward",
+  "affix.playwrights_guns_and_buns:armor/attribute/fire_resistance.suffix" : "of Quenching",
+
+  "affix.playwrights_guns_and_buns:armor/attribute/holy_resistance" : "Radiancebane",
+  "affix.playwrights_guns_and_buns:armor/attribute/holy_resistance.suffix" : "of the Veil",
+
+  "affix.playwrights_guns_and_buns:armor/attribute/ice_resistance" : "Frostshroud",
+  "affix.playwrights_guns_and_buns:armor/attribute/ice_resistance.suffix" : "of Warmth",
+
+  "affix.playwrights_guns_and_buns:armor/attribute/lightning_resistance" : "Grounded",
+  "affix.playwrights_guns_and_buns:armor/attribute/lightning_resistance.suffix" : "of Grounding",
+
+  "affix.playwrights_guns_and_buns:armor/attribute/nature_resistance" : "Barkbound",
+  "affix.playwrights_guns_and_buns:armor/attribute/nature_resistance.suffix" : "of Thornwarding",
 
   "attachment.magitacz.on_hit_spell" : "%s | %s | Spell Level: %s",
 

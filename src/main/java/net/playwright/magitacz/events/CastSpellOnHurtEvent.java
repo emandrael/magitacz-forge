@@ -104,7 +104,6 @@ public class CastSpellOnHurtEvent {
                 boolean shouldTrigger = count % castPerX == 0;
 
                 if (shouldTrigger) {
-                    MagitaczMod.LOGGER.info("Triggering On Hurt spell");
                     doSpellCastOnEntity( shooter, spell, world, spellLevel);
                 }
 
@@ -119,7 +118,6 @@ public class CastSpellOnHurtEvent {
                     chance = params.get("chance_to_cast");
                 }
                 if (random.nextDouble() < chance) {
-                    MagitaczMod.LOGGER.info("Triggering On Chance spell");
                     doSpellCastOnEntity( shooter, spell, world, spellLevel);
                 }
                 break;

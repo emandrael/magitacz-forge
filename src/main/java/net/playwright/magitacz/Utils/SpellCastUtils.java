@@ -31,7 +31,6 @@ public class SpellCastUtils {
 
         // Check against the cost, not the post-deduction amount
         if (data.getMana() < cost) {
-            MagitaczMod.LOGGER.info("Not enough mana");
             return;
         }
 
@@ -41,7 +40,6 @@ public class SpellCastUtils {
     }
 
     public static void castGunSpell(AbstractSpell spell, Level world, int spellLevel,float discount, ServerPlayer serverPlayer, CastSource castSource, boolean triggerCooldown) {
-        MagitaczMod.LOGGER.info("Casting spell NOW: {}", spell.getSpellId());
         MagicData magicData = MagicData.getPlayerMagicData(serverPlayer);
         PlayerRecasts playerRecasts = magicData.getPlayerRecasts();
         boolean playerAlreadyHasRecast = playerRecasts.hasRecastForSpell(spell.getSpellId());
@@ -54,9 +52,6 @@ public class SpellCastUtils {
 
         SpellOnCastEvent event = new SpellOnCastEvent(serverPlayer, spell.getSpellId(), spellLevel, (int) cost, spell.getSchoolType(), castSource);
         MinecraftForge.EVENT_BUS.post(event);
-
-        MagitaczMod.LOGGER.info("COST SPEL: {}", cost);
-
 
         if (castSource.consumesMana() && !playerAlreadyHasRecast) {
             float newMana = Math.max(magicData.getMana() - (float)event.getManaCost(), 0.0F);

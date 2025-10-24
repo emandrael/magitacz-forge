@@ -42,8 +42,5 @@ public class test {
 
         String directStr = direct != null ? direct.getType().toShortString() : "null";
         String attackerStr = attacker != null ? attacker.getType().toShortString() : "null";
-
-        MagitaczMod.LOGGER.info("[Damage] {} took {} damage | type={} | direct={} | attacker={}",
-                victimName, amount, typeId, directStr, attackerStr);
     }
 }

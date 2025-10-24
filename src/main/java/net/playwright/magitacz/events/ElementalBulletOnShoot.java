@@ -48,7 +48,6 @@ public class ElementalBulletOnShoot {
 
         List<AttachedSpell> spells = MagitaczDataUtils.getAttachedSpells(gunItem, api.getGunIndex().getGunData());
         if (spells.isEmpty()) {
-            MagitaczMod.LOGGER.info("No Spell attached!");
             return;
         };
         AttachedSpell attachedSpell = spells.get(0);
