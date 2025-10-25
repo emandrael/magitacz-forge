@@ -5,7 +5,13 @@
     "apotheosis_modern_ragnarok:shotgun",
     "apotheosis_modern_ragnarok:full_auto",
     "apotheosis_modern_ragnarok:semi_auto",
-    "apotheosis_modern_ragnarok:bolt_action"
+    "apotheosis_modern_ragnarok:bolt_action",
+    "magitacz:muzzle",
+    "magitacz:scope",
+    "magitacz:stock",
+    "magitacz:grip",
+    "magitacz:extended_mag",
+    "magitacz:laser"
   ],
   "values": {
     "rare": {
