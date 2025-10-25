@@ -81,6 +81,7 @@
       "minecraft:skeleton": "2025-10-02 21:18:14 +0100",
       "minecraft:spider": "2025-10-02 22:02:59 +0100",
       "minecraft:creeper": "2025-10-02 22:03:33 +0100",
+      "minecraft:phantom": "2025-10-25 20:14:24 +0100",
       "minecraft:witch": "2025-10-02 22:08:22 +0100",
       "minecraft:enderman": "2025-10-02 23:53:06 +0100",
       "minecraft:zombie": "2025-10-02 22:01:15 +0100",
@@ -1135,6 +1136,114 @@
   "apotheotic_additions:affix/heirloom": {
     "criteria": {
       "sword": "2025-10-14 14:45:32 +0100"
+    },
+    "done": true
+  },
+  "apotheosis:spawner/root": {
+    "criteria": {
+      "spawner": "2025-10-25 16:41:29 +0100"
+    },
+    "done": true
+  },
+  "apotheotic_additions:affix/salvaging_table": {
+    "criteria": {
+      "material": "2025-10-25 20:10:46 +0100"
+    },
+    "done": true
+  },
+  "apotheotic_additions:affix/materials": {
+    "criteria": {
+      "material": "2025-10-25 20:11:11 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_bricks": {
+    "criteria": {
+      "has_stone": "2025-10-25 20:15:00 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_brick_slab_from_stone_stonecutting": {
+    "criteria": {
+      "has_stone": "2025-10-25 20:15:00 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_brick_stairs_from_stone_stonecutting": {
+    "criteria": {
+      "has_stone": "2025-10-25 20:15:00 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_slab_from_stone_stonecutting": {
+    "criteria": {
+      "has_stone": "2025-10-25 20:15:00 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_bricks_from_stone_stonecutting": {
+    "criteria": {
+      "has_stone": "2025-10-25 20:15:00 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_slab": {
+    "criteria": {
+      "has_stone": "2025-10-25 20:15:00 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/chiseled_stone_bricks_stone_from_stonecutting": {
+    "criteria": {
+      "has_stone": "2025-10-25 20:15:00 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_stairs_from_stone_stonecutting": {
+    "criteria": {
+      "has_stone": "2025-10-25 20:15:00 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/stone_button": {
+    "criteria": {
+      "has_stone": "2025-10-25 20:15:00 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/stonecutter": {
+    "criteria": {
+      "has_stone": "2025-10-25 20:15:00 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/stone_pressure_plate": {
+    "criteria": {
+      "has_stone": "2025-10-25 20:15:00 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/smooth_stone": {
+    "criteria": {
+      "has_stone": "2025-10-25 20:15:00 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/stone_brick_walls_from_stone_stonecutting": {
+    "criteria": {
+      "has_stone": "2025-10-25 20:15:00 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_stairs": {
+    "criteria": {
+      "has_stone": "2025-10-25 20:15:00 +0100"
+    },
+    "done": true
+  },
+  "apotheosis:affix/rare_gem": {
+    "criteria": {
+      "gem": "2025-10-25 20:21:49 +0100"
     },
     "done": true
   },

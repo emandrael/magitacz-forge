@@ -5,6 +5,7 @@ import com.tacz.guns.api.event.common.GunFireEvent;
 import com.tacz.guns.api.item.attachment.AttachmentType;
 import com.tacz.guns.item.ModernKineticGunScriptAPI;
 import com.tacz.guns.resource.pojo.data.gun.GunData;
+import dev.shadowsoffire.apotheosis.util.ApothMiscUtil;
 import io.redspace.ironsspellbooks.IronsSpellbooks;
 import io.redspace.ironsspellbooks.api.magic.MagicData;
 import io.redspace.ironsspellbooks.capabilities.magic.TargetEntityCastData;
@@ -44,6 +45,10 @@ public class CastSpellOnHurtEvent {
         ItemStack gunItem = shooter.getMainHandItem();
         ResourceLocation itemId = BuiltInRegistries.ITEM.getKey(gunItem.getItem());
         String key = "magitacz_shots_with_gun_" + itemId.toString();
+
+
+
+
         CompoundTag tag = shooter.getPersistentData();
 
         int count = tag.getInt(key) + 1;

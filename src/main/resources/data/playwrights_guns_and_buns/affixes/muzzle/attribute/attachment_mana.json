@@ -1,0 +1,46 @@
+{
+  "type": "apotheosis:attribute",
+  "attribute": "irons_spellbooks:max_mana",
+
+  "operation": "ADDITION",
+  "values": {
+    "common": {
+      "min": 5,
+      "steps": 1,
+      "step": 5
+    },
+    "uncommon": {
+      "min": 15,
+      "steps": 1,
+      "step": 5
+    },
+    "rare": {
+      "min": 25,
+      "steps": 1,
+      "step": 5
+    },
+    "epic": {
+      "min": 35,
+      "steps": 1,
+      "step": 5
+    },
+    "mythic": {
+      "min": 45,
+      "steps": 1,
+      "step": 5
+    },
+    "ancient": {
+      "min": 75,
+      "steps": 1,
+      "step": 5
+    }
+  },
+  "types": [
+    "magitacz:muzzle",
+    "magitacz:scope",
+    "magitacz:stock",
+    "magitacz:grip",
+    "magitacz:extended_mag",
+    "magitacz:laser"
+  ]
+}
