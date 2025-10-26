@@ -152,10 +152,11 @@ Adding Libraries to Inheritance
 Reading Input: C:\Projects\magitacz-forge\build\libs\magitacz-1.0.jar
 Adding input to inheritance map
 Processing entries
+Conflicting propagated mapping for net/playwright/magitacz/datagen/loot/MagitaczLootProvider$InjectSubProvider/generate(Ljava/util/function/BiConsumer;)V from net/minecraft/data/loot/LootTableSubProvider/generate(Ljava/util/function/BiConsumer;)V: generate -> m_245126_
 Conflicting propagated mapping for net/playwright/magitacz/enchantments/LightningStrikeEnchantment/doPostAttack(Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/entity/Entity;I)V from net/minecraft/world/item/enchantment/Enchantment/doPostAttack(Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/entity/Entity;I)V: doPostAttack -> m_7677_
 Conflicting propagated mapping for net/playwright/magitacz/enchantments/LightningStrikeEnchantment/getMaxLevel()I from net/minecraft/world/item/enchantment/Enchantment/getMaxLevel()I: getMaxLevel -> m_6586_
-Conflicting propagated mapping for net/playwright/magitacz/datagen/loot/MagitaczLootProvider$InjectSubProvider/generate(Ljava/util/function/BiConsumer;)V from net/minecraft/data/loot/LootTableSubProvider/generate(Ljava/util/function/BiConsumer;)V: generate -> m_245126_
 Conflicting propagated mapping for com/tacz/guns/api/item/gun/AbstractGunItem/getName(Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/network/chat/Component; from net/minecraft/world/item/Item/getName(Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/network/chat/Component;: getName -> m_7626_
+Conflicting propagated mapping for com/tacz/guns/api/item/gun/AbstractGunItem/getTooltipImage(Lnet/minecraft/world/item/ItemStack;)Ljava/util/Optional; from net/minecraft/world/item/Item/getTooltipImage(Lnet/minecraft/world/item/ItemStack;)Ljava/util/Optional;: getTooltipImage -> m_142422_
 Conflicting propagated mapping for net/playwright/magitacz/item/armor/MagitaczArmorMaterials/getRepairIngredient()Lnet/minecraft/world/item/crafting/Ingredient; from net/minecraft/world/item/ArmorMaterial/getRepairIngredient()Lnet/minecraft/world/item/crafting/Ingredient;: getRepairIngredient -> m_6230_
 Conflicting propagated mapping for net/playwright/magitacz/item/armor/MagitaczArmorMaterials/getEnchantmentValue()I from net/minecraft/world/item/ArmorMaterial/getEnchantmentValue()I: getEnchantmentValue -> m_6646_
 Conflicting propagated mapping for net/playwright/magitacz/item/armor/MagitaczArmorMaterials/getKnockbackResistance()F from net/minecraft/world/item/ArmorMaterial/getKnockbackResistance()F: getKnockbackResistance -> m_6649_
@@ -164,16 +165,13 @@ Conflicting propagated mapping for net/playwright/magitacz/item/armor/MagitaczAr
 Conflicting propagated mapping for net/playwright/magitacz/item/armor/MagitaczArmorMaterials/getDefenseForType(Lnet/minecraft/world/item/ArmorItem$Type;)I from net/minecraft/world/item/ArmorMaterial/getDefenseForType(Lnet/minecraft/world/item/ArmorItem$Type;)I: getDefenseForType -> m_7366_
 Conflicting propagated mapping for net/playwright/magitacz/item/armor/MagitaczArmorMaterials/getEquipSound()Lnet/minecraft/sounds/SoundEvent; from net/minecraft/world/item/ArmorMaterial/getEquipSound()Lnet/minecraft/sounds/SoundEvent;: getEquipSound -> m_7344_
 Conflicting propagated mapping for net/playwright/magitacz/item/armor/MagitaczArmorMaterials/getDurabilityForType(Lnet/minecraft/world/item/ArmorItem$Type;)I from net/minecraft/world/item/ArmorMaterial/getDurabilityForType(Lnet/minecraft/world/item/ArmorItem$Type;)I: getDurabilityForType -> m_266425_
-Conflicting propagated mapping for com/tacz/guns/api/item/gun/AbstractGunItem/getTooltipImage(Lnet/minecraft/world/item/ItemStack;)Ljava/util/Optional; from net/minecraft/world/item/Item/getTooltipImage(Lnet/minecraft/world/item/ItemStack;)Ljava/util/Optional;: getTooltipImage -> m_142422_
 Conflicting propagated mapping for net/playwright/magitacz/item/armor/MagitaczExtendedModArmorItem/getDefaultAttributeModifiers(Lnet/minecraft/world/entity/EquipmentSlot;)Lcom/google/common/collect/Multimap; from net/minecraft/world/item/ArmorItem/getDefaultAttributeModifiers(Lnet/minecraft/world/entity/EquipmentSlot;)Lcom/google/common/collect/Multimap;: getDefaultAttributeModifiers -> m_7167_
+Conflicting propagated mapping for net/minecraftforge/event/BuildCreativeModeTabContentsEvent/accept(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/CreativeModeTab$TabVisibility;)V from net/minecraft/world/item/CreativeModeTab$Output/accept(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/CreativeModeTab$TabVisibility;)V: accept -> m_246267_
+Conflicting propagated mapping for dev/shadowsoffire/placebo/reload/DynamicRegistry/apply(Ljava/lang/Object;Lnet/minecraft/server/packs/resources/ResourceManager;Lnet/minecraft/util/profiling/ProfilerFiller;)V from net/minecraft/server/packs/resources/SimplePreparableReloadListener/apply(Ljava/lang/Object;Lnet/minecraft/server/packs/resources/ResourceManager;Lnet/minecraft/util/profiling/ProfilerFiller;)V: apply -> m_5787_
+Conflicting propagated mapping for net/minecraft/world/entity/LivingEntity/lambda$addAdditionalSaveData$3(Lnet/minecraft/nbt/CompoundTag;Lnet/minecraft/nbt/Tag;)V from net/minecraft/world/entity/player/Player/lambda$addAdditionalSaveData$3(Lnet/minecraft/nbt/CompoundTag;Lnet/minecraft/nbt/Tag;)V: lambda$addAdditionalSaveData$3 -> m_219754_
 Conflicting propagated mapping for net/playwright/magitacz/tooltips/ImageTooltipComponent/renderImage(Lnet/minecraft/client/gui/Font;IILnet/minecraft/client/gui/GuiGraphics;)V from net/minecraft/client/gui/screens/inventory/tooltip/ClientTooltipComponent/renderImage(Lnet/minecraft/client/gui/Font;IILnet/minecraft/client/gui/GuiGraphics;)V: renderImage -> m_183452_
 Conflicting propagated mapping for net/playwright/magitacz/tooltips/ImageTooltipComponent/getWidth(Lnet/minecraft/client/gui/Font;)I from net/minecraft/client/gui/screens/inventory/tooltip/ClientTooltipComponent/getWidth(Lnet/minecraft/client/gui/Font;)I: getWidth -> m_142069_
 Conflicting propagated mapping for net/playwright/magitacz/tooltips/ImageTooltipComponent/getHeight()I from net/minecraft/client/gui/screens/inventory/tooltip/ClientTooltipComponent/getHeight()I: getHeight -> m_142103_
-Conflicting propagated mapping for mod/chloeprime/apotheosismodernragnarok/common/loot/ApothReforgeFunction/run(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/storage/loot/LootContext;)Lnet/minecraft/world/item/ItemStack; from net/minecraft/world/level/storage/loot/functions/LootItemConditionalFunction/run(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/storage/loot/LootContext;)Lnet/minecraft/world/item/ItemStack;: run -> m_7372_
-Conflicting propagated mapping for mod/chloeprime/apotheosismodernragnarok/common/loot/ApothReforgeFunction/getType()Lnet/minecraft/world/level/storage/loot/functions/LootItemFunctionType; from net/minecraft/world/level/storage/loot/functions/LootItemFunction/getType()Lnet/minecraft/world/level/storage/loot/functions/LootItemFunctionType;: getType -> m_7162_
-Conflicting propagated mapping for net/minecraftforge/event/BuildCreativeModeTabContentsEvent/accept(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/CreativeModeTab$TabVisibility;)V from net/minecraft/world/item/CreativeModeTab$Output/accept(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/CreativeModeTab$TabVisibility;)V: accept -> m_246267_
-Conflicting propagated mapping for net/minecraft/world/entity/LivingEntity/lambda$addAdditionalSaveData$3(Lnet/minecraft/nbt/CompoundTag;Lnet/minecraft/nbt/Tag;)V from net/minecraft/world/entity/player/Player/lambda$addAdditionalSaveData$3(Lnet/minecraft/nbt/CompoundTag;Lnet/minecraft/nbt/Tag;)V: lambda$addAdditionalSaveData$3 -> m_219754_
-Conflicting propagated mapping for dev/shadowsoffire/placebo/reload/DynamicRegistry/apply(Ljava/lang/Object;Lnet/minecraft/server/packs/resources/ResourceManager;Lnet/minecraft/util/profiling/ProfilerFiller;)V from net/minecraft/server/packs/resources/SimplePreparableReloadListener/apply(Ljava/lang/Object;Lnet/minecraft/server/packs/resources/ResourceManager;Lnet/minecraft/util/profiling/ProfilerFiller;)V: apply -> m_5787_
 Conflicting propagated mapping for com/obscuria/aquamirae/common/entities/CaptainCornelia/getHurtSound(Lnet/minecraft/world/damagesource/DamageSource;)Lnet/minecraft/sounds/SoundEvent; from net/minecraft/world/entity/monster/Monster/getHurtSound(Lnet/minecraft/world/damagesource/DamageSource;)Lnet/minecraft/sounds/SoundEvent;: getHurtSound -> m_7975_
 Conflicting propagated mapping for com/obscuria/aquamirae/common/entities/CaptainCornelia/stopSeenByPlayer(Lnet/minecraft/server/level/ServerPlayer;)V from net/minecraft/world/entity/Entity/stopSeenByPlayer(Lnet/minecraft/server/level/ServerPlayer;)V: stopSeenByPlayer -> m_6452_
 Conflicting propagated mapping for com/obscuria/aquamirae/common/entities/CaptainCornelia/finalizeSpawn(Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/MobSpawnType;Lnet/minecraft/world/entity/SpawnGroupData;Lnet/minecraft/nbt/CompoundTag;)Lnet/minecraft/world/entity/SpawnGroupData; from net/minecraft/world/entity/Mob/finalizeSpawn(Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/MobSpawnType;Lnet/minecraft/world/entity/SpawnGroupData;Lnet/minecraft/nbt/CompoundTag;)Lnet/minecraft/world/entity/SpawnGroupData;: finalizeSpawn -> m_6518_
@@ -192,6 +190,8 @@ Conflicting propagated mapping for com/obscuria/aquamirae/common/entities/Captai
 Conflicting propagated mapping for com/obscuria/aquamirae/common/entities/CaptainCornelia/registerGoals()V from net/minecraft/world/entity/Mob/registerGoals()V: registerGoals -> m_8099_
 Conflicting propagated mapping for com/obscuria/aquamirae/common/entities/CaptainCornelia/removeWhenFarAway(D)Z from net/minecraft/world/entity/Mob/removeWhenFarAway(D)Z: removeWhenFarAway -> m_6785_
 Conflicting propagated mapping for com/obscuria/aquamirae/common/entities/CaptainCornelia/baseTick()V from net/minecraft/world/entity/Mob/baseTick()V: baseTick -> m_6075_
+Conflicting propagated mapping for mod/chloeprime/apotheosismodernragnarok/common/loot/ApothReforgeFunction/run(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/storage/loot/LootContext;)Lnet/minecraft/world/item/ItemStack; from net/minecraft/world/level/storage/loot/functions/LootItemConditionalFunction/run(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/storage/loot/LootContext;)Lnet/minecraft/world/item/ItemStack;: run -> m_7372_
+Conflicting propagated mapping for mod/chloeprime/apotheosismodernragnarok/common/loot/ApothReforgeFunction/getType()Lnet/minecraft/world/level/storage/loot/functions/LootItemFunctionType; from net/minecraft/world/level/storage/loot/functions/LootItemFunction/getType()Lnet/minecraft/world/level/storage/loot/functions/LootItemFunctionType;: getType -> m_7162_
 Conflicting propagated mapping for com/obscuria/aquamirae/common/items/weapon/WhisperOfTheAbyssItem/getDefaultAttributeModifiers(Lnet/minecraft/world/entity/EquipmentSlot;)Lcom/google/common/collect/Multimap; from net/minecraft/world/item/SwordItem/getDefaultAttributeModifiers(Lnet/minecraft/world/entity/EquipmentSlot;)Lcom/google/common/collect/Multimap;: getDefaultAttributeModifiers -> m_7167_
 Conflicting propagated mapping for com/obscuria/aquamirae/common/items/weapon/WhisperOfTheAbyssItem/hurtEnemy(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/entity/LivingEntity;)Z from net/minecraft/world/item/SwordItem/hurtEnemy(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/entity/LivingEntity;)Z: hurtEnemy -> m_7579_
 Conflicting propagated mapping for com/obscuria/aquamirae/common/items/weapon/DividerItem/hurtEnemy(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/entity/LivingEntity;)Z from net/minecraft/world/item/SwordItem/hurtEnemy(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/entity/LivingEntity;)Z: hurtEnemy -> m_7579_
@@ -289,6 +289,14 @@ Writing Output: C:\Projects\magitacz-forge\build\reobfJar\output.jar
   data/playwrights_guns_and_buns/affixes/elemental_bullets/elemental_bullet_lightning.json
   data/playwrights_guns_and_buns/affixes/elemental_bullets/elemental_bullet_nature.json
   data/playwrights_guns_and_buns/affixes/iron_spell.json
+  data/playwrights_guns_and_buns/affixes/muzzle/
+  data/playwrights_guns_and_buns/affixes/muzzle/attribute/
+  data/playwrights_guns_and_buns/affixes/muzzle/attribute/attachment_adrenalinic.json
+  data/playwrights_guns_and_buns/affixes/muzzle/attribute/attachment_large_capacity.json
+  data/playwrights_guns_and_buns/affixes/muzzle/attribute/attachment_lightweight.json
+  data/playwrights_guns_and_buns/affixes/muzzle/attribute/attachment_mana.json
+  data/playwrights_guns_and_buns/affixes/muzzle/attribute/attachment_mundane.json
+  data/playwrights_guns_and_buns/affixes/muzzle/attribute/attachment_tungstenic.json
   magitacz.mixins.json
   magitacz.refmap.json
   net/
@@ -305,9 +313,14 @@ Writing Output: C:\Projects\magitacz-forge\build\reobfJar\output.jar
   net/playwright/magitacz/Utils/MagitaczTooltipUtils.class
   net/playwright/magitacz/Utils/SpellCastUtils.class
   net/playwright/magitacz/Utils/test.class
-  net/playwright/magitacz/affix/
-  net/playwright/magitacz/affix/ElementType.class
-  net/playwright/magitacz/affix/ElementalBulletAffix.class
+  net/playwright/magitacz/apoth/
+  net/playwright/magitacz/apoth/affix/
+  net/playwright/magitacz/apoth/affix/AttachmentAttributeAffix.class
+  net/playwright/magitacz/apoth/affix/ElementType.class
+  net/playwright/magitacz/apoth/affix/ElementalBulletAffix.class
+  net/playwright/magitacz/apoth/category/
+  net/playwright/magitacz/apoth/category/AttachmentPredicate.class
+  net/playwright/magitacz/apoth/category/ExtraLootCategories.class
   net/playwright/magitacz/attachment_modifiers/
   net/playwright/magitacz/attachment_modifiers/AttachedSpell$CastType.class
   net/playwright/magitacz/attachment_modifiers/AttachedSpell$SpellRegistryEnum.class
@@ -333,6 +346,7 @@ Writing Output: C:\Projects\magitacz-forge\build\reobfJar\output.jar
   net/playwright/magitacz/enchantments/ModEnchantments.class
   net/playwright/magitacz/events/
   net/playwright/magitacz/events/AddSpellToolTipImageEvent.class
+  net/playwright/magitacz/events/AttachmentEvents.class
   net/playwright/magitacz/events/BulletDamageResistanceEvent.class
   net/playwright/magitacz/events/CastOnReload.class
   net/playwright/magitacz/events/CastSpellOnHurtEvent$1.class

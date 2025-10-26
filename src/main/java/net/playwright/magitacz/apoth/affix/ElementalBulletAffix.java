@@ -94,7 +94,7 @@ public class ElementalBulletAffix extends AbstractValuedAffix implements GunAffi
                 .withStyle(style ->
                         style.withColor(getSchoolColor(this.element)));
         return Component.translatable("affix.magitacz.elemental_bullet.desc",
-                        value, elementName); // orange, for example
+                value, elementName); // orange, for example
     }
 
     @Override

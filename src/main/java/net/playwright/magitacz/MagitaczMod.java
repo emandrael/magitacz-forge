@@ -19,6 +19,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.playwright.magitacz.apoth.affix.ElementalBulletAffix;
+import net.playwright.magitacz.apoth.affix.SpellAffix;
 import net.playwright.magitacz.apoth.category.ExtraLootCategories;
 import net.playwright.magitacz.attachment_modifiers.SpellModifier;
 import net.playwright.magitacz.blocks.MagitaczBlocks;
@@ -74,6 +75,10 @@ public class MagitaczMod {
         AttachmentPropertyManager.getModifiers().put("spell", new SpellModifier());
 
         AffixRegistry.INSTANCE.registerCodec(loc("elemental_bullet"), ElementalBulletAffix.CODEC);
+        AffixRegistry.INSTANCE.registerCodec(loc("spell"), SpellAffix.CODEC);
+
+        MagitaczMod.LOGGER.info("Affixes {}", AffixRegistry.INSTANCE.getKeys());
+
 
         modEventBus.addListener(this::gatherData);
 

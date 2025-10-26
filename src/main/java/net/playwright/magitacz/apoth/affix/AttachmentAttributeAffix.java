@@ -41,7 +41,7 @@ public class AttachmentAttributeAffix extends AttributeAffix {
     }
 
     public boolean canApplyTo(ItemStack stack, LootCategory cat, LootRarity rarity) {
-        return super.canApplyTo(stack, cat, rarity) && Gunsmith.getGunInfo(stack).map((gi) -> gi.index().getGunData()).filter(this::canApplyTo).filter((gunData) -> gunData.getReloadData().getType() != FeedType.INVENTORY).isPresent();
+        return true;
     }
 
     public Codec<? extends Affix> getCodec() {
