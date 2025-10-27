@@ -52,10 +52,7 @@ public class ExtraLootCategories {
         SCOPE = register("scope", AttachmentPredicate.matchIndex(ExtraLootCategories::isScope), EquipmentSlot.MAINHAND);
     }
 
-    static boolean isMuzzle(@NotNull CommonAttachmentIndex index) {
-        return index.getType() == AttachmentType.MUZZLE;
-
-    }
+    static boolean isMuzzle(@NotNull CommonAttachmentIndex index) { return index.getType() == AttachmentType.MUZZLE;}
 
     static boolean isScope(@NotNull CommonAttachmentIndex index) {
         return index.getType() == AttachmentType.SCOPE;
@@ -69,16 +66,11 @@ public class ExtraLootCategories {
         return index.getType() == AttachmentType.STOCK;
     }
 
-    static boolean isExtendedMagazine(@NotNull CommonAttachmentIndex index) {
-        return index.getType() == AttachmentType.EXTENDED_MAG;
-    }
+    static boolean isExtendedMagazine(@NotNull CommonAttachmentIndex index) {return index.getType() == AttachmentType.EXTENDED_MAG;}
 
     static boolean isLaser(@NotNull CommonAttachmentIndex index) {
         return index.getType() == AttachmentType.LASER;
     }
-
-
-
 
 
     private static LootCategory register(String path, Predicate<ItemStack> predicate, EquipmentSlot... slots) {

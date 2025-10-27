@@ -6,6 +6,8 @@
   "item.magitacz.elementium_sword": "Elementium Sword",
   "item.magitacz.raw_elementium": "Unstable Elementium",
 
+  "attribute.magitacz.spell_shot_reduction" : "Spell Shot Reduction",
+
   "item.magitacz.elementium_helmet": "Elementium Helmet",
   "item.magitacz.elementium_leggings": "Elementium Leggings",
   "item.magitacz.elementium_chestplate": "Elementium Chestplate",

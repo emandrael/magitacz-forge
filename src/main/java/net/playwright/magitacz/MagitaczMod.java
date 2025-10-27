@@ -22,6 +22,7 @@ import net.playwright.magitacz.apoth.affix.ElementalBulletAffix;
 import net.playwright.magitacz.apoth.affix.SpellAffix;
 import net.playwright.magitacz.apoth.category.ExtraLootCategories;
 import net.playwright.magitacz.attachment_modifiers.SpellModifier;
+import net.playwright.magitacz.attributes.MagitaczAttributes;
 import net.playwright.magitacz.blocks.MagitaczBlocks;
 import net.playwright.magitacz.enchantments.ModEnchantments;
 import net.playwright.magitacz.item.MagitaczItems;
@@ -51,6 +52,7 @@ public class MagitaczMod {
 
         MagitaczItems.ITEMS.register(modEventBus);
         MagitaczBlocks.register(modEventBus);
+        MagitaczAttributes.register(modEventBus);
 
 
 
@@ -74,10 +76,11 @@ public class MagitaczMod {
         AttachmentPropertyManager.registerModifier();
         AttachmentPropertyManager.getModifiers().put("spell", new SpellModifier());
 
-        AffixRegistry.INSTANCE.registerCodec(loc("elemental_bullet"), ElementalBulletAffix.CODEC);
-        AffixRegistry.INSTANCE.registerCodec(loc("spell"), SpellAffix.CODEC);
 
-        MagitaczMod.LOGGER.info("Affixes {}", AffixRegistry.INSTANCE.getKeys());
+
+
+        AffixRegistry.INSTANCE.registerCodec(loc("elemental_bullet"), ElementalBulletAffix.CODEC);
+        AffixRegistry.INSTANCE.registerCodec(loc("spells_attachment"), SpellAffix.CODEC);
 
 
         modEventBus.addListener(this::gatherData);

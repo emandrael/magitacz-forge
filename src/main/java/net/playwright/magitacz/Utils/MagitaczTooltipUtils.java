@@ -36,45 +36,45 @@ public class MagitaczTooltipUtils {
 
 
             switch (attachedSpell.getCastType()) {
-                case ONHIT -> {
+                    case ONHIT -> {
 
-                    if (singular) {
-                        var onHitComponent = Component.translatable("lands").withStyle(ChatFormatting.DARK_PURPLE).withStyle(ChatFormatting.UNDERLINE);
-                        return (Component.translatable("guns.magitacz:spell_attachment_on_hit_singular", spellNameComponent, onHitComponent));
+                        if (singular) {
+                            var onHitComponent = Component.translatable("lands").withStyle(ChatFormatting.DARK_PURPLE).withStyle(ChatFormatting.UNDERLINE);
+                            return (Component.translatable("guns.magitacz:spell_attachment_on_hit_singular", spellNameComponent, onHitComponent));
 
-                    } else {
-                        var onHitComponent = Component.translatable("land").withStyle(ChatFormatting.DARK_PURPLE).withStyle(ChatFormatting.UNDERLINE);
-                        return (Component.translatable("guns.magitacz:spell_attachment_on_hit", spellNameComponent, attachedSpell.getCastTypeParameters().get("per_x").intValue(), onHitComponent));
+                        } else {
+                            var onHitComponent = Component.translatable("land").withStyle(ChatFormatting.DARK_PURPLE).withStyle(ChatFormatting.UNDERLINE);
+                            return (Component.translatable("guns.magitacz:spell_attachment_on_hit", spellNameComponent, attachedSpell.getCastTypeParameters().get("per_x").intValue(), onHitComponent));
 
-                    }
-
-                }
-
-                case ONKILL -> {
-                    if (singular) {
-                        var onKillComponent = Component.translatable("takedown").withStyle(ChatFormatting.DARK_RED).withStyle(ChatFormatting.UNDERLINE);
-                        return (Component.translatable("guns.magitacz:spell_attachment_on_kill_singular", spellNameComponent, onKillComponent));
-                    } else {
-                        var onKillComponent = Component.translatable("taken down").withStyle(ChatFormatting.DARK_RED).withStyle(ChatFormatting.UNDERLINE);
-                        return (Component.translatable("guns.magitacz:spell_attachment_on_kill", spellNameComponent, attachedSpell.getCastTypeParameters().get("per_x").intValue(), onKillComponent));
-                    }
-                }
-                case ONSHOOT -> {
-                    if (singular) {
-                        var onShootComponent = Component.translatable("fired").withStyle(ChatFormatting.DARK_GREEN).withStyle(ChatFormatting.UNDERLINE);
-                        return (Component.translatable("guns.magitacz:spell_attachment_on_shoot_singular", spellNameComponent, onShootComponent));
+                        }
 
                     }
 
-                    var onShootComponent = Component.translatable("shot").withStyle(ChatFormatting.DARK_GREEN).withStyle(ChatFormatting.UNDERLINE);
-                    return (Component.translatable("guns.magitacz:spell_attachment_on_shoot", spellNameComponent, attachedSpell.getCastTypeParameters().get("per_x").intValue(), onShootComponent));
+                    case ONKILL -> {
+                        if (singular) {
+                            var onKillComponent = Component.translatable("takedown").withStyle(ChatFormatting.DARK_RED).withStyle(ChatFormatting.UNDERLINE);
+                            return (Component.translatable("guns.magitacz:spell_attachment_on_kill_singular", spellNameComponent, onKillComponent));
+                        } else {
+                            var onKillComponent = Component.translatable("taken down").withStyle(ChatFormatting.DARK_RED).withStyle(ChatFormatting.UNDERLINE);
+                            return (Component.translatable("guns.magitacz:spell_attachment_on_kill", spellNameComponent, attachedSpell.getCastTypeParameters().get("per_x").intValue(), onKillComponent));
+                        }
+                    }
+                    case ONSHOOT -> {
+                        if (singular) {
+                            var onShootComponent = Component.translatable("fired").withStyle(ChatFormatting.DARK_GREEN).withStyle(ChatFormatting.UNDERLINE);
+                            return (Component.translatable("guns.magitacz:spell_attachment_on_shoot_singular", spellNameComponent, onShootComponent));
 
+                        }
+
+                        var onShootComponent = Component.translatable("shot").withStyle(ChatFormatting.DARK_GREEN).withStyle(ChatFormatting.UNDERLINE);
+                        return (Component.translatable("guns.magitacz:spell_attachment_on_shoot", spellNameComponent, attachedSpell.getCastTypeParameters().get("per_x").intValue(), onShootComponent));
+
+                    }
+
+                    case ONCHANCE -> {
+
+                    }
                 }
-
-                case ONCHANCE -> {
-
-                }
-            }
         }
         return null;
     }

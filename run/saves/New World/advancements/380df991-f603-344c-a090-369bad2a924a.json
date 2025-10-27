@@ -1247,5 +1247,35 @@
     },
     "done": true
   },
+  "apotheotic_additions:main/tower": {
+    "criteria": {
+      "enter_tower": "2025-10-26 20:50:35 +0000"
+    },
+    "done": true
+  },
+  "apotheosis:affix/epic": {
+    "criteria": {
+      "sword": "2025-10-26 21:32:27 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/stick_from_bamboo_item": {
+    "criteria": {
+      "has_bamboo": "2025-10-27 09:28:12 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/bamboo_block": {
+    "criteria": {
+      "has_bamboo": "2025-10-27 09:28:12 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/scaffolding": {
+    "criteria": {
+      "has_bamboo": "2025-10-27 09:28:12 +0000"
+    },
+    "done": true
+  },
   "DataVersion": 3465
 }

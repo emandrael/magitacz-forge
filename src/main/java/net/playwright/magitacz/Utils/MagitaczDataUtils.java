@@ -8,6 +8,7 @@ import com.tacz.guns.api.modifier.JsonProperty;
 import com.tacz.guns.resource.index.CommonAttachmentIndex;
 import com.tacz.guns.resource.pojo.data.attachment.AttachmentData;
 import com.tacz.guns.resource.pojo.data.gun.GunData;
+import io.redspace.ironsspellbooks.IronsSpellbooks;
 import io.redspace.ironsspellbooks.api.registry.AttributeRegistry;
 import io.redspace.ironsspellbooks.api.registry.SpellRegistry;
 import io.redspace.ironsspellbooks.api.spells.AbstractSpell;
@@ -21,6 +22,7 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.item.ItemStack;
 import net.playwright.magitacz.MagitaczMod;
+import net.playwright.magitacz.apoth.affix.SpellAffix;
 import net.playwright.magitacz.attachment_modifiers.AttachedSpell;
 import net.playwright.magitacz.attachment_modifiers.SpellModifier;
 
@@ -41,6 +43,13 @@ public class MagitaczDataUtils {
 
         return SpellRegistry.getSpell(spellId);
     }
+
+    public static AbstractSpell getSpellOnAffix(SpellAffix spellAffix) {
+        String spellName = spellAffix.getSpell();
+        ResourceLocation spellId = new ResourceLocation(IronsSpellbooks.MODID, spellName);
+        return SpellRegistry.getSpell(spellId);
+    }
+
 
 
     public static AttachedSpell getAttachmentSpellData(ItemStack gunItem, GunData gunData, AttachmentType attachmentType) {

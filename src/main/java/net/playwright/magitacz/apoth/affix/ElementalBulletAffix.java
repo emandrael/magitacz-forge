@@ -32,6 +32,7 @@ import java.util.Set;
 // --- Iron's Spellbooks imports ---
 import io.redspace.ironsspellbooks.api.registry.AttributeRegistry;
 import net.minecraft.world.level.Level;
+import net.playwright.magitacz.MagitaczMod;
 import net.playwright.magitacz.Utils.DamageSourceUtils;
 
 public class ElementalBulletAffix extends AbstractValuedAffix implements GunAffix {
@@ -66,9 +67,14 @@ public class ElementalBulletAffix extends AbstractValuedAffix implements GunAffi
         this.element = element;
         this.exclusiveGroup = element;
     }
-//
-//    @Override
-//    public boolean canApplyTo(ItemStack stack, LootCategory cat, LootRarity rarity) {
+
+    @Override
+    public boolean canApplyTo(ItemStack stack, LootCategory category, LootRarity rarity) {
+        MagitaczMod.LOGGER.info("EEE - ELEMENTL BUKKE");
+        return super.canApplyTo(stack, category, rarity);
+    }
+
+    //    public boolean canApplyTo(ItemStack stack, LootCategory cat, LootRarity rarity) {
 //        if (!super.canApplyTo(stack, cat, rarity)) return false;
 //
 //        Map<DynamicHolder<? extends Affix>, AffixInstance> affixes = AffixHelper.getAffixes(stack);

@@ -1,0 +1,141 @@
+---- Minecraft Crash Report ----
+// I just don't know what went wrong :(
+
+Time: 2025-10-26 21:18:19
+Description: Ticking player
+
+java.lang.NullPointerException: Cannot invoke "com.tacz.guns.api.modifier.CacheValue.getValue()" because the return value of "java.util.Map.get(Object)" is null
+	at com.tacz.guns.resource.modifier.AttachmentCacheProperty.getCache(AttachmentCacheProperty.java:58) ~[timeless-and-classics-zero-1028108-6654541_mapped_official_1.20.1.jar%23199!/:1.1.6-hotfix] {re:mixin,re:classloading}
+	at com.tacz.guns.entity.shooter.LivingEntitySpeedModifier.updateSpeedModifier(LivingEntitySpeedModifier.java:40) ~[timeless-and-classics-zero-1028108-6654541_mapped_official_1.20.1.jar%23199!/:1.1.6-hotfix] {re:mixin,re:classloading}
+	at net.minecraft.world.entity.LivingEntity.handler$zfa000$onTickServerSide(LivingEntity.java:4741) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23184!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at net.minecraft.world.entity.LivingEntity.tick(LivingEntity.java:2378) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23184!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at net.minecraft.world.entity.player.Player.tick(Player.java:241) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23184!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:gunsmithlib.mixins.json:MixinPlayer,pl:mixin:APP:playerAnimator-common.mixins.json:PlayerEntityMixin,pl:mixin:APP:attributeslib.mixins.json:PlayerMixin,pl:mixin:APP:mixins.irons_spellbooks.json:PlayerMixin,pl:mixin:APP:dummmmmmy-common.mixins.json:PlayerMixin,pl:mixin:A}
+	at net.minecraft.server.level.ServerPlayer.doTick(ServerPlayer.java:467) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23184!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:moonlight-common.mixins.json:ServerPlayerMixin,pl:mixin:APP:tacz.mixins.json:common.ServerPlayerMixin,pl:mixin:A}
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.tick(ServerGamePacketListenerImpl.java:262) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23184!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:tacz.mixins.json:common.ServerGamePacketListenerImplMixin,pl:mixin:APP:tacz.mixins.json:common.ServerPlayNetHandlerMixin,pl:mixin:A}
+	at net.minecraft.network.Connection.tick(Connection.java:263) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23184!/:?] {re:classloading}
+	at net.minecraft.server.network.ServerConnectionListener.tick(ServerConnectionListener.java:142) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23184!/:?] {re:classloading}
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:907) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23184!/:?] {re:classloading,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:814) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23184!/:?] {re:classloading,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B}
+	at net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:89) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23184!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:661) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23184!/:?] {re:classloading,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:251) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23184!/:?] {re:classloading,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B}
+	at java.lang.Thread.run(Thread.java:840) ~[?:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Suspected Mod: 
+	Timeless & Classics Guns: Zero (tacz), Version: 1.1.6-hotfix
+		at TRANSFORMER/tacz@1.1.6-hotfix/com.tacz.guns.resource.modifier.AttachmentCacheProperty.getCache(AttachmentCacheProperty.java:58)
+Stacktrace:
+	at com.tacz.guns.resource.modifier.AttachmentCacheProperty.getCache(AttachmentCacheProperty.java:58) ~[timeless-and-classics-zero-1028108-6654541_mapped_official_1.20.1.jar%23199!/:1.1.6-hotfix] {re:mixin,re:classloading}
+	at com.tacz.guns.entity.shooter.LivingEntitySpeedModifier.updateSpeedModifier(LivingEntitySpeedModifier.java:40) ~[timeless-and-classics-zero-1028108-6654541_mapped_official_1.20.1.jar%23199!/:1.1.6-hotfix] {re:mixin,re:classloading}
+	at net.minecraft.world.entity.LivingEntity.handler$zfa000$onTickServerSide(LivingEntity.java:4741) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23184!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at net.minecraft.world.entity.LivingEntity.tick(LivingEntity.java:2378) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23184!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at net.minecraft.world.entity.player.Player.tick(Player.java:241) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23184!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:gunsmithlib.mixins.json:MixinPlayer,pl:mixin:APP:playerAnimator-common.mixins.json:PlayerEntityMixin,pl:mixin:APP:attributeslib.mixins.json:PlayerMixin,pl:mixin:APP:mixins.irons_spellbooks.json:PlayerMixin,pl:mixin:APP:dummmmmmy-common.mixins.json:PlayerMixin,pl:mixin:A}
+-- Player being ticked --
+Details:
+	Entity Type: minecraft:player (net.minecraft.server.level.ServerPlayer)
+	Entity ID: 104
+	Entity Name: Dev
+	Entity's Exact location: 86.26, 91.25, -401.24
+	Entity's Block location: World: (86,91,-402), Section: (at 6,11,14 in 5,5,-26; chunk contains blocks 80,-64,-416 to 95,319,-401), Region: (0,-1; contains chunks 0,-32 to 31,-1, blocks 0,-64,-512 to 511,319,-1)
+	Entity's Momentum: 0.00, 0.00, 0.00
+	Entity's Passengers: []
+	Entity's Vehicle: null
+Stacktrace:
+	at net.minecraft.server.level.ServerPlayer.doTick(ServerPlayer.java:467) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23184!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:moonlight-common.mixins.json:ServerPlayerMixin,pl:mixin:APP:tacz.mixins.json:common.ServerPlayerMixin,pl:mixin:A}
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.tick(ServerGamePacketListenerImpl.java:262) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23184!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:tacz.mixins.json:common.ServerGamePacketListenerImplMixin,pl:mixin:APP:tacz.mixins.json:common.ServerPlayNetHandlerMixin,pl:mixin:A}
+	at net.minecraft.network.Connection.tick(Connection.java:263) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23184!/:?] {re:classloading}
+	at net.minecraft.server.network.ServerConnectionListener.tick(ServerConnectionListener.java:142) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23184!/:?] {re:classloading}
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:907) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23184!/:?] {re:classloading,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:814) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23184!/:?] {re:classloading,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B}
+	at net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:89) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23184!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:661) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23184!/:?] {re:classloading,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:251) ~[forge-1.20.1-47.4.0_mapped_official_1.20.1.jar%23184!/:?] {re:classloading,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B}
+	at java.lang.Thread.run(Thread.java:840) ~[?:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.20.1
+	Minecraft Version ID: 1.20.1
+	Operating System: Mac OS X (aarch64) version 13.4
+	Java Version: 17.0.14, Eclipse Adoptium
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Eclipse Adoptium
+	Memory: 1133608960 bytes (1081 MiB) / 3101687808 bytes (2958 MiB) up to 4294967296 bytes (4096 MiB)
+	CPUs: 8
+	Processor Vendor: Apple Inc.
+	Processor Name: Apple M1
+	Identifier: Apple Inc. Family 0x1b588bb3 Model 0 Stepping 0
+	Microarchitecture: ARM64 SoC: Firestorm + Icestorm
+	Frequency (GHz): 3.20
+	Number of physical packages: 1
+	Number of physical CPUs: 8
+	Number of logical CPUs: 8
+	Graphics card #0 name: Apple M1
+	Graphics card #0 vendor: Apple (0x106b)
+	Graphics card #0 VRAM (MB): 0.00
+	Graphics card #0 deviceId: unknown
+	Graphics card #0 versionInfo: unknown
+	Memory slot #0 capacity (MB): 0.00
+	Memory slot #0 clockSpeed (GHz): 0.00
+	Memory slot #0 type: unknown
+	Virtual memory max (MB): 25600.00
+	Virtual memory used (MB): 22044.52
+	Swap memory total (MB): 9216.00
+	Swap memory used (MB): 8506.81
+	JVM Flags: 0 total; 
+	Server Running: true
+	Player Count: 1 / 8; [ServerPlayer['Dev'/104, l='ServerLevel[New World]', x=86.26, y=91.25, z=-401.24]]
+	Data Packs: vanilla, mod:attributeslib (incompatible), mod:moonlight (incompatible), mod:magitacz (incompatible), mod:gunsmithlib (incompatible), mod:apotheosis (incompatible), mod:geckolib, mod:playeranimator (incompatible), mod:irons_spellbooks, mod:apotheosis_modern_ragnarok (incompatible), mod:tacz, mod:caelus (incompatible), mod:forge, mod:dummmmmmy (incompatible), mod:curios (incompatible), mod:placebo (incompatible), tacz_resources, mod:tslatentitystatus, mod:obscure_api (incompatible), mod:aquamirae (incompatible), mod:apotheotic_additions
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Stable
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'forge'; Server brand changed to 'forge'
+	Launched Version: MOD_DEV
+	ModLauncher: 10.0.9+10.0.9+main.dcd20f30
+	ModLauncher launch target: forgeclientuserdev
+	ModLauncher naming: mcp
+	ModLauncher services: 
+		mixin-0.8.5.jar mixin PLUGINSERVICE 
+		eventbus-6.0.5.jar eventbus PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.0.jar slf4jfixer PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.0.jar object_holder_definalize PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.0.jar runtime_enum_extender PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.0.jar capability_token_subclass PLUGINSERVICE 
+		accesstransformers-8.0.4.jar accesstransformer PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.0.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-10.0.9.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-10.0.9.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		minecraft@1.0
+		lowcodefml@null
+		javafml@null
+	Mod List: 
+		forge-1.20.1-47.4.0_mapped_official_1.20.1.jar    |Minecraft                     |minecraft                     |1.20.1              |DONE      |Manifest: a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		TES-forge-1.20.1-1.5.1_mapped_official_1.20.1.jar |TES                           |tslatentitystatus             |1.5.1               |DONE      |Manifest: NOSIGNATURE
+		selene-499980-6380635_mapped_official_1.20.1.jar  |Moonlight Library             |moonlight                     |1.20-2.13.81        |DONE      |Manifest: NOSIGNATURE
+		main                                              |Playwright's Guns and Buns    |magitacz                      |1.0                 |DONE      |Manifest: NOSIGNATURE
+		gunsmith-lib-1264058-7049169_mapped_official_1.20.|GunsmithLib                   |gunsmithlib                   |4.8.2+mc1.20.1+tacz1|DONE      |Manifest: NOSIGNATURE
+		geckolib-forge-1.20.1-4.4.9_mapped_official_1.20.1|GeckoLib 4                    |geckolib                      |4.4.9               |DONE      |Manifest: NOSIGNATURE
+		player-animation-lib-forge-1.0.2-rc1+1.20_mapped_o|Player Animator               |playeranimator                |1.0.2-rc1+1.20      |DONE      |Manifest: NOSIGNATURE
+		timeless-and-classics-zero-1028108-6654541_mapped_|Timeless & Classics Guns: Zero|tacz                          |1.1.6-hotfix        |DONE      |Manifest: NOSIGNATURE
+		caelus-forge-3.2.0+1.20.1_mapped_official_1.20.1.j|Caelus API                    |caelus                        |3.2.0+1.20.1        |DONE      |Manifest: NOSIGNATURE
+		obscure-api-638417-4616364_mapped_official_1.20.1.|Obscure API                   |obscure_api                   |15                  |DONE      |Manifest: NOSIGNATURE
+		curios-forge-5.14.1+1.20.1_mapped_official_1.20.1.|Curios API                    |curios                        |5.14.1+1.20.1       |DONE      |Manifest: NOSIGNATURE
+		apotheotic-additions-924640-6393313_mapped_officia|Apotheotic Additions          |apotheotic_additions          |2.2.2               |DONE      |Manifest: NOSIGNATURE
+		Placebo-1.20.1-8.6.3_mapped_official_1.20.1.jar   |Placebo                       |placebo                       |8.6.3               |DONE      |Manifest: NOSIGNATURE
+		apothic-attributes-898963-5634071_mapped_official_|Apothic Attributes            |attributeslib                 |1.3.7               |DONE      |Manifest: NOSIGNATURE
+		irons_spellbooks-1.20.1-3.4.0.9_mapped_official_1.|Iron's Spells 'n Spellbooks   |irons_spellbooks              |1.20.1-3.4.0.9      |DONE      |Manifest: NOSIGNATURE
+		Apotheosis-1.20.1-7.4.8_mapped_official_1.20.1.jar|Apotheosis                    |apotheosis                    |7.4.8               |DONE      |Manifest: NOSIGNATURE
+		apotheosis-modern-ragnarok-966582-6956142_mapped_o|Apotheosis Modern Ragnarok: Ze|apotheosis_modern_ragnarok    |5.0.16+mc1.20.1+tacz|DONE      |Manifest: NOSIGNATURE
+		                                                  |Forge                         |forge                         |47.4.0              |DONE      |Manifest: NOSIGNATURE
+		mmmmmmmmmmmm-225738-6237015_mapped_official_1.20.1|MmmMmmMmmmmm                  |dummmmmmy                     |1.20-2.0.6          |DONE      |Manifest: NOSIGNATURE
+		ob-aquamirae-536254-7039863_mapped_official_1.20.1|Aquamirae                     |aquamirae                     |6.1.0               |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: cab9de3b-74be-4a12-b41d-dc6949665074
+	FML: 47.4
+	Forge: net.minecraftforge:47.4.0
