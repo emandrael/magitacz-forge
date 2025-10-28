@@ -78,6 +78,9 @@ public class AddSpellToolTipImageEvent {
                         AttributeInstance spell_shot_reduction = shooter.getAttribute(MagitaczAttributes.CASTING_SHOT_AMPLIFICATION.get());
                         var spell_shot_reduction_value = spell_shot_reduction.getValue();
 
+                        AttributeInstance mana_cost_reduction = shooter.getAttribute(MagitaczAttributes.MANA_COST_REDUCTION.get());
+                        var mana_cost_reduction_value = mana_cost_reduction.getValue();
+
                         int player_cast_type_parameter;
                         boolean singular = false;
 
@@ -110,16 +113,29 @@ public class AddSpellToolTipImageEvent {
 
                         Component full_heading_component = Component.empty().append(bullet_point).append(attachment_heading_component).append(bullet_point);
 
-                        Component affix_spell_component = MagitaczDataUtils.getSpellComponent(spell, spellAffix.getCastType().name(), player_cast_type_parameter, singular, (int) spellAffix.getSpellLevel(attachment,inst));
+                        Component manaCost = MagitaczDataUtils.getManaCostComponent(spell, (float) mana_cost_reduction_value, (int) spellAffix.getSpellLevel(attachment,inst));
 
-                        Component cost = Component.translatable("magitacz.tooltip.mana_cost", spell.getManaCost((int) spellAffix.getSpellLevel(attachment,inst))).withStyle(ChatFormatting.AQUA);
+
+                        Component affix_spell_component;
+
+                        affix_spell_component = MagitaczDataUtils.getSpellComponent(
+                                spell,
+                                spellAffix.getCastType().name(),
+                                spellAffix.getCastParameter(),
+                                singular,
+                                (int) spellAffix.getSpellLevel(attachment,inst),
+                                (float) spell_shot_reduction_value);
+
+
 
 
                         if (affix_spell_component != null) {
 
                             event.getToolTip().add(1,full_heading_component);
                             event.getToolTip().add(2,affix_spell_component);
-                            event.getToolTip().add(2,cost);
+                            event.getToolTip().add(2,Component.empty());
+                            event.getToolTip().add(4,manaCost);
+
                         }
 
                     }

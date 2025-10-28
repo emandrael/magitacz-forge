@@ -1,0 +1,17 @@
+{
+  "type": "magitacz:spells_attachment",
+  "cast_type": "ONSHOOT",
+  "exclusive_group": "spells",
+  "spell": "frostwave",
+  "types": [
+    "magitacz:muzzle"
+  ],
+  "cast_parameter": 10,
+  "levels": {
+    "epic": {
+      "min": 7,
+      "steps": 2,
+      "step": 1.0
+    }
+  }
+}

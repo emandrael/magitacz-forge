@@ -37,10 +37,10 @@ import static net.playwright.magitacz.Utils.SpellCastUtils.doSpellCastOnEntity;
 @Mod.EventBusSubscriber(modid = MagitaczMod.MODID, bus = Mod.EventBusSubscriber.Bus.FORGE)
 public class CastSpellOnShootEvent {
     static Random random = new Random();
+
+
     @SubscribeEvent
     public static void onGunFire(GunFireEvent event) {
-
-
 
         LivingEntity shooter = event.getShooter();
 
@@ -55,7 +55,6 @@ public class CastSpellOnShootEvent {
         for (AttachmentType type : AttachmentType.values())
         {
             var attachment = iGun.getAttachment(gunItem,type);
-
 
             if ( attachment != null && attachment.hasTag()) {
                 Map<DynamicHolder<? extends Affix>, AffixInstance> affixes = AffixHelper.getAffixes(attachment);

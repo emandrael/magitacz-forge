@@ -118,36 +118,22 @@ public class SpellAffix extends AbstractValuedAffix implements GunAffix {
         AbstractSpell spell = SpellRegistry.getSpell(spellId);
 
 
-
-        var mutableComponent = Component.literal("");
-
-        var component = MagitaczDataUtils.getSpellComponent(spell, getCastType().name(),cast_type_parameter,singular,getSpellLevel(attachment,rarity,level));
-
-        Component shift_component;
-
-        if (Screen.hasShiftDown()){
-            //TODO Change Shift to show calculations?
-            shift_component = Component.translatable("magitacz.tooltip.show_extra_information").withStyle(ChatFormatting.GOLD);
-        }
-        else {
-            shift_component = Component.translatable("magitacz.tooltip.hide_extra_information").withStyle(ChatFormatting.YELLOW);
-        }
-
-        Component cost = Component.translatable("magitacz.tooltip.mana_cost", spell.getManaCost((int) getSpellLevel(attachment,rarity,level))).withStyle(ChatFormatting.AQUA);
-
-
-        mutableComponent.append(Component.literal("Spell Attachment")
-                .withStyle(ChatFormatting.GREEN));
-        mutableComponent.append(Component.literal(" • \n"));
-        mutableComponent.append(component);
-        mutableComponent.append(Component.literal("\n\n"));
-        mutableComponent.append(cost);
-        mutableComponent.append(Component.literal("\n"));
+        var mutableComponent = Component.literal("EEE").withStyle(ChatFormatting.WHITE);
 
 
 
 
-        return mutableComponent;
+
+        Component component = MagitaczDataUtils.getSpellComponent(spell, getCastType().name(),cast_type_parameter,singular,getSpellLevel(attachment,rarity,level), 1.0f);
+
+        Component double_new_line = (Component.literal("\n\n"));
+
+        Component manaCost = MagitaczDataUtils.getManaCostComponent(spell,1.0f, getSpellLevel(attachment,rarity,level));
+//
+//
+//
+//
+        return Component.translatable("%s%s%s\n", component, double_new_line, manaCost );
     }
 
 

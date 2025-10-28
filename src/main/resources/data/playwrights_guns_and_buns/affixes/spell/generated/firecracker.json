@@ -1,0 +1,37 @@
+{
+  "type": "magitacz:spells_attachment",
+  "cast_type": "ONHIT",
+  "exclusive_group": "spells",
+  "spell": "firecracker",
+  "types": [
+    "magitacz:muzzle"
+  ],
+  "cast_parameter": 6,
+  "levels": {
+    "common": {
+      "min": 1,
+      "steps": 1,
+      "step": 1.0
+    },
+    "uncommon": {
+      "min": 3,
+      "steps": 1,
+      "step": 1.0
+    },
+    "rare": {
+      "min": 5,
+      "steps": 1,
+      "step": 1.0
+    },
+    "epic": {
+      "min": 7,
+      "steps": 2,
+      "step": 1.0
+    },
+    "mythic": {
+      "min": 10,
+      "steps": 1,
+      "step": 0.0
+    }
+  }
+}

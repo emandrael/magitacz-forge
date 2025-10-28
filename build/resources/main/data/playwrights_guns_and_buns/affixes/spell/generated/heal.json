@@ -1,0 +1,17 @@
+{
+  "type": "magitacz:spells_attachment",
+  "cast_type": "ONKILL",
+  "exclusive_group": "spells",
+  "spell": "heal",
+  "types": [
+    "magitacz:muzzle"
+  ],
+  "cast_parameter": 5,
+  "levels": {
+    "epic": {
+      "min": 7,
+      "steps": 2,
+      "step": 1.0
+    }
+  }
+}

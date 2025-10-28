@@ -255,8 +255,6 @@ dependencies {
 
     implementation fg.deobf("dev.kosmx.player-anim:player-animation-lib-forge:${player_animator_version}")
 
-    implementation fg.deobf("curse.maven:apotheotic-additions-924640:6393313")
-
     implementation fg.deobf("dev.shadowsoffire:Apotheosis:${minecraft_version}-${apoth_version}")
     implementation fg.deobf("curse.maven:apothic-attributes-898963:5634071")
     implementation fg.deobf("dev.shadowsoffire:Placebo:${minecraft_version}-${placebo_version}")
@@ -277,6 +275,9 @@ dependencies {
     implementation fg.deobf("curse.maven:apotheosis-modern-ragnarok-966582:7152588")
     implementation fg.deobf("curse.maven:gunsmith-lib-1264058:7049169")
     implementation fg.deobf("curse.maven:selene-499980:6380635")
+
+
+    //temp iNSTALLATIONS
     implementation fg.deobf("curse.maven:mmmmmmmmmmmm-225738:6237015")
 
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'

@@ -39,8 +39,6 @@ public class CastSpellOnKillEvent {
         LivingEntity shooter = event.getAttacker();
         LivingEntity victim = event.getKilledEntity();
 
-        assert shooter != null;
-
 
         if (!(shooter instanceof LivingEntity) || event.getLogicalSide() != LogicalSide.SERVER) return;
 

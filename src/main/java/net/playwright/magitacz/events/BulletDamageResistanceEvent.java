@@ -29,10 +29,23 @@ public class BulletDamageResistanceEvent {
         var src = event.getSource();
 
         Entity direct = src.getDirectEntity(); // e.g., an arrow or the same attacker for melee
-        LivingEntity attacker = (LivingEntity) src.getEntity();     // the living attacker (shooter), if any
+        if (!(entity instanceof LivingEntity)) return;
+
+        LivingEntity attacker;
+
+        try {
+             attacker = (LivingEntity) src.getEntity();     // the living attacker (shooter), if any
+        }
+        catch (ClassCastException e) {
+            MagitaczMod.LOGGER.warn("Tried to cast an Arrow to LivingEntity", e);
+            return;
+        }
+
+        if (attacker == null) return;
+
 
         String directStr = direct != null ? direct.getType().toShortString() : "null";
-        String attackerStr = attacker != null ? attacker.getType().toShortString() : "null";
+        String attackerStr = attacker.getType().toShortString();
 
         Holder<DamageType> holder = src.typeHolder();
         // 2) Turn the holder into a registry id like "minecraft:mob_attack" or "irons_spellbooks:frost"

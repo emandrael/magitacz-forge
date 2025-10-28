@@ -1,0 +1,45 @@
+{
+  "type": "apotheosis:attribute",
+  "attribute": "magitacz:casting_shot_amplification",
+  "operation": "MULTIPLY_BASE",
+  "values": {
+    "common": {
+      "min": 0.0,
+      "steps": 2,
+      "step": 0.05
+    },
+    "uncommon": {
+      "min": 0.0,
+      "steps": 2,
+      "step": 0.05
+    },
+    "rare": {
+      "min": 0.05,
+      "steps": 3,
+      "step": 0.1
+    },
+    "epic": {
+      "min": 0.1,
+      "steps": 4,
+      "step": 0.1
+    },
+    "mythic": {
+      "min": 0.2,
+      "steps": 3,
+      "step": 0.15
+    },
+    "ancient": {
+      "min": 0.5,
+      "steps": 3,
+      "step": 0.25
+    }
+  },
+  "types": [
+    "magitacz:muzzle",
+    "magitacz:scope",
+    "magitacz:stock",
+    "magitacz:grip",
+    "magitacz:extended_mag",
+    "magitacz:laser"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "type": "magitacz:spells_attachment",
+  "cast_type": "ONHIT",
+  "exclusive_group": "spells",
+  "spell": "blood_slash",
+  "types": [
+    "magitacz:muzzle"
+  ],
+  "cast_parameter": 4,
+  "levels": {
+    "epic": {
+      "min": 4,
+      "steps": 0,
+      "step": 0
+    },
+    "mythic": {
+      "min": 5,
+      "steps": 1,
+      "step": 0.0
+    }
+  }
+}
