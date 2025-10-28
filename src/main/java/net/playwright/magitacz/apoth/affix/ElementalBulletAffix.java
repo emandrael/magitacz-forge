@@ -70,7 +70,6 @@ public class ElementalBulletAffix extends AbstractValuedAffix implements GunAffi
 
     @Override
     public boolean canApplyTo(ItemStack stack, LootCategory category, LootRarity rarity) {
-        MagitaczMod.LOGGER.info("EEE - ELEMENTL BUKKE");
         return super.canApplyTo(stack, category, rarity);
     }
 

@@ -14,7 +14,9 @@ public class ModAttributeEvents {
     @SubscribeEvent
     public static void onEntityAttributeModification(EntityAttributeModificationEvent e) {
         MagitaczMod.LOGGER.info("Adding Spell Shot Reduction Attribute");
-        Attribute attr = MagitaczAttributes.SPELL_SHOT_REDUCTION.get();
+        Attribute attr = MagitaczAttributes.CASTING_SHOT_AMPLIFICATION.get();
+        e.add(EntityType.PLAYER, attr);
+        attr = MagitaczAttributes.MANA_COST_REDUCTION.get();
         e.add(EntityType.PLAYER, attr);
     }
 }

@@ -20,8 +20,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.playwright.magitacz.apoth.affix.ElementalBulletAffix;
 import net.playwright.magitacz.apoth.affix.SpellAffix;
-import net.playwright.magitacz.apoth.category.ExtraLootCategories;
-import net.playwright.magitacz.attachment_modifiers.SpellModifier;
+import net.playwright.magitacz.apoth.category.AttachmentLootCategories;
 import net.playwright.magitacz.attributes.MagitaczAttributes;
 import net.playwright.magitacz.blocks.MagitaczBlocks;
 import net.playwright.magitacz.enchantments.ModEnchantments;
@@ -73,15 +72,9 @@ public class MagitaczMod {
 
         // Register our mod's ForgeConfigSpec so that Forge can create and load the config file for us
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);
-        AttachmentPropertyManager.registerModifier();
-        AttachmentPropertyManager.getModifiers().put("spell", new SpellModifier());
-
-
-
 
         AffixRegistry.INSTANCE.registerCodec(loc("elemental_bullet"), ElementalBulletAffix.CODEC);
         AffixRegistry.INSTANCE.registerCodec(loc("spells_attachment"), SpellAffix.CODEC);
-
 
         modEventBus.addListener(this::gatherData);
 
@@ -101,7 +94,7 @@ public class MagitaczMod {
 
     private void commonSetup(final FMLCommonSetupEvent event) {
         // Some common setup code
-        ExtraLootCategories.init();
+        AttachmentLootCategories.init();
     }
 
     // Add the example block item to the building blocks tab

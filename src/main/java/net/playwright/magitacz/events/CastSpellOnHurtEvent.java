@@ -23,6 +23,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.ai.attributes.AttributeInstance;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -31,7 +32,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.playwright.magitacz.MagitaczMod;
 import net.playwright.magitacz.Utils.MagitaczDataUtils;
 import net.playwright.magitacz.apoth.affix.SpellAffix;
-import net.playwright.magitacz.attachment_modifiers.AttachedSpell;
+import net.playwright.magitacz.attributes.MagitaczAttributes;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -65,8 +66,6 @@ public class CastSpellOnHurtEvent {
         for (AttachmentType type : AttachmentType.values())
         {
             var attachment = iGun.getAttachment(gunItem,type);
-
-
 
             if ( attachment != null && attachment.hasTag()) {
                 Map<DynamicHolder<? extends Affix>, AffixInstance> affixes = AffixHelper.getAffixes(attachment);
@@ -105,25 +104,39 @@ public class CastSpellOnHurtEvent {
 
                         int spellLevel = (int) Math.round(spellAffix.getValue(attachment,inst));
 
-                        MagitaczMod.LOGGER.info("Spell affix found {} of level {}", spellAffix.getSpell(), spellLevel);
+                        AttributeInstance spell_shot_reduction = shooter.getAttribute(MagitaczAttributes.CASTING_SHOT_AMPLIFICATION.get());
+
 
                         switch (spellAffix.getCastType()){
                             case ONHIT: {
                                 // Every X bullets, cast (if param is missing, default 1)
-                                int castPerX = spellAffix.getCastParameter();
 
                                 CompoundTag current_tag = shooter.getPersistentData();
 
+                                var spell_shot_reduction_value = spell_shot_reduction.getValue();
+
+                                var player_cast_type_parameter = (int) Math.round(spellAffix.getCastParameter() / spell_shot_reduction_value);
 
                                 int current_count = current_tag.getInt(key);
 
-
-                                boolean shouldTrigger = current_count % castPerX == 0;
+                                boolean shouldTrigger = current_count % player_cast_type_parameter == 0;
 
                                 if (shouldTrigger) {
                                     doSpellCastOnEntity( shooter, spell, world, spellLevel);
                                 }
 
+                            }
+
+                            case ONHITCHANCE: {
+
+                                var randomNum = random.nextDouble();
+                                double percent =  (spellAffix.getCastParameter() / 100.0);
+
+                                boolean shouldTrigger = randomNum <= percent;
+
+                                if (shouldTrigger) {
+                                    doSpellCastOnEntity( shooter, spell, world, spellLevel);
+                                }
                             }
                         }
                     }

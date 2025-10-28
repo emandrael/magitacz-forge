@@ -6,7 +6,7 @@
   "item.magitacz.elementium_sword": "Elementium Sword",
   "item.magitacz.raw_elementium": "Unstable Elementium",
 
-  "attribute.magitacz.spell_shot_reduction" : "Spell Shot Reduction",
+  "attribute.magitacz.casting_shot_amplification" : "Casting Shot Amplification",
 
   "item.magitacz.elementium_helmet": "Elementium Helmet",
   "item.magitacz.elementium_leggings": "Elementium Leggings",
@@ -87,6 +87,22 @@
   "guns.magitacz:spell_attachment_on_shoot" : "Cast %s every %s bullets %s from this gun.",
   "guns.magitacz:spell_attachment_on_shoot_singular" : "Cast %s every shot %s from this gun.",
 
+  "guns.magitacz:spell_attachment_on_hit_chance" : "%s on an enemy has a %s%% chance of casting %s",
+  "guns.magitacz:spell_attachment_on_kill_chance" : "%s on an enemy has a %s%% chance of casting %s",
+  "guns.magitacz:spell_attachment_on_shoot_chance" : "%s from your gun has a %s%% chance of casting %s",
+
+  "magitacz.tooltip.hide_extra_information" : "Press Shift For More Information",
+  "magitacz.tooltip.show_extra_information" :
+    "Don't like these stats?\nSpells conditions can be hastened with \"Casting Shot Amplification Attribute\"!\nYou can also reduce the mana costs incurred from shots with the \"Mana Cost Reduction\" attribute",
+
+
+
+
+
+  "magitacz.tooltip.mana_cost" : "Mana Cost Per Cast: %s",
+
+  "magitacz.tooltip.bullet_point" : "• ",
+  "magitacz.tooltip.attachment_heading" : "%s Spell Attachment ",
 
   "creativetab.magitacz" : "Magitacz"
 }

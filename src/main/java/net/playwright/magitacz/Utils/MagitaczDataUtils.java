@@ -14,6 +14,11 @@ import io.redspace.ironsspellbooks.api.registry.SpellRegistry;
 import io.redspace.ironsspellbooks.api.spells.AbstractSpell;
 import io.redspace.ironsspellbooks.damage.ISSDamageTypes;
 import io.redspace.ironsspellbooks.registries.MobEffectRegistry;
+import net.minecraft.ChatFormatting;
+import net.minecraft.client.resources.language.I18n;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.Style;
+import net.minecraft.network.chat.TextColor;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.damagesource.DamageType;
@@ -23,26 +28,12 @@ import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.item.ItemStack;
 import net.playwright.magitacz.MagitaczMod;
 import net.playwright.magitacz.apoth.affix.SpellAffix;
-import net.playwright.magitacz.attachment_modifiers.AttachedSpell;
-import net.playwright.magitacz.attachment_modifiers.SpellModifier;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class MagitaczDataUtils {
 
-    public static AbstractSpell getSpellOnAttachment(ItemStack gunItem, GunData gunData, AttachmentType attachmentType) {
-        AttachedSpell attachedSpell = getAttachmentSpellData(gunItem,gunData,attachmentType);
-
-        if (attachedSpell == null) return null;
-
-        String spellName = attachedSpell.getSpellName();
-        AttachedSpell.SpellRegistryEnum spellRegistryEnum = attachedSpell.getSpellRegistry();
-
-        ResourceLocation spellId = new ResourceLocation(spellRegistryEnum.registryName, spellName);
-
-        return SpellRegistry.getSpell(spellId);
-    }
 
     public static AbstractSpell getSpellOnAffix(SpellAffix spellAffix) {
         String spellName = spellAffix.getSpell();
@@ -51,86 +42,74 @@ public class MagitaczDataUtils {
     }
 
 
+    public static Component getSpellComponent(AbstractSpell spell, String castType,int cast_type_parameter, boolean singular, int level) {
+        int spellColor = MagitaczDataUtils.getSchoolColor(spell.getSchoolType().getDisplayName().getString().toLowerCase());
 
-    public static AttachedSpell getAttachmentSpellData(ItemStack gunItem, GunData gunData, AttachmentType attachmentType) {
-        IGun iGun = IGun.getIGunOrNull(gunItem);
-        AttachedSpell attachedSpell = null;
+        var spellNameComponent = Component.translatable(I18n.get(("spell." + IronsSpellbooks.MODID + "." + spell.getSpellName())));
+        var levelComponent = Component.literal(String.valueOf(level));
 
+        spellNameComponent.append(Component.literal(" Lvl. "));
+        spellNameComponent.append(levelComponent);
+        spellNameComponent.withStyle(Style.EMPTY.withColor(TextColor.fromRgb(spellColor)).withUnderlined(true));
 
+        Component component;
 
-        if (iGun == null) {
-            return new AttachedSpell();
-        }
-        else{
-            ResourceLocation attachmentId = iGun.getAttachmentId(gunItem, attachmentType);
+        switch (SpellAffix.CastType.valueOf(castType)) {
+            case ONHIT -> {
 
+                if (singular) {
+                    var onHitComponent = Component.translatable("Lands").withStyle(ChatFormatting.DARK_PURPLE).withStyle(ChatFormatting.UNDERLINE);
+                    return (Component.translatable("guns.magitacz:spell_attachment_on_hit_singular", spellNameComponent, onHitComponent));
 
-            if (!DefaultAssets.isEmptyAttachmentId(attachmentId)) {
-                AttachmentData attachmentData = (AttachmentData)gunData.getExclusiveAttachments().get(attachmentId);
-                if (attachmentData != null) {
-                    JsonProperty<?> m = attachmentData.getModifier().get(SpellModifier.ID);;
-                    if (m != null) {
-                        Object spell = m.getValue();
-                        if (spell instanceof AttachedSpell) {
-                            attachedSpell =  (AttachedSpell) spell;
-                        }
-                    }
                 } else {
-                    CommonAttachmentIndex index = (CommonAttachmentIndex) TimelessAPI.getCommonAttachmentIndex(attachmentId).orElse(null);
-                    if (index != null) {
-                        JsonProperty<?> m = (JsonProperty)index.getData().getModifier().get(SpellModifier.ID);
-                        if (m != null) {
-                            Object spell = m.getValue();
-                            if (spell instanceof AttachedSpell modifier) {
-                                attachedSpell =  (AttachedSpell) spell;
-                            }
-                        }
-                    }
+                    var onHitComponent = Component.translatable("Land").withStyle(ChatFormatting.DARK_PURPLE).withStyle(ChatFormatting.UNDERLINE);
+                    component = (Component.translatable("guns.magitacz:spell_attachment_on_hit", spellNameComponent, cast_type_parameter , onHitComponent));
+
                 }
-            }
-            return attachedSpell;
-        }
-    }
 
-    public static List<AttachedSpell> getAttachedSpells(ItemStack gunItem, GunData gunData) {
-        IGun iGun = IGun.getIGunOrNull(gunItem);
-        List<AttachedSpell> attachedSpells = new ArrayList<>();
-
-
-        if (iGun == null) {
-            return new ArrayList<AttachedSpell>();
-        } else {
-
-            for(AttachmentType type : AttachmentType.values()) {
-                ResourceLocation attachmentId = iGun.getAttachmentId(gunItem, type);
-                if (!DefaultAssets.isEmptyAttachmentId(attachmentId)) {
-                    AttachmentData attachmentData = (AttachmentData)gunData.getExclusiveAttachments().get(attachmentId);
-                    if (attachmentData != null) {
-                        JsonProperty<?> m = attachmentData.getModifier().get(SpellModifier.ID);
-                        if (m != null) {
-                            Object spell = m.getValue();
-                            if (spell instanceof AttachedSpell attachedSpell) {
-                                attachedSpells.add(attachedSpell);
-                            }
-                        }
-                    } else {
-                        CommonAttachmentIndex index = (CommonAttachmentIndex) TimelessAPI.getCommonAttachmentIndex(attachmentId).orElse(null);
-                        if (index != null) {
-                            JsonProperty<?> m = (JsonProperty)index.getData().getModifier().get(SpellModifier.ID);
-                            if (m != null) {
-                                Object spell = m.getValue();
-                                if (spell instanceof AttachedSpell modifier) {
-                                    attachedSpells.add(modifier);
-                                }
-                            }
-                        }
-                    }
-                }
             }
 
-            return attachedSpells;
-        }
+            case ONKILL -> {
+                if (singular) {
+                    var onKillComponent = Component.translatable("Takedown").withStyle(ChatFormatting.DARK_RED).withStyle(ChatFormatting.UNDERLINE);
+                    component = (Component.translatable("guns.magitacz:spell_attachment_on_kill_singular", spellNameComponent, onKillComponent));
+                } else {
+                    var onKillComponent = Component.translatable("Taken Down").withStyle(ChatFormatting.DARK_RED).withStyle(ChatFormatting.UNDERLINE);
+                    component = (Component.translatable("guns.magitacz:spell_attachment_on_kill", spellNameComponent, cast_type_parameter, onKillComponent));
+                }
+            }
+            case ONSHOOT -> {
+                if (singular) {
+                    var onShootComponent = Component.translatable("Fired").withStyle(ChatFormatting.DARK_GREEN).withStyle(ChatFormatting.UNDERLINE);
+                    component = (Component.translatable("guns.magitacz:spell_attachment_on_shoot_singular", spellNameComponent, onShootComponent));
 
+                }
+
+                var onShootComponent = Component.translatable("Shot").withStyle(ChatFormatting.DARK_GREEN).withStyle(ChatFormatting.UNDERLINE);
+                component = (Component.translatable("guns.magitacz:spell_attachment_on_shoot", spellNameComponent, cast_type_parameter, onShootComponent));
+
+            }
+
+            case ONHITCHANCE -> {
+                var onHitComponent = Component.translatable("Landing a shot").withStyle(ChatFormatting.DARK_PURPLE).withStyle(ChatFormatting.UNDERLINE);
+                component = Component.translatable("guns.magitacz:spell_attachment_on_hit_chance", onHitComponent,cast_type_parameter, spellNameComponent);
+            }
+
+            case ONKILLCHANCE -> {
+                var onKillComponent = Component.translatable("Landing a killing shot").withStyle(ChatFormatting.DARK_RED).withStyle(ChatFormatting.UNDERLINE);
+                component = Component.translatable("guns.magitacz:spell_attachment_on_kill_chance",onKillComponent,cast_type_parameter, spellNameComponent);
+            }
+
+            case ONSHOOTCHANCE -> {
+                var onShootComponenet = Component.translatable("Firing").withStyle(ChatFormatting.DARK_GREEN).withStyle(ChatFormatting.UNDERLINE);
+                component = Component.translatable("guns.magitacz:spell_attachment_on_shoot_chance",onShootComponenet,cast_type_parameter, spellNameComponent);
+            }
+
+            default -> {
+                component = Component.literal("");
+            }
+        }
+        return component;
     }
 
     public static MobEffect getElementEffect(String element) {

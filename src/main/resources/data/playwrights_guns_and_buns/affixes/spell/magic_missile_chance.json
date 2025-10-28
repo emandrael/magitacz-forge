@@ -1,0 +1,29 @@
+{
+  "type": "magitacz:spells_attachment",
+  "cast_type" : "ONSHOOT",
+  "exclusive_group" : "fire_spell",
+  "spell": "magic_missile",
+  "types": [
+    "magitacz:muzzle"
+  ],
+
+  "cast_parameter": 3,
+
+  "levels": {
+    "rare": {
+      "min": 1,
+      "steps": 1,
+      "step": 1.0
+    },
+    "epic": {
+      "min": 3,
+      "steps": 1,
+      "step": 1.00
+    },
+    "mythic": {
+      "min": 5,
+      "steps": 1,
+      "step": 0
+    }
+  }
+}
