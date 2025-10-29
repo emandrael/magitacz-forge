@@ -41,8 +41,33 @@ import java.util.Map;
 import static net.playwright.magitacz.Utils.SpellCastUtils.doSpellCastOnEntity;
 
 
+
 @Mod.EventBusSubscriber(modid = MagitaczMod.MODID, bus = Mod.EventBusSubscriber.Bus.FORGE)
 public class AddSpellToolTipImageEvent {
+
+    public static boolean attachmentsHasSpellAffixes(ItemStack gunItemStack) {
+
+
+        for (AttachmentType type : AttachmentType.values())
+        {
+            var iGun = IGun.getIGunOrNull(gunItemStack);
+            var attachment = iGun.getAttachment(gunItemStack,type);
+
+            if (attachment.hasTag()) {
+                Map<DynamicHolder<? extends Affix>, AffixInstance> affixes = AffixHelper.getAffixes(attachment);
+                for (Map.Entry<DynamicHolder<? extends Affix>, AffixInstance> entry : affixes.entrySet()) {
+                    AffixInstance inst = entry.getValue();
+                    if (inst.affix().get() instanceof SpellAffix) {
+                        return true;
+                    }
+                }
+}
+            }
+        return false;
+        }
+
+
+
     @SubscribeEvent
     public static void onTooltip(ItemTooltipEvent event) {
         ItemStack gunItemStack = event.getItemStack();
@@ -57,6 +82,19 @@ public class AddSpellToolTipImageEvent {
         IGun iGun = IGun.getIGunOrNull(gunItemStack);
 
         if (iGun == null) return;
+
+
+        if (! attachmentsHasSpellAffixes(gunItemStack)) {
+            return;
+        }
+
+
+        if (!Screen.hasControlDown()) {
+            event.getToolTip().add(1,Component.literal("Press CTRL/CMD for to see Attached Spells").withStyle(ChatFormatting.GRAY));
+            return;
+        }
+
+
 
         for (AttachmentType type : AttachmentType.values())
         {
@@ -108,11 +146,6 @@ public class AddSpellToolTipImageEvent {
                         var attachment_heading_string = type.name().toLowerCase();
                         var first_letter_cap = attachment_heading_string.substring(0,1).toUpperCase();
 
-                        Component bullet_point = Component.translatable("magitacz.tooltip.bullet_point").withStyle(ChatFormatting.YELLOW, ChatFormatting.BOLD);
-                        Component attachment_heading_component = Component.translatable("magitacz.tooltip.attachment_heading", (first_letter_cap + attachment_heading_string.substring(1))).withStyle(ChatFormatting.GREEN);
-
-                        Component full_heading_component = Component.empty().append(bullet_point).append(attachment_heading_component).append(bullet_point);
-
                         Component manaCost = MagitaczDataUtils.getManaCostComponent(spell, (float) mana_cost_reduction_value, (int) spellAffix.getSpellLevel(attachment,inst));
 
 
@@ -130,23 +163,21 @@ public class AddSpellToolTipImageEvent {
 
 
                         if (affix_spell_component != null) {
-
-                            event.getToolTip().add(1,full_heading_component);
+                            event.getToolTip().add(1,Component.empty());
                             event.getToolTip().add(2,affix_spell_component);
                             event.getToolTip().add(2,Component.empty());
                             event.getToolTip().add(4,manaCost);
-
                         }
-
                     }
-
-
                 });
             }
 
-
         }
 
+        if (!Screen.hasShiftDown()) {
+            event.getToolTip().add(event.getToolTip().size(),Component.empty());
+            event.getToolTip().add(event.getToolTip().size(),Component.literal("Press SHIFT for Calculations").withStyle(ChatFormatting.GRAY, ChatFormatting.UNDERLINE));
+        }
 
     }
 }

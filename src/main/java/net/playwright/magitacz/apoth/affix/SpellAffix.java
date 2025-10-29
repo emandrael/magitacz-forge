@@ -85,17 +85,6 @@ public class SpellAffix extends AbstractValuedAffix implements GunAffix {
 
 
     @Override
-    public boolean canApplyTo(ItemStack attachment, LootCategory category, LootRarity rarity) {
-        // base type validation
-        if (category == LootCategory.NONE) return false;
-        Set<LootCategory> validTypes = AttachmentLootCategories.all();
-        if (!validTypes.isEmpty() && !validTypes.contains(category)) return false;
-
-        return true;
-    }
-
-
-    @Override
     public Component getAugmentingText(ItemStack stack, LootRarity rarity, float level) {
         double value = getValue(stack, rarity, level);
         double min = getValue(stack, rarity, 0.0F);

@@ -61,8 +61,8 @@ public class MagitaczLootProvider {
             for (String gun : guns) {
                 String pillagedGunId = MagitaczMod.DEFAULT_PACK_NAME + ":" + gun;
                 output.accept(
-                        MagitaczMod.loc("kits/tacz/pistol/" + gun + pillagedStr),
-                        this.gunAndAmmo(pillagedGunId, "create_armorer:rbapb", 3, 4)
+                        MagitaczMod.loc("kits/tacz/pistol/" + gun),
+                        this.gunAndAmmo(pillagedGunId, "playwrights_gunpack:copper_round", 3, 4)
                 );
             }
 
@@ -70,12 +70,9 @@ public class MagitaczLootProvider {
                 String pillagedGunId = MagitaczMod.DEFAULT_PACK_NAME + ":" + gun + pillagedStr;
                 output.accept(
                         MagitaczMod.loc("kits/tacz/pistol/" + gun + pillagedStr),
-                        this.gunAndAmmo(pillagedGunId, "create_armorer:rbapb", 3, 4)
+                        this.gunAndAmmo(pillagedGunId, "playwrights_gunpack:copper_round", 3, 4)
                 );
             }
-
-
-            output.accept(MagitaczMod.loc("kits/tacz/pistol/whirly_pillaged"), this.gunAndAmmo("playwrights_gunpack:pistol_revolver_whirly_pillaged", "create_armorer:rbapb", 3, 4));
 
             output.accept(
                     MagitaczMod.loc("injects/chest/integrated_dungeons"),

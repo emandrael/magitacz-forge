@@ -49,6 +49,7 @@ public class CastSpellOnHurtEvent {
     static Random random = new Random();
 
 
+
     @SubscribeEvent
     public static void onEntityHurtByGunWithSpellAffix(EntityHurtByGunEvent.Post event) {
 

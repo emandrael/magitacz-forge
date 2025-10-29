@@ -1,9 +1,11 @@
 package net.playwright.magitacz.events;
 
+import com.tacz.guns.api.TimelessAPI;
 import com.tacz.guns.api.event.common.GunFireEvent;
 import com.tacz.guns.api.item.IGun;
 import com.tacz.guns.api.item.attachment.AttachmentType;
 import com.tacz.guns.item.ModernKineticGunScriptAPI;
+import com.tacz.guns.resource.index.CommonAttachmentIndex;
 import com.tacz.guns.resource.pojo.data.gun.GunData;
 import dev.shadowsoffire.apotheosis.adventure.affix.Affix;
 import dev.shadowsoffire.apotheosis.adventure.affix.AffixHelper;
@@ -24,11 +26,13 @@ import net.minecraft.world.level.Level;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.LogicalSide;
 import net.minecraftforge.fml.common.Mod;
+import net.playwright.magitacz.Config;
 import net.playwright.magitacz.MagitaczMod;
 import net.playwright.magitacz.Utils.MagitaczDataUtils;
 import net.playwright.magitacz.apoth.affix.SpellAffix;
 import net.playwright.magitacz.attributes.MagitaczAttributes;
 
+import java.util.ArrayList;
 import java.util.Map;
 import java.util.Random;
 
@@ -39,8 +43,25 @@ public class CastSpellOnShootEvent {
     static Random random = new Random();
 
 
+
+    @SubscribeEvent
+    public static void onDebugShot(GunFireEvent event) {
+        if (!Config.debug) return;
+
+        ArrayList<String> attachments = new ArrayList<>();
+
+        for (Map.Entry<ResourceLocation, CommonAttachmentIndex> attachment : TimelessAPI.getAllCommonAttachmentIndex().stream().toList()) {
+            attachments.add(String.format("\"%s@10\"",attachment.getKey()));
+        }
+
+        MagitaczMod.LOGGER.info(String.format("%s",attachments));
+
+    }
+
     @SubscribeEvent
     public static void onGunFire(GunFireEvent event) {
+
+
 
         LivingEntity shooter = event.getShooter();
 

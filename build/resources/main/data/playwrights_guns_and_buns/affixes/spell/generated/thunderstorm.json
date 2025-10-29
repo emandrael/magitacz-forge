@@ -1,6 +1,6 @@
 {
   "type": "magitacz:spells_attachment",
-  "cast_type": "ONSHOOT",
+  "cast_type": "ONSHOOTCHANCE",
   "exclusive_group": "spells",
   "spell": "thunderstorm",
   "types": [

@@ -37,9 +37,6 @@
   "types": [
     "magitacz:muzzle",
     "magitacz:scope",
-    "magitacz:stock",
-    "magitacz:grip",
-    "magitacz:extended_mag",
     "magitacz:laser"
   ]
 }
