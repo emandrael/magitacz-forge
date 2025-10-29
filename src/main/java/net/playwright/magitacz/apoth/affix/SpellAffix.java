@@ -118,13 +118,25 @@ public class SpellAffix extends AbstractValuedAffix implements GunAffix {
         AbstractSpell spell = SpellRegistry.getSpell(spellId);
 
 
-        var mutableComponent = Component.literal("EEE").withStyle(ChatFormatting.WHITE);
+        var mutableComponent = Component.literal(String.format("%s ERROR", spellId)).withStyle(ChatFormatting.WHITE);
+
+
+        if (attachment == null || rarity == null) return mutableComponent;
 
 
 
 
+        Component component;
+        try {
+            component = MagitaczDataUtils.getSpellComponent(spell, getCastType().name(),cast_type_parameter,singular,getSpellLevel(attachment,rarity,level), 1.0f);
+        }
 
-        Component component = MagitaczDataUtils.getSpellComponent(spell, getCastType().name(),cast_type_parameter,singular,getSpellLevel(attachment,rarity,level), 1.0f);
+        catch (Exception e) {
+            return  Component.literal(String.format("%s , %s ERROR Please Check Apoth Tables", spell.getSpellName(), spell.getSpellId())).withStyle(ChatFormatting.WHITE);
+        }
+
+
+
 
         Component double_new_line = (Component.literal("\n\n"));
 

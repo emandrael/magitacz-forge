@@ -19,8 +19,8 @@ public class MagitaczAttributes {
     );
 
     public static final RegistryObject<Attribute> MANA_COST_REDUCTION = ATTRIBUTES.register(
-            "mana_cost_reduction.json",
-            () -> new RangedAttribute("attribute." + MagitaczMod.MODID + ".mana_cost_reduction.json", 1.0D, 0.0D, 2.0D)
+            "mana_cost_reduction",
+            () -> new RangedAttribute("attribute." + MagitaczMod.MODID + ".mana_cost_reduction", 1.0D, 0.0D, 2.0D)
                     .setSyncable(true) // important for client visibility
     );
 

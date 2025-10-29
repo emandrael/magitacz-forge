@@ -19,7 +19,7 @@ mixinConfigs = "magitacz.mixins.json"
 # The modid of the mod
 modId = "magitacz" #mandatory
 # The version number of the mod
-version = "1.0" #mandatory
+version = "1.1" #mandatory
 # A display name for the mod
 displayName = "Playwright's Guns and Buns" #mandatory
 # A URL to query for updates for this mod. See the JSON update specification https://docs.minecraftforge.net/en/latest/misc/updatechecker/

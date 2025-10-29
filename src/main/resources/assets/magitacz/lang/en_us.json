@@ -7,7 +7,31 @@
   "item.magitacz.raw_elementium": "Unstable Elementium",
 
   "attribute.magitacz.casting_shot_amplification" : "Casting Shot Amplification",
+  "attribute.magitacz.mana_cost_reduction" : "Mana Shot Reduction",
 
+  "affix.playwrights_guns_and_buns:muzzle/attribute/attachment_adrenalinic" : "Adrenalinic Catalyst",
+  "affix.playwrights_guns_and_buns:muzzle/attribute/attachment_adrenalinic.suffix" : "of the Sudden Tempest",
+
+  "affix.playwrights_guns_and_buns:muzzle/attribute/attachment_large_capacity" : "Boundless Magazine Attachment",
+  "affix.playwrights_guns_and_buns:muzzle/attribute/attachment_large_capacity.suffix" : "of the Boundless Chamber",
+
+  "affix.playwrights_guns_and_buns:muzzle/attribute/attachment_lightweight" : "Featherlight Attachment",
+  "affix.playwrights_guns_and_buns:muzzle/attribute/attachment_lightweight.suffix" : "of the Featherweight Frame",
+
+  "affix.playwrights_guns_and_buns:muzzle/attribute/attachment_mana" : "Mana Conduit",
+  "affix.playwrights_guns_and_buns:muzzle/attribute/attachment_mana.suffix" : "of the Arcane Reservoir",
+
+  "affix.playwrights_guns_and_buns:muzzle/attribute/attachment_mundane" : "Mundane Spark Attachment",
+  "affix.playwrights_guns_and_buns:muzzle/attribute/attachment_mundane.suffix" : "of the Mundane Spark",
+
+  "affix.playwrights_guns_and_buns:muzzle/attribute/attachment_tungstenic" : "Tungstenic Conduit",
+  "affix.playwrights_guns_and_buns:muzzle/attribute/attachment_tungstenic.suffix" : "of the Tungsten Core",
+
+  "affix.playwrights_guns_and_buns:muzzle/attribute/casting_shot_amplification" : "Arcane Shot Amplification",
+  "affix.playwrights_guns_and_buns:muzzle/attribute/casting_shot_amplification.suffix" : "of Masterful Enchantment",
+
+  "affix.playwrights_guns_and_buns:muzzle/attribute/mana_cost_reduction" : "Aetheric Efficiency",
+  "affix.playwrights_guns_and_buns:muzzle/attribute/mana_cost_reduction.suffix" : "of the Frugal Mage",
 
   "affix.playwrights_guns_and_buns:spell/generated/ball_lightning" : "Ball Lightning",
   "affix.playwrights_guns_and_buns:spell/generated/ball_lightning.suffix" : "of the Shocking Burst",
