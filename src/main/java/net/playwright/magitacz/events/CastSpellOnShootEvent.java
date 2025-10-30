@@ -4,8 +4,10 @@ import com.tacz.guns.api.TimelessAPI;
 import com.tacz.guns.api.event.common.GunFireEvent;
 import com.tacz.guns.api.item.IGun;
 import com.tacz.guns.api.item.attachment.AttachmentType;
+import com.tacz.guns.client.resource.index.ClientGunIndex;
 import com.tacz.guns.item.ModernKineticGunScriptAPI;
 import com.tacz.guns.resource.index.CommonAttachmentIndex;
+import com.tacz.guns.resource.index.CommonGunIndex;
 import com.tacz.guns.resource.pojo.data.gun.GunData;
 import dev.shadowsoffire.apotheosis.adventure.affix.Affix;
 import dev.shadowsoffire.apotheosis.adventure.affix.AffixHelper;
@@ -32,9 +34,7 @@ import net.playwright.magitacz.Utils.MagitaczDataUtils;
 import net.playwright.magitacz.apoth.affix.SpellAffix;
 import net.playwright.magitacz.attributes.MagitaczAttributes;
 
-import java.util.ArrayList;
-import java.util.Map;
-import java.util.Random;
+import java.util.*;
 
 import static net.playwright.magitacz.Utils.SpellCastUtils.doSpellCastOnEntity;
 
@@ -55,6 +55,89 @@ public class CastSpellOnShootEvent {
         }
 
         MagitaczMod.LOGGER.info(String.format("%s",attachments));
+
+        ArrayList<String> guns = new ArrayList<>();
+
+        for (Map.Entry<ResourceLocation, ClientGunIndex> gun : TimelessAPI.getAllClientGunIndex().stream().toList()) {
+            guns.add(String.format("\"%s\"",gun.getKey()));
+        }
+
+        MagitaczMod.LOGGER.info(String.format("%s",guns));
+
+        final int maxDurability = 1500;
+        final double jamMultiplier = 0.5;
+        final int jamTime = 100;
+
+        final double pillagedJamMultiplier = 2.5;
+        final int pillagedDurability = 200;
+
+        final double midJamMultiplier = 1.5;
+        final int midDurability = 750;
+
+
+        List<String> entries = new ArrayList<>();
+        for (Map.Entry<ResourceLocation, ClientGunIndex> e : TimelessAPI.getAllClientGunIndex().stream().toList()) {
+            ResourceLocation id = e.getKey();
+
+            String entry;
+
+            if (id.toString().contains("_pillaged")){
+                entry = String.format(
+                        Locale.ROOT,
+                        """
+                        {
+                        "gunId": "%s",
+                        "maxDurability": %d,
+                        "jamMultiplier": %.1f,
+                        "jamTime": %d
+                        }""",
+                        id,
+                        pillagedDurability,
+                        pillagedJamMultiplier,
+                        jamTime
+                );
+            } else if (id.toString().contains("playwrights_gunpack")) {
+                entry = String.format(
+                        Locale.ROOT,
+                        """
+                        {
+                        "gunId": "%s",
+                        "maxDurability": %d,
+                        "jamMultiplier": %.1f,
+                        "jamTime": %d
+                        }""",
+                        id,
+                        midDurability,
+                        midJamMultiplier,
+                        jamTime
+                );
+            }
+            else {
+                entry = String.format(
+                        Locale.ROOT,
+                        """
+                                {
+                                "gunId": "%s",
+                                "maxDurability": %d,
+                                "jamMultiplier": %.1f,
+                                "jamTime": %d
+                                }""",
+                        id,
+                        maxDurability,
+                        jamMultiplier,
+                        jamTime
+                );
+            }
+            entries.add(entry);
+        }
+
+        String out = String.format(
+            """
+            "durabilityList": [
+            %s
+            ]""", String.join(",\n", entries));
+
+        MagitaczMod.LOGGER.info(out);
 
     }
 
