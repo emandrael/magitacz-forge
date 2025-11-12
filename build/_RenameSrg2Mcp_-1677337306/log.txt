@@ -1,0 +1,15 @@
+Java Launcher: /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home/bin/java
+Arguments: '--task, SRG_TO_MCP, --input, /Users/rai/.gradle/caches/modules-2/files-2.1/curse.maven/pillagers-gun-948255/6875446/8c861b275a4432ff0cd72b0d286faa93ee7ba90c/pillagers-gun-948255-6875446.jar, --output, /Users/rai/.gradle/caches/forge_gradle/deobf_dependencies/curse/maven/pillagers-gun-948255/6875446_mapped_official_1.20.1/pillagers-gun-948255-6875446_mapped_official_1.20.1.jar, --mcp, /Users/rai/.gradle/caches/forge_gradle/mcp_repo/net/minecraft/mapping/1.20.1/mapping-1.20.1-mapping.zip, --strip-signatures'
+Classpath:
+ - /Users/rai/.gradle/caches/forge_gradle/maven_downloader/net/minecraftforge/installertools/1.4.4/installertools-1.4.4-fatjar.jar
+Working directory: /Users/rai/Projects/magitacz-forge/build/_RenameSrg2Mcp_-1677337306
+Main class: net.minecraftforge.installertools.ConsoleTool
+====================================
+Task: SRG_TO_MCP
+Input:  /Users/rai/.gradle/caches/modules-2/files-2.1/curse.maven/pillagers-gun-948255/6875446/8c861b275a4432ff0cd72b0d286faa93ee7ba90c/pillagers-gun-948255-6875446.jar
+Output: /Users/rai/.gradle/caches/forge_gradle/deobf_dependencies/curse/maven/pillagers-gun-948255/6875446_mapped_official_1.20.1/pillagers-gun-948255-6875446_mapped_official_1.20.1.jar
+MCP:    /Users/rai/.gradle/caches/forge_gradle/mcp_repo/net/minecraft/mapping/1.20.1/mapping-1.20.1-mapping.zip
+Loading MCP Data
+Processing ZIP file
+Stripped Manifest of sha digests
+Process complete

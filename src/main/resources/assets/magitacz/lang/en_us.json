@@ -9,6 +9,16 @@
   "attribute.magitacz.casting_shot_amplification" : "Casting Shot Amplification",
   "attribute.magitacz.mana_cost_reduction" : "Mana Shot Reduction",
 
+  "death.attack.ice_magic": "%1$s §bwas encased in ice by§r %2$s, %3$s",
+  "death.attack.evocation_magic": "%1$s §dwas overwhelmed by spectral summons from§r %2$s",
+  "death.attack.ender_magic": "%1$s §5had their essence warped into an ender pearl by§r %2$s",
+  "death.attack.fire_magic": "%1$s §cwas reduced to cinders by§r %2$s",
+  "death.attack.holy_magic": "%1$s §ewas smitten by radiant judgement from§r %2$s",
+  "death.attack.blood_magic": "%1$s §4was drained of every drop by§r %2$s",
+  "death.attack.nature_magic": "%1$s §awas reclaimed by the wilds of§r %2$s",
+  "death.attack.eldritch_magic": "%1$s §8was unmade by eldritch whispers of§r %2$s",
+
+
   "affix.playwrights_guns_and_buns:muzzle/attribute/attachment_adrenalinic" : "Adrenalinic Catalyst",
   "affix.playwrights_guns_and_buns:muzzle/attribute/attachment_adrenalinic.suffix" : "of the Sudden Tempest",
 

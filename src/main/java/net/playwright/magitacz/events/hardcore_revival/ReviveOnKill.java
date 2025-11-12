@@ -5,14 +5,19 @@ import net.blay09.mods.hardcorerevival.HardcoreRevival;
 import net.blay09.mods.hardcorerevival.capability.HardcoreRevivalData;
 import net.minecraft.client.Minecraft;
 import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.chat.Component;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.event.entity.player.PlayerWakeUpEvent;
 import net.minecraftforge.event.level.SleepFinishedTimeEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -31,29 +36,46 @@ public class ReviveOnKill {
         MagitaczMod.LOGGER.info("AWOKEN");
     }
 
+//    static final Item melon = Items.MELON_SEEDS;
+
+
     @SubscribeEvent
     public static void onEntityKill(EntityKillByGunEvent event) {
+
+
         if (ModList.get().isLoaded("hardcorerevival")) {
             Player player = (Player) event.getAttacker();
 
             HardcoreRevivalData playerData =  HardcoreRevival.getManager().getRevivalData(player);
 
             if (playerData.isKnockedOut()) {
-                HardcoreRevival.getManager().wakeup(player, true);
 
 
                 if (player instanceof ServerPlayer sp) {
-                    sp.level().broadcastEntityEvent(sp, (byte)35); // triggers overlay + particles on clients
-                    sp.level().playSound(null, sp.getX(), sp.getY(), sp.getZ(),
-                            SoundEvents.TOTEM_USE, SoundSource.PLAYERS, 1.0F, 1.0F);
+                    Minecraft.getInstance().execute(() ->
+                            Minecraft.getInstance().gameRenderer.displayItemActivation(Items.MELON_SLICE.getDefaultInstance()));
+
+
+                    ServerLevel serverLevel = (ServerLevel) player.level();
+
+                    Vec3 pos = player.position(); // or any location you want
+                    serverLevel.sendParticles(
+                            ParticleTypes.HEART, // particle type
+                            pos.x, pos.y + 1.0D, pos.z,     // center position
+                            32,                             // count
+                            0.5D, 0.5D, 0.5D,               // spread on X/Y/Z
+                            0.0D                            // speed (motion magnitude)
+                    );
+
+                    HardcoreRevival.getManager().wakeup(player, true);
+
+
                 }
+
+
             }
 
-            if (player.level().isClientSide && player == Minecraft.getInstance().player) {
-                Minecraft.getInstance().execute(() ->
-                        Minecraft.getInstance().gameRenderer.displayItemActivation(new ItemStack(Items.MELON_SLICE))
-                );
-            }
+
 
         }
 

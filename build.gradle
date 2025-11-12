@@ -277,7 +277,11 @@ dependencies {
     implementation fg.deobf("curse.maven:selene-499980:6380635")
 
     // Hardcore Revival
+    implementation fg.deobf("curse.maven:balm-531761:7087245")
     implementation fg.deobf("curse.maven:hardcore-revival-274036:7174968")
+
+    // Pillager's Gun
+    implementation fg.deobf("curse.maven:pillagers-gun-948255:6875446")
 
 
     //temp iNSTALLATIONS
@@ -345,6 +349,10 @@ tasks.register('installMod', Copy) {
     }
     if (Os.isFamily(Os.FAMILY_MAC))
     {
+        def modsDir = file("/Users/rai/Library/Application Support/PrismLauncher/instances/playwrights_guns_and_buns_client/minecraft/mods")
+        dependsOn tasks.named('reobfJar')
+        from(tasks.named('jar').flatMap { it.archiveFile })
+        into modsDir
         println("No mac setup")
     }
 

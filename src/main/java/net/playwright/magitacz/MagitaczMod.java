@@ -1,6 +1,7 @@
 package net.playwright.magitacz;
 
 import com.mojang.logging.LogUtils;
+import com.tacz.guns.api.resource.ResourceManager;
 import com.tacz.guns.resource.modifier.AttachmentPropertyManager;
 import dev.shadowsoffire.apotheosis.adventure.affix.AffixRegistry;
 import net.minecraft.resources.ResourceLocation;
@@ -81,6 +82,7 @@ public class MagitaczMod {
 
         ResourceLocation hudResource = new ResourceLocation("magitacz","textures/item/elementium.png");
 
+        registerDefaultExtraGunPack();
 
     }
 
@@ -90,6 +92,12 @@ public class MagitaczMod {
         var generator = event.getGenerator();
         var output = generator.getPackOutput();
         boolean includeServer = event.includeServer();
+    }
+
+
+    private static void registerDefaultExtraGunPack() {
+        String jarDefaultPackPath = String.format("/assets/%s/custom/%s", MODID, DEFAULT_PACK_NAME);
+        ResourceManager.registerExportResource(MagitaczMod.class, jarDefaultPackPath);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {

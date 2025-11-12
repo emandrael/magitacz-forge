@@ -1,0 +1,7 @@
+{
+    "name": "playwrights_gunpack.gun.rifle_assult_peacock",
+    "display": "playwrights_gunpack:rifle_assult_peacock_display",
+    "data": "playwrights_gunpack:rifle_assult_peacock_data",
+    "type": "rifle",
+    "sort": 350
+}

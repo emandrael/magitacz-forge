@@ -1,0 +1,8 @@
+{
+    "name": "playwrights_gunpack.gun.pistol_revolver_whirly_pillaged",
+    "display": "playwrights_gunpack:pistol_revolver_whirly_pillaged_display",
+    "data": "playwrights_gunpack:pistol_revolver_whirly_pillaged_data",
+    "tooltip": "playwrights_gunpack.gun.pillaged.desc",
+    "type": "pistol",
+    "sort": 352
+}

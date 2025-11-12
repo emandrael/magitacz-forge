@@ -150,6 +150,13 @@ versionRange="[6.1.0,)"
 ordering="NONE"
 side="BOTH"
 
+[[dependencies.magitacz]]
+modId="hardcorerevival"
+mandatory=false
+versionRange="[12.0.9,)"
+ordering="NONE"
+side="BOTH"
+
 
 
 

@@ -10,6 +10,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import net.playwright.magitacz.Config;
 import net.playwright.magitacz.MagitaczMod;
 
 @Mod.EventBusSubscriber(modid = MagitaczMod.MODID, bus = Mod.EventBusSubscriber.Bus.FORGE)
@@ -18,7 +19,7 @@ public class test {
     @SubscribeEvent
     public static void onLivingHurt(LivingHurtEvent event) {
         // Only log on the server to avoid double spam
-        if (event.getEntity().level().isClientSide) return;
+        if (event.getEntity().level().isClientSide && !Config.debug) return;
 
         DamageSource src = event.getSource();
 
@@ -42,5 +43,7 @@ public class test {
 
         String directStr = direct != null ? direct.getType().toShortString() : "null";
         String attackerStr = attacker != null ? attacker.getType().toShortString() : "null";
+
+        MagitaczMod.LOGGER.info(directStr + " " + attackerStr + " " + victimName + " " + amount);
     }
 }

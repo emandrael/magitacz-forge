@@ -1,0 +1,39 @@
+{
+  "pack.playwrights_gunpack.name": "Playwright's Gunpack",
+
+  "pack.playwrights_gunpack.desc": "Some modified weapons textures and models from a plethora of differnt gun packs!",
+
+  "playwrights_gunpack.gun.pillaged.desc": "§8This gun has been through a lot, maybe you can make something with it? (Check Usages (U))",
+  "playwrights_gunpack.gun.rifle_assult_peacock_pillaged": "\"Peacock\" Assult Rifle - §8Pillaged",
+  "playwrights_gunpack.gun.shotgun_db_rock_pillaged": "\"Rock\" Shotgun - §8Pillaged",
+  "playwrights_gunpack.gun.pistol_auto_stress_out_pillaged": "\"Stressed Out\" Pistol - §8Pillaged",
+  "playwrights_gunpack.gun.pistol_revolver_whirly_pillaged": "\"Whirly\" Revolver - §8Pillaged",
+  "playwrights_gunpack.gun.sniper_semi_unclassical_pillaged": "\"Unclassical M1\" Semi Rifle - §8Pillaged",
+
+  "playwrights_gunpack.gun.rifle_assult_peacock": "\"Peacock\" Assult Rifle",
+  "playwrights_gunpack.gun.shotgun_db_rock": "\"Rock\" Shotgun",
+  "playwrights_gunpack.gun.pistol_auto_stress_out": "\"Stressed Out\" Pistol",
+  "playwrights_gunpack.gun.pistol_revolver_whirly": "\"Whirly\" Revolver",
+  "playwrights_gunpack.gun.sniper_semi_unclassical": "\"Unclassical M1\" Semi Rifle",
+  "playwrights_gunpack.ammo.copper_round.name": "Copper AP Ammo",
+
+  "playwrights_gunpack.ammo.copper_sniper_ammo.name": "§7Copper Sniper Ammo§r",
+  "playwrights_gunpack.ammo.brass_sniper_ammo.name": "§2Brass Sniper Ammo§r",
+  "playwrights_gunpack.ammo.aluminium_sniper_ammo.name": "§9Aluminium Sniper Ammo§r",
+  "playwrights_gunpack.ammo.polymer_sniper_ammo.name": "§5Polymer Sniper Ammo§r",
+
+  "playwrights_gunpack.ammo.copper_pistol_ammo": "§7Copper Pistol Ammo§r",
+  "playwrights_gunpack.ammo.brass_pistol_ammo": "§2Brass Pistol Ammo§r",
+  "playwrights_gunpack.ammo.aluminium_pistol_ammo": "§9Aluminium Pistol Ammo§r",
+  "playwrights_gunpack.ammo.polymer_pistol_ammo": "§5Polymer Pistol Ammo§r",
+
+  "playwrights_gunpack.ammo.copper_rifle_ammo": "§7Copper Rifle Ammo§r",
+  "playwrights_gunpack.ammo.brass_rifle_ammo": "§2Brass Rifle Ammo§r",
+  "playwrights_gunpack.ammo.aluminium_rifle_ammo": "§9Aluminium Rifle Ammo§r",
+  "playwrights_gunpack.ammo.polymer_rifle_ammo": "§5Polymer Rifle Ammo§r",
+
+  "playwrights_gunpack.ammo.copper_shotgun_ammo": "§7Copper Shotgun Ammo§r",
+  "playwrights_gunpack.ammo.brass_shotgun_ammo": "§2Brass Shotgun Ammo§r",
+  "playwrights_gunpack.ammo.aluminium_shotgun_ammo": "§9Aluminium Shotgun Ammo§r",
+  "playwrights_gunpack.ammo.polymer_shotgun_ammo": "§5Polymer Shotgun Ammo§r"
+}

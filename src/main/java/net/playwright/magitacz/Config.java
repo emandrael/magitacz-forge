@@ -1,23 +1,15 @@
 package net.playwright.magitacz;
 
-import com.tacz.guns.api.TimelessAPI;
-import com.tacz.guns.init.ModItems;
-import com.tacz.guns.item.AttachmentItem;
-import com.tacz.guns.resource.index.CommonAttachmentIndex;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.Item;
 import net.minecraftforge.common.ForgeConfigSpec;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.config.ModConfigEvent;
-import net.minecraftforge.registries.ForgeRegistries;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
 import java.util.regex.Pattern;
-import java.util.stream.Collectors;
 
 // An example config class. This is not required, but it's a good idea to have one to keep your config organized.
 // Demonstrates how to use Forge's config APIs
@@ -39,20 +31,52 @@ public class Config {
 
     public static Map<ResourceLocation, Integer> attachmentWeights = Map.of();
 
+
+    public static final ForgeConfigSpec.DoubleValue UNCOMMON_RARITY =
+            BUILDER.comment("Uncommon Rarity")
+                    .defineInRange("uncommonRarity", 0.20D, 0.0D, 1.0D);
+
+    public static final ForgeConfigSpec.DoubleValue RARE_RARITY =
+            BUILDER.comment("Rare Rarity")
+                    .defineInRange("rareRarity", 0.10D, 0.0D, 1.0D);
+
+    public static final ForgeConfigSpec.DoubleValue EPIC_RARITY =
+            BUILDER.comment("Epic Rarity")
+                    .defineInRange("epicRarity", 0.05D, 0.0D, 1.0D);
+
+    public static final ForgeConfigSpec.DoubleValue MYTHIC_RARITY =
+            BUILDER.comment("Mythic Rarity")
+                    .defineInRange("mythicRarity", 0.01D, 0.0D, 1.0D);
+
     public static final ForgeConfigSpec.BooleanValue DEBUG_ENABLED =
             BUILDER.comment("Whether to use debug messages. WARNING A LOT OF LOGS INCOMING MUAHHAHAHAHA")
                     .define("debug", false);
-
 
     public static final ForgeConfigSpec.BooleanValue INJECT_CHEST_LOOT_TABLES =
             BUILDER.comment("Whether to inject attachments into matching loot tables.")
                     .define("injectChestLoot", true);
 
+    public static final ForgeConfigSpec.BooleanValue HARDCORE_REVIVAL_RES =
+            BUILDER.comment("Whether to allow player's to resurrect themselves")
+                    .define("enableGunResurrect", true);
+
+    public static final ForgeConfigSpec.BooleanValue HARDCORE_REVIVAL_REDUCE_TIME_ON_SHOT =
+            BUILDER.comment("Whether to allow player's to resurrect themselves")
+                    .define("reduceTimeOnMissedShot", true);
+
+    public static final ForgeConfigSpec.ConfigValue<Integer> HARDCORE_REVIVAL_SHOT_REDUCTION_TIME =
+            BUILDER.comment("Time Taken Away Per Shot")
+                    .define("timeReducedPer", 5 * 20);
+
+    public static final ForgeConfigSpec.ConfigValue<Integer> HARDCORE_REVIVAL_STOP_REDUCTION_AT_TICKS =
+            BUILDER.comment("Stop reduction time at ticks")
+                    .define("stopReductionShotsAt", 10*20);
+
     // Regex for loot table IDs to target (namespace:path)
     public static final ForgeConfigSpec.ConfigValue<List<? extends String>> ATTACHMENT_TABLE_REGEX =
             BUILDER.comment("Regex patterns for loot table IDs to receive attachment injections.")
                     .defineListAllowEmpty("attachmentLootTableRegex",
-                            List.of("^minecraft:chests/.*$"),
+                            List.of(".*treasure.*"),
                             o -> o instanceof String);
 
     // List of attachment IDs (namespace:path) to inject
@@ -71,7 +95,14 @@ public class Config {
     public static boolean debug;
 
 
+
     public static boolean injectChestLoot;
+
+    public static double uncommonRarity;
+    public static double rareRarity;
+    public static double epicRarity;
+    public static double mythicRarity;
+
     public static List<Pattern> attachmentTablePatterns = List.of();
     public static List<ResourceLocation> attachmentIds = List.of();
 
@@ -112,12 +143,15 @@ public class Config {
 
         MagitaczMod.LOGGER.info("Loaded Magitacz config file {}", event.getConfig().getFileName());
 
-        ArrayList<String> attachments = new ArrayList<>();
-
 
         debug = DEBUG_ENABLED.get();
 
         injectChestLoot = INJECT_CHEST_LOOT_TABLES.get();
+
+        uncommonRarity = UNCOMMON_RARITY.get();
+        rareRarity = RARE_RARITY.get();
+        epicRarity = EPIC_RARITY.get();
+        mythicRarity = MYTHIC_RARITY.get();
 
         // Compile table regex
         attachmentTablePatterns = ATTACHMENT_TABLE_REGEX.get().stream()

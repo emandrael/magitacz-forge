@@ -80,10 +80,10 @@ public class LootInjections {
                             .apply(GunLootFunctions.initAttachmentInfo(attachmentId))
                             // your rarity pipeline (adjust as you like)
                             .apply(ApothReforgeFunction.apothReforge(new ResourceLocation("apotheosis:common")))
-                            .apply(reforgeWithCondition(new ResourceLocation("apotheosis:uncommon"), 0.40F))
-                            .apply(reforgeWithCondition(new ResourceLocation("apotheosis:rare"),     0.20F))
-                            .apply(reforgeWithCondition(new ResourceLocation("apotheosis:epic"),     0.10F))
-                            .apply(reforgeWithCondition(new ResourceLocation("apotheosis:mythic"),   0.05F));
+                            .apply(reforgeWithCondition(new ResourceLocation("apotheosis:uncommon"), (float) Config.uncommonRarity))
+                            .apply(reforgeWithCondition(new ResourceLocation("apotheosis:rare"), (float) Config.rareRarity))
+                            .apply(reforgeWithCondition(new ResourceLocation("apotheosis:epic"), (float) Config.epicRarity))
+                            .apply(reforgeWithCondition(new ResourceLocation("apotheosis:mythic"), (float) Config.mythicRarity));
 
             pool.add(entry);
         }

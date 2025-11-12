@@ -1,0 +1,8 @@
+{
+    "name": "playwrights_gunpack.gun.shotgun_db_rock_pillaged",
+    "display": "playwrights_gunpack:shotgun_db_rock_pillaged_display",
+    "data": "playwrights_gunpack:shotgun_db_rock_pillaged_data",
+    "tooltip": "playwrights_gunpack.gun.pillaged.desc",
+    "type": "shotgun",
+    "sort": 350
+}

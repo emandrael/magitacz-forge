@@ -1,0 +1,8 @@
+{
+    "name": "playwrights_gunpack.gun.rifle_assult_peacock_pillaged",
+    "display": "playwrights_gunpack:rifle_assult_peacock_pillaged_display",
+    "data": "playwrights_gunpack:rifle_assult_peacock_pillaged_data",
+    "tooltip": "playwrights_gunpack.gun.pillaged.desc",
+    "type": "rifle",
+    "sort": 350
+}
