@@ -27,8 +27,6 @@ import net.playwright.magitacz.MagitaczMod;
 
 import java.util.Collection;
 
-@Mod.EventBusSubscriber(modid = MagitaczMod.MODID, bus = Mod.EventBusSubscriber.Bus.FORGE)
-
 public class ReviveOnKill {
 
     @SubscribeEvent

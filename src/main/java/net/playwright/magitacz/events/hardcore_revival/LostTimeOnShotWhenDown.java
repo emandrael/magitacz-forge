@@ -16,7 +16,6 @@ import net.minecraftforge.fml.common.Mod;
 import net.playwright.magitacz.Config;
 import net.playwright.magitacz.MagitaczMod;
 
-@Mod.EventBusSubscriber(modid = MagitaczMod.MODID, bus = Mod.EventBusSubscriber.Bus.FORGE)
 public class LostTimeOnShotWhenDown {
 
     @SubscribeEvent

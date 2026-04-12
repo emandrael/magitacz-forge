@@ -180,7 +180,8 @@ repositories {
     }
 
     maven {
-        url = uri("https://maven.theillusivec4.top/")
+        name = "Illusive Soulworks maven"
+        url = "https://maven.theillusivec4.top/"
     }
 
     maven { url = "https://maven.kosmx.dev/" }
@@ -208,6 +209,14 @@ repositories {
         url "https://maven.shadowsoffire.dev/releases"
         content {
             includeGroup "dev.shadowsoffire"
+        }
+    }
+
+    maven {
+        name = "Modrinth"
+        url = "https://api.modrinth.com/maven"
+        content {
+            includeGroup "maven.modrinth"
         }
     }
 
@@ -240,16 +249,26 @@ dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
 
 
-    implementation fg.deobf("io.redspace.ironsspellbooks:irons_spellbooks:${irons_spells_version}")
-    runtimeOnly fg.deobf("io.redspace.ironsspellbooks:irons_spellbooks:${irons_spells_version}")
 
+    // Iron's Spells Dependency
+
+    implementation fg.deobf("io.redspace:irons_spellbooks:${irons_spells_version}")
+    runtimeOnly fg.deobf("io.redspace:irons_spellbooks:${irons_spells_version}")
+    // Required by irons_spellbooks
+    runtimeOnly fg.deobf("maven.modrinth:irons-lib:1.20.1-1.0.1")
+
+    // GeckLib
     implementation fg.deobf("software.bernie.geckolib:geckolib-forge-${geckolib_version}")
     implementation("com.eliotlash.mclib:mclib:20")
 
+    // Curios
     implementation fg.deobf("top.theillusivec4.curios:curios-forge:${curios_version}:api")
-    //Uncomment the following line to run with Curios in dev
-    runtimeOnly  fg.deobf("top.theillusivec4.curios:curios-forge:${curios_version}")
 
+    //Uncomment the following line to run with Curios in dev
+    // Compile against only the API artifact
+    compileOnly(fg.deobf("top.theillusivec4.curios:curios-forge:${curios_version}:api"))
+    // Use the full Curios API jar at runtime
+    runtimeOnly(fg.deobf("top.theillusivec4.curios:curios-forge:${curios_version}"))
     compileOnly fg.deobf("top.theillusivec4.caelus:caelus-forge:${caelus_version}:api")
     runtimeOnly  fg.deobf("top.theillusivec4.caelus:caelus-forge:${caelus_version}")
 
@@ -261,31 +280,33 @@ dependencies {
 
     implementation fg.deobf("curse.maven:timeless-and-classics-zero-1028108:6654541")//    modImplementation('curse.maven:timeless-and-classics-zero-1028108:6069384');
 
-    // Aquamirae
-    implementation fg.deobf("curse.maven:obscure-api-638417:4616364")
-    implementation fg.deobf("curse.maven:ob-aquamirae-536254:7039863")
-    runtimeOnly fg.deobf("curse.maven:ob-aquamirae-536254:7039863")
-
-
-    // TSLAT ENtity HUD
-    implementation fg.deobf("net.tslat.tes:TES-forge-1.20.1:1.5.1")
-
-
     // Modern Ragnarok
     implementation fg.deobf("curse.maven:apotheosis-modern-ragnarok-966582:7152588")
     implementation fg.deobf("curse.maven:gunsmith-lib-1264058:7049169")
     implementation fg.deobf("curse.maven:selene-499980:6380635")
 
-    // Hardcore Revival
-    implementation fg.deobf("curse.maven:balm-531761:7087245")
-    implementation fg.deobf("curse.maven:hardcore-revival-274036:7174968")
 
-    // Pillager's Gun
-    implementation fg.deobf("curse.maven:pillagers-gun-948255:6875446")
+    // Optional Mods
+
+    // Aquamirae
+    compileOnly  fg.deobf("curse.maven:obscure-api-638417:4616364")
+    compileOnly  fg.deobf("curse.maven:ob-aquamirae-536254:7039863")
+    //    runtimeOnly fg.deobf("curse.maven:ob-aquamirae-536254:7039863")
+
+    // Hardcore Revival
+    compileOnly  fg.deobf("curse.maven:balm-531761:7087245")
+    compileOnly  fg.deobf("curse.maven:hardcore-revival-274036:7174968")
+
+    // TSLAT ENtity HUD
+    compileOnly fg.deobf("net.tslat.tes:TES-forge-1.20.1:1.5.1")
+
 
 
     //temp iNSTALLATIONS
-    implementation fg.deobf("curse.maven:mmmmmmmmmmmm-225738:6237015")
+
+    implementation fg.deobf("curse.maven:mmmmmmmmmmmm-225738:6860192") // Dummy
+    implementation fg.deobf("curse.maven:pillagers-gun-948255:6875446") // Pillager's Gun
+
 
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 
@@ -296,9 +317,11 @@ dependencies {
 mixin {
     add(sourceSets.main, 'magitacz.refmap.json')
     config('magitacz.mixins.json')
+
+    debug.verbose = true
+    debug.export = true
+
 }
-
-
 
 // This block of code expands all declared replace properties in the specified resource targets.
 // A missing property will result in an error. Properties are expanded using ${} Groovy notation.

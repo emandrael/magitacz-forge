@@ -12,7 +12,6 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.playwright.magitacz.MagitaczMod;
 
-@Mod.EventBusSubscriber(modid = MagitaczMod.MODID, bus = Mod.EventBusSubscriber.Bus.FORGE)
 public class OnKnockout {
 
     private static final String TAG_CURRENT_REMAINING = "magitacz_current_knockout_remaining";

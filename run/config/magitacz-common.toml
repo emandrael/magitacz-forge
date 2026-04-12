@@ -13,7 +13,7 @@ epicRarity = 0.05
 #Range: 0.0 ~ 1.0
 mythicRarity = 0.01
 #Whether to use debug messages. WARNING A LOT OF LOGS INCOMING MUAHHAHAHAHA
-debug = true
+debug = false
 #Whether to inject attachments into matching loot tables.
 injectChestLoot = true
 #Whether to allow player's to resurrect themselves

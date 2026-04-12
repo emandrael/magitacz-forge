@@ -4,6 +4,7 @@
   "package": "net.playwright.magitacz.mixins",
   "compatibilityLevel": "JAVA_17",
   "refmap": "magitacz.refmap.json",
+  "plugin": "net.playwright.magitacz.mixins.MagitaczMixinPlugin",
   "mixins": [ "CaptainCorneliaMixin" ],
   "client": [],
   "injectors": { "defaultRequire": 1 }

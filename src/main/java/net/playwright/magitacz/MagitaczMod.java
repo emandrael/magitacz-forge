@@ -13,6 +13,7 @@ import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
@@ -24,6 +25,7 @@ import net.playwright.magitacz.apoth.affix.SpellAffix;
 import net.playwright.magitacz.apoth.category.AttachmentLootCategories;
 import net.playwright.magitacz.attributes.MagitaczAttributes;
 import net.playwright.magitacz.blocks.MagitaczBlocks;
+import net.playwright.magitacz.compat.HardcoreRevivalCompat;
 import net.playwright.magitacz.enchantments.ModEnchantments;
 import net.playwright.magitacz.item.MagitaczItems;
 import org.slf4j.Logger;
@@ -66,6 +68,12 @@ public class MagitaczMod {
 
         ModEnchantments.register(modEventBus);
 
+
+        // Register Hardcore Optional Dependency
+
+        if (ModList.get().isLoaded("hardcorerevival")) {
+            HardcoreRevivalCompat.register();
+        }
 
 
         // Register the item to a creative tab

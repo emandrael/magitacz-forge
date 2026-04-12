@@ -133,6 +133,7 @@ key_key.curios.open.desc:key.keyboard.g
 key_placebo.toggleTrails:key.keyboard.keypad.9
 key_placebo.toggleWings:key.keyboard.keypad.8
 key_key.irons_spellbooks.spell_wheel:key.keyboard.r
+key_key.irons_spellbooks.spell_wheel_toggle:key.keyboard.unknown
 key_key.irons_spellbooks.spellbook_cast:key.keyboard.v
 key_key.irons_spellbooks.spell_bar_modifier:key.keyboard.left.alt
 key_key.irons_spellbooks.spell_quick_cast_1:key.keyboard.unknown

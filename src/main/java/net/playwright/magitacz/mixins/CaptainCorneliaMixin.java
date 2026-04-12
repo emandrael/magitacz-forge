@@ -21,6 +21,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.Level;
+import net.minecraftforge.fml.ModList;
 import net.playwright.magitacz.MagitaczMod;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
@@ -40,6 +41,11 @@ public abstract class CaptainCorneliaMixin extends Monster {
     @Inject(method = "doHurtTarget(Lnet/minecraft/world/entity/Entity;)Z",
             at = @At("HEAD"), cancellable = true)
     private void iss$swapDamageTypes(Entity target, CallbackInfoReturnable<Boolean> cir) {
+        
+        if (!ModList.get().isLoaded("obscure_api")) {
+            return;
+        }
+        
         if (!(target instanceof LivingEntity living)) return;
         Item held = this.getMainHandItem().getItem();
 

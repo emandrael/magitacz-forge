@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: fmlloader
+
+Name: net/minecraftforge/fml/loading/
+Specification-Title: FMLLoader
+Specification-Vendor: Forge Development LLC
+Specification-Version: 1
+Implementation-Title: FML Loader
+Implementation-Version: 1.0
+Implementation-Vendor: Forge
+
+Name: /
+Timestamp: 2025-03-04T23:54:20+0000
+Git-Commit: 753d68d2
+Git-Branch: 1.20.1
+Build-Number: 1.20.1-47.4.0
+

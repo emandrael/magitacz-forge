@@ -7,9 +7,9 @@ import io.redspace.ironsspellbooks.api.magic.MagicHelper;
 import io.redspace.ironsspellbooks.api.spells.AbstractSpell;
 import io.redspace.ironsspellbooks.api.spells.CastSource;
 import io.redspace.ironsspellbooks.capabilities.magic.PlayerRecasts;
-import io.redspace.ironsspellbooks.network.ClientboundSyncMana;
-import io.redspace.ironsspellbooks.network.spell.ClientboundOnClientCast;
-import io.redspace.ironsspellbooks.setup.Messages;
+import io.redspace.ironsspellbooks.network.SyncManaPacket;
+import io.redspace.ironsspellbooks.network.casting.OnClientCastPacket;
+import io.redspace.ironsspellbooks.setup.PacketDistributor;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.level.Level;
@@ -22,6 +22,8 @@ public class SpellCastUtils {
         if (!(shooter instanceof ServerPlayer player)) return;              // must be a player
         if (level.isClientSide) return;                                     // server-side only
         if (!spell.isLearned(player)) return;
+
+
 
         MagicData data = MagicData.getPlayerMagicData(player);
 
@@ -56,7 +58,8 @@ public class SpellCastUtils {
         if (castSource.consumesMana() && !playerAlreadyHasRecast) {
             float newMana = Math.max(magicData.getMana() - (float)event.getManaCost(), 0.0F);
             magicData.setMana(newMana);
-            Messages.sendToPlayer(new ClientboundSyncMana(magicData), serverPlayer);
+
+            PacketDistributor.sendToPlayer(serverPlayer,new SyncManaPacket(magicData));
         }
 
         spell.onCast(world, event.getSpellLevel(), serverPlayer, castSource, magicData);
@@ -67,7 +70,8 @@ public class SpellCastUtils {
             MagicHelper.MAGIC_MANAGER.addCooldown(serverPlayer, spell, castSource);
         }
 
-        Messages.sendToPlayer(new ClientboundOnClientCast(spell.getSpellId(), spellLevel, castSource, magicData.getAdditionalCastData()), serverPlayer);
+
+        PacketDistributor.sendToPlayer(serverPlayer, new OnClientCastPacket(spell.getSpellId(), spellLevel, castSource, magicData.getAdditionalCastData()));
     }
 
 }
